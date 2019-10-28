@@ -1,0 +1,43 @@
+---
+title: "Data Quirks"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Please find information regarding data extracted for each species and data file formats
+
+## Input file formats
+
+All pdf files should have the same format.
+
+YEAR_SPECIESNAME_LOCATION_REPORTNAME.pdf (Note: 3 underscores) 
+
+eg. 2017_mackerel_GOM-GB-MA_18-06.pdf
+
+
+
+* LOCATION defines the location where SPECIESNAME is harvested/sampled (eg, GB, GOM, EastGB, GB-GOM, etc).
+Use hyphens to separate acronyms/words in LOCATION
+
+* REPORTNAME defines the source report of the pdf.
+
+Do not use additional underscores. Underscores will be used to split the pdf name if necessary.
+
+
+
+
+## Mackerel
+
+Biomass and Catch extracted
+
+## Herring 
+
+Biomass and landings extracted
+
+Discards partially extracted (Table has unusual format. Requires manual data entry)
+
+# Cod
+
