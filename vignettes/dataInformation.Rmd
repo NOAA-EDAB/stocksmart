@@ -7,7 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Please find information regarding data extracted for each species and data file formats
+Please find information regarding data extracted for each species and data file formats.
+
+## Location of reports
+
+All reports were downloaded from 
+
+* [Stock Assessment Review Index (SARI)](https://www.nefsc.noaa.gov/saw/reviews_report_options.php)
+* [Stock Assessment Support Information (SASINF)](https://www.nefsc.noaa.gov/saw/sasi/sasi_report_options.php)
 
 ## Input file formats
 

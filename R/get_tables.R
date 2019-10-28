@@ -10,7 +10,7 @@
 #'
 #' Input: Pdf documents are assumed to be in the "docs" folder of the current working directory.
 #' 
-
+library(magrittr)
 
 get_tables <- function(pdfName,tableTypes){
 
