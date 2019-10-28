@@ -33,17 +33,13 @@ Use hyphens to separate acronyms/words in LOCATION
 Do not use additional underscores. Underscores will be used to split the pdf name if necessary.
 
 
+## Output
 
+Column names in all tables vary across species. No consistency
 
-## Mackerel
-
-Biomass and Catch extracted
 
 ## Herring 
 
-Biomass and landings extracted
-
-Discards partially extracted (Table has unusual format. Requires manual data entry)
-
-# Cod
+Biomass, landings, discards extracted
+Need to determin how to combine (although discards seem pretty small to me, maybe worth ignoring)
 
