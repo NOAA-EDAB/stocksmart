@@ -1,18 +1,16 @@
 #' Extracts table from pdf
 #' 
 #' @param pdfName String. Name of pdf file
-#' @param pdfDir String. Directory pdf resides
-#' @param tableTypes Dataframe. Two columms. Column 1 = Type of data in table ("Biomass","Landings", etc.). column2 = page number(s) in document where table exists
+#' @param tableTypes Dataframe. Two columms. Column 1 = Type of data in table ("Biomass","Landings", etc.).
+#'  Column 2 = page number(s) in document where table exists
 #' 
-#'@return Nothing. 
+#'@return The extracted table asa tibble
 #'
-#'@section Input/Output files:
+#'@section Input
 #'
 #' Input: Pdf documents are assumed to be in the "docs" folder of the current working directory.
 #' 
-#' Output: RDS Files are written to the working directory. 
-#' The files have the same name as \code{pdfName} with the "type" of data concatenated. ("_Biomass"). The 
-#'"type" is taken from column 1 of \code{tableTypes}.
+
 
 get_tables <- function(pdfName,tableTypes){
 
@@ -35,10 +33,12 @@ get_tables <- function(pdfName,tableTypes){
       newtab <- tab %>% dplyr::select(colsToKeep)
       newTable <- rbind(newTable,newtab)
     }
-    outPath <- here::here(paste0(pdfName,"_",dtype,".RDS"))
-    saveRDS(newTable,outPath)
-    message(paste0("Extracted data has been saved to: ",outPath))
+    #outPath <- here::here(paste0(pdfName,"_",dtype,".RDS"))
+    #saveRDS(newTable,outPath)
+    #message(paste0("Extracted data has been saved to: ",outPath))
   }
+  
+  return(dplyr::as_tibble(newTable))
 
 }
   
