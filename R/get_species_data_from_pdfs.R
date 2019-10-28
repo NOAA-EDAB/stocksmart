@@ -2,6 +2,9 @@ library(magrittr)
 #library(dplyr)
 source(here::here("R","get_tables.R"))
 
+# should really create a master df to store species, datatype, page number
+# then just filter the df accordingly
+
 ############################################################
 ############ MACKEREL ######################################
 ############################################################
