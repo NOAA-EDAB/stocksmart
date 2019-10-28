@@ -1,5 +1,5 @@
 ---
-title: "Data Quirks"
+title: "Data Information"
 output: html_document
 ---
 
@@ -15,8 +15,7 @@ All pdf files should have the same format.
 
 YEAR_SPECIESNAME_LOCATION_REPORTNAME.pdf (Note: 3 underscores) 
 
-eg. 2017_mackerel_GOM-GB-MA_18-06.pdf
-
+eg. 2017_mackerel_GOM-GB-MA_SARC64-18-06.pdf
 
 
 * LOCATION defines the location where SPECIESNAME is harvested/sampled (eg, GB, GOM, EastGB, GB-GOM, etc).
