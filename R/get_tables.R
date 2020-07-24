@@ -21,6 +21,7 @@ get_tables <- function(pdfName,tableTypes){
   for(dtype in unique(tableTypes$type)) {
     pages <- tableTypes %>% dplyr::filter(type == dtype) %>% dplyr::select(pages)
     dtables <- tabulizer::extract_tables(filePath,pages=unlist(pages),output="data.frame")
+    return(dtables)
     #For types that exist in tables that span multiple pages. The table is read in parts, each page is part
     #of the table. They need to be rbind(ed) to create the full table
     newTable <- NULL
@@ -31,6 +32,7 @@ get_tables <- function(pdfName,tableTypes){
       # removes columns with all NAs. These are created by tabulizer
       colsToKeep <- which(!is.na(colMeans(tab,na.rm =T)))
       newtab <- tab %>% dplyr::select(colsToKeep)
+      print(head(newtab))
       newTable <- rbind(newTable,newtab)
     }
     #outPath <- here::here(paste0(pdfName,"_",dtype,".RDS"))
