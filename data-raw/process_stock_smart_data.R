@@ -13,7 +13,6 @@ process_stock_smart_data <- function() {
   for (fn in files) {
     dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = F)
     year <- as.numeric(unlist(dataf[6:nrow(dataf),2]))
-    nYrs <- length(year)
     for (icol in 3:ncol(dataf)) {
       # get metadata for this species
       meta <- as.vector(unlist(dataf[1:5,icol]))
@@ -26,8 +25,15 @@ process_stock_smart_data <- function() {
       units <- meta[5]
       # time series data
       ts <- as.numeric(unlist(dataf[6:nrow(dataf),icol]))
+      # select years where data is available
+      ind <- !is.na(ts)
+      Year <- year[ind]
+      ts <- ts[ind]
+      # length of data vailable
+      nYrs <- length(Year)
       # build a tidy tibble
-      speciesData <- tibble::tibble(Species=rep(SpeciesNm,nYrs),Region = rep(region,nYrs),year=year,ts=ts,Metric = rep(metric,nYrs),Description=rep(description,nYrs),Units=rep(units,nYrs))
+      speciesData <- tibble::tibble(Species=rep(SpeciesNm,nYrs),Region = rep(region,nYrs),Year=Year,Value=ts,Metric = rep(metric,nYrs),Description=rep(description,nYrs),Units=rep(units,nYrs))
+      # combine data for this column to master
       stockAssessmentData <- rbind(stockAssessmentData,speciesData)
     }
     
