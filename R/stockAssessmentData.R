@@ -1,6 +1,6 @@
 #' Abundance, Catch, fishing mortalit, Recruitment for USA assessed stocks
 #' 
-#' Stock assessment data for many of the species found in waters of the USA
+#' Stock assessment data for species found in waters of the USA. Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
 #'
 #' @format A datafram with 45451 rows and 7 variables
 #' 
