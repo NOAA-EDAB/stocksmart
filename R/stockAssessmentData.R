@@ -17,6 +17,8 @@
 #'
 #' @source \url{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}
 #' 
+#' @family stockAssessments
+#' 
 #' @section Data download:
 #' 
 #' The data were downloaded from [Stock SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock) - Status, Management, Assessments & Resource Trends. Follow these steps:

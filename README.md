@@ -3,9 +3,12 @@
 Stock assessments reports are typically lengthy documents containing a great deal of information. This repo contains time series data for all assessed stocks in the United States. The following time series are available:
 
 * Catch
-* Abundance
-* Recruitment
+* Abundance - Estimate of the numbers of individuals in the population
+* Index - An index of biomass for the population
+* Recruitment - Abundance of Juveniles
 * Fishing mortality
+
+Summary statistics for these assessments are also available (FMSY, BMSY, Ftarget etc) in addition to metadata (Jurisdiction, Point of contact, Year of assessment etc)
 
 The data are extracted from NOAA's [Stock SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) web based data portal and processed. The result is a data frame in long format.
 
