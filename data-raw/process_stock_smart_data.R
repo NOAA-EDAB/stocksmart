@@ -6,11 +6,23 @@
 #'
 #'
 
-process_stock_smart_data <- function() {
-  #find all excel files
-  files <- list.files(here::here("data-raw"),pattern="\\.xlsx$")
+read_sa_files <- function(){
+  files <- list.files(here::here("data-raw"),pattern="\\.xlsx$") %>%
+    tibble::as_tibble() %>% 
+    dplyr::rename("Files"="value")
+  return(files)
+}
+
+
+#' process time series data
+#' 
+process_stock_smart_ts_data <- function(files) {
+  files <- read_sa_files()
+  
+  tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
   stockAssessmentData <- NULL
-  for (fn in files) {
+  for (fn in unlist(tsfiles)) {
+    print(fn)
     dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = F)
     year <- as.numeric(unlist(dataf[6:nrow(dataf),2]))
     for (icol in 3:ncol(dataf)) {
@@ -40,6 +52,28 @@ process_stock_smart_data <- function() {
   }
   
   save(stockAssessmentData,file = here::here("data","stockAssessmentData.Rdata"))
-
+  
   
 }
+
+
+#' process summary data
+#' 
+process_stock_smart_summary_Data <- function(){
+  files <- read_sa_files()
+  
+  summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
+  summaryData <- NULL
+  for (fn in unlist(summaryfiles)) {
+    print(fn)
+    dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = T)
+    summaryData <- rbind(summaryData,dataf)
+  }
+  stockAssessmentSummary <- summaryData
+  save(stockAssessmentSummary,file = here::here("data","stockAssessmentSummary.Rdata"))
+  
+}
+  ## Process Summary data
+
+  
+
