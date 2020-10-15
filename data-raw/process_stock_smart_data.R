@@ -1,24 +1,24 @@
 #' Process xlsx files from Stock SMART
 #'
 #' NOAA Stock SMART site https://www.st.nmfs.noaa.gov/stocksmart?app=homepage
-#' hosts stock assessment data for all managed species. Data is provided iin multiple xlsx files. 
+#' hosts stock assessment data for all managed species. Data is provided iin multiple xlsx files.
 #' Read in and process this data and export as tidy Rdata file
 #'
 #'
 
 read_sa_files <- function(){
   files <- list.files(here::here("data-raw"),pattern="\\.xlsx$") %>%
-    tibble::as_tibble() %>% 
+    tibble::enframe(name=NULL) %>%
     dplyr::rename("Files"="value")
   return(files)
 }
 
 
 #' process time series data
-#' 
-process_stock_smart_ts_data <- function(files) {
+#'
+process_stock_smart_ts_data <- function() {
   files <- read_sa_files()
-  
+
   tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
   stockAssessmentData <- NULL
   for (fn in unlist(tsfiles)) {
@@ -48,20 +48,18 @@ process_stock_smart_ts_data <- function(files) {
       # combine data for this column to master
       stockAssessmentData <- rbind(stockAssessmentData,speciesData)
     }
-    
+
   }
-  
-  save(stockAssessmentData,file = here::here("data","stockAssessmentData.Rdata"))
-  
-  
+
+  usethis::use_data(stockAssessmentData,overwrite = T)
 }
 
 
 #' process summary data
-#' 
+#'
 process_stock_smart_summary_Data <- function(){
   files <- read_sa_files()
-  
+
   summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
   summaryData <- NULL
   for (fn in unlist(summaryfiles)) {
@@ -70,10 +68,10 @@ process_stock_smart_summary_Data <- function(){
     summaryData <- rbind(summaryData,dataf)
   }
   stockAssessmentSummary <- summaryData
-  save(stockAssessmentSummary,file = here::here("data","stockAssessmentSummary.Rdata"))
-  
+
+  usethis::use_data(stockAssessmentSummary,overwrite = T)
 }
   ## Process Summary data
 
-  
+
 
