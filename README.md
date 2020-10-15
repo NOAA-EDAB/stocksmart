@@ -1,4 +1,4 @@
-# assessmentOutput
+# assessmentdata
 
 Stock assessments reports are typically lengthy documents containing a great deal of information. This repo contains time series data for all assessed stocks in the United States. The following time series are available:
 
