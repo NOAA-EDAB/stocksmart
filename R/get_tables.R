@@ -1,22 +1,23 @@
 #' Extracts table from pdf
-#' 
+#'
+#' Given a pdf and the page numbers, a table of data is extracted
+#'
 #' @param pdfName String. Name of pdf file
 #' @param tableTypes Dataframe. Two columms. Column 1 = Type of data in table ("Biomass","Landings", etc.).
 #'  Column 2 = page number(s) in document where table exists
-#' 
-#'@return The extracted table asa tibble
 #'
-#'@section Input
+#'@return The extracted table a sa tibble
 #'
-#' Input: Pdf documents are assumed to be in the "docs" folder of the current working directory.
-#' 
-library(magrittr)
+#'@section Input:
+#'
+#' Input: Pdf documents are assumed to be in the "reports" folder of the current working directory.
+#' @export
 
 get_tables <- function(pdfName,tableTypes){
 
   # PDFS assumed to be in docs folder. Can remove/generalize this later
-  filePath <- here::here("docs",paste0(pdfName,".pdf"))
-  
+  filePath <- here::here("reports",paste0(pdfName,".pdf"))
+
   # for each unique type ("Biomass","catch" etc)
   for(dtype in unique(tableTypes$type)) {
     pages <- tableTypes %>% dplyr::filter(type == dtype) %>% dplyr::select(pages)
@@ -39,8 +40,8 @@ get_tables <- function(pdfName,tableTypes){
     #saveRDS(newTable,outPath)
     #message(paste0("Extracted data has been saved to: ",outPath))
   }
-  
+
   return(dplyr::as_tibble(newTable))
 
 }
-  
+
