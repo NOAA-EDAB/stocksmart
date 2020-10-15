@@ -1,0 +1,6 @@
+^assessmentdata\.Rproj$
+^\.Rproj\.user$
+
+#folders
+dataFromReports
+reports
