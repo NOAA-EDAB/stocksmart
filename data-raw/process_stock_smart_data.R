@@ -6,6 +6,7 @@
 #'
 #'
 
+library(magrittr)
 read_sa_files <- function(){
   files <- list.files(here::here("data-raw"),pattern="\\.xlsx$") %>%
     tibble::enframe(name=NULL) %>%
@@ -51,6 +52,8 @@ process_stock_smart_ts_data <- function() {
 
   }
 
+  stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
+
   usethis::use_data(stockAssessmentData,overwrite = T)
 }
 
@@ -68,6 +71,8 @@ process_stock_smart_summary_Data <- function(){
     summaryData <- rbind(summaryData,dataf)
   }
   stockAssessmentSummary <- summaryData
+
+  stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
 
   usethis::use_data(stockAssessmentSummary,overwrite = T)
 }
