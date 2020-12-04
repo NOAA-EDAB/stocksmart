@@ -8,7 +8,7 @@
 
 library(magrittr)
 read_sa_files <- function(){
-  files <- list.files(here::here("data-raw"),pattern="\\.xlsx$") %>%
+  files <- list.files(here::here("data-raw","allAssessments"),pattern="\\.xlsx$") %>%
     tibble::enframe(name=NULL) %>%
     dplyr::rename("Files"="value")
   return(files)
@@ -24,7 +24,7 @@ process_stock_smart_ts_data <- function() {
   stockAssessmentData <- NULL
   for (fn in unlist(tsfiles)) {
     print(fn)
-    dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = F)
+    dataf <- readxl::read_xlsx(here::here("data-raw","allAssessments",fn), col_names = F)
     year <- as.numeric(unlist(dataf[6:nrow(dataf),2]))
     for (icol in 3:ncol(dataf)) {
       # get metadata for this species
@@ -33,6 +33,7 @@ process_stock_smart_ts_data <- function() {
       spnm_region <- stringr::str_split(meta[1],"-")[[1]]
       SpeciesNm <- stringr::str_remove(spnm_region[1],"\\s+$")
       region <- stringr::str_remove(spnm_region[2],"^\\s+")
+      AssessmentYear <- as.numeric(meta[2])
       metric <- meta[3]
       description <- meta[4]
       units <- meta[5]
@@ -45,7 +46,13 @@ process_stock_smart_ts_data <- function() {
       # length of data vailable
       nYrs <- length(Year)
       # build a tidy tibble
-      speciesData <- tibble::tibble(Species=rep(SpeciesNm,nYrs),Region = rep(region,nYrs),Year=Year,Value=ts,Metric = rep(metric,nYrs),Description=rep(description,nYrs),Units=rep(units,nYrs))
+      speciesData <- tibble::tibble(Species=rep(SpeciesNm,nYrs),
+                                    Region = rep(region,nYrs),
+                                    Year=Year,Value=ts,
+                                    Metric = rep(metric,nYrs),
+                                    Description=rep(description,nYrs),
+                                    Units=rep(units,nYrs),
+                                    AssessmentYear=rep(AssessmentYear,nYrs))
       # combine data for this column to master
       stockAssessmentData <- rbind(stockAssessmentData,speciesData)
     }
@@ -53,30 +60,7 @@ process_stock_smart_ts_data <- function() {
   }
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
-
   usethis::use_data(stockAssessmentData,overwrite = T)
 }
-
-
-#' process summary data
-#'
-process_stock_smart_summary_Data <- function(){
-  files <- read_sa_files()
-
-  summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
-  summaryData <- NULL
-  for (fn in unlist(summaryfiles)) {
-    print(fn)
-    dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = T)
-    summaryData <- rbind(summaryData,dataf)
-  }
-  stockAssessmentSummary <- summaryData
-
-  stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
-
-  usethis::use_data(stockAssessmentSummary,overwrite = T)
-}
-  ## Process Summary data
-
 
 
