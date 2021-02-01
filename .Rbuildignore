@@ -4,3 +4,4 @@
 #folders
 dataFromReports
 reports
+^README\.Rmd$
