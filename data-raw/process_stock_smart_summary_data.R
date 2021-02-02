@@ -7,7 +7,7 @@
 #'
 
 library(magrittr)
-read_sa_files <- function(){
+read_summary_files <- function(){
   files <- list.files(here::here("data-raw"),pattern="\\.xlsx$") %>%
     tibble::enframe(name=NULL) %>%
     dplyr::rename("Files"="value")
@@ -18,7 +18,7 @@ read_sa_files <- function(){
 #' process summary data
 #'
 process_stock_smart_summary_data <- function(){
-  files <- read_sa_files()
+  files <- read_summary_files()
 
   summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
   summaryData <- NULL
@@ -32,6 +32,8 @@ process_stock_smart_summary_data <- function(){
   stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
 
   usethis::use_data(stockAssessmentSummary,overwrite = T)
+
+  return(stockAssessmentSummary)
 }
   ## Process Summary data
 

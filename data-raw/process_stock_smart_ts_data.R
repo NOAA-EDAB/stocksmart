@@ -7,7 +7,9 @@
 #'
 
 library(magrittr)
-read_sa_files <- function(){
+source(here::here("data-raw","process_stock_smart_summary_data.R"))
+
+read_assessment_files <- function(){
   files <- list.files(here::here("data-raw","allAssessments"),pattern="\\.xlsx$") %>%
     tibble::enframe(name=NULL) %>%
     dplyr::rename("Files"="value")
@@ -18,7 +20,7 @@ read_sa_files <- function(){
 #' process time series data
 #'
 process_stock_smart_ts_data <- function() {
-  files <- read_sa_files()
+  files <- read_assessment_files()
 
   tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
   stockAssessmentData <- NULL
@@ -58,6 +60,12 @@ process_stock_smart_ts_data <- function() {
     }
 
   }
+
+  # process summary data
+  #summaryData <- process_stock_smart_summary_data()
+  # join with processed data and export
+
+  file.create(here::here("data-raw","datapull.txt"))
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
   usethis::use_data(stockAssessmentData,overwrite = T)
