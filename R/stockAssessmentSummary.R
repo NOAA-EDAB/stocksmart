@@ -2,7 +2,7 @@
 #'
 #' Stock assessment metadata and reference points for species found in waters of the USA. Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
 #'
-#' @format A dataframe with 1691 rows and 53 variables
+#' @format A data frame with n rows and m variables
 #'
 #' \describe{
 #'   \item{Stock Name}{}
@@ -11,6 +11,10 @@
 #'   \item{Science Center}{}
 #'   \item{Regional Ecosystem}{}
 #'   \item{FSSI Stock?}{}
+#'   {ITIS Taxon Serial Number}
+#'   {Scientific Name}
+#'   {Common Name}
+#'   {Stock Area}
 #'   \item{Assessment Year}{}
 #'   \item{Assessment Month}{}
 #'   \item{Last Data Year }{}
@@ -20,6 +24,8 @@
 #'   \item{Model Version}{}
 #'   \item{Lead Lab }{}
 #'   \item{Citation}{}
+#'   {Final assessment Report 1}
+#'   {Final assessment Report 2}
 #'   \item{Point of Contact}{}
 #'   \item{Life History Data}{}
 #'   \item{Abundance Data}{}
