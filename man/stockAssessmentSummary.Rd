@@ -14,10 +14,10 @@ A data frame with n rows and m variables
 \item{Science Center}{}
 \item{Regional Ecosystem}{}
 \item{FSSI Stock?}{}
-{ITIS Taxon Serial Number}
-{Scientific Name}
-{Common Name}
-{Stock Area}
+\item{ITIS Taxon Serial Number}{}
+\item{Scientific Name}{}
+\item{Common Name}{}
+\item{Stock Area}{}
 \item{Assessment Year}{}
 \item{Assessment Month}{}
 \item{Last Data Year }{}
@@ -27,8 +27,8 @@ A data frame with n rows and m variables
 \item{Model Version}{}
 \item{Lead Lab }{}
 \item{Citation}{}
-{Final assessment Report 1}
-{Final assessment Report 2}
+\item{Final assessment Report 1}{}
+\item{Final assessment Report 2}{}
 \item{Point of Contact}{}
 \item{Life History Data}{}
 \item{Abundance Data}{}
