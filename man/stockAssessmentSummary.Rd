@@ -5,7 +5,7 @@
 \alias{stockAssessmentSummary}
 \title{Reference points, contact info, assessment metadata for USA assessed stocks}
 \format{
-A dataframe with 1691 rows and 53 variables
+A data frame with n rows and m variables
 
 \describe{
 \item{Stock Name}{}
@@ -14,6 +14,10 @@ A dataframe with 1691 rows and 53 variables
 \item{Science Center}{}
 \item{Regional Ecosystem}{}
 \item{FSSI Stock?}{}
+{ITIS Taxon Serial Number}
+{Scientific Name}
+{Common Name}
+{Stock Area}
 \item{Assessment Year}{}
 \item{Assessment Month}{}
 \item{Last Data Year }{}
@@ -23,6 +27,8 @@ A dataframe with 1691 rows and 53 variables
 \item{Model Version}{}
 \item{Lead Lab }{}
 \item{Citation}{}
+{Final assessment Report 1}
+{Final assessment Report 2}
 \item{Point of Contact}{}
 \item{Life History Data}{}
 \item{Abundance Data}{}

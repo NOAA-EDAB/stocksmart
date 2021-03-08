@@ -5,7 +5,7 @@
 \alias{stockAssessmentData}
 \title{Abundance, Catch, fishing mortalit, Recruitment for USA assessed stocks}
 \format{
-A dataframe with 45451 rows and 7 variables
+A data frame with n rows and m variables
 
 \describe{
 \item{Species}{Common name for the assessed species}
@@ -15,6 +15,7 @@ A dataframe with 45451 rows and 7 variables
 \item{Metric}{Typeof metric: Abundance of species, Index of Biomass, Catch, Recruitment of juvenile individuals, Fmort - Fishing mortality}
 \item{Description}{Description of \code{Metric}}
 \item{Units}{Units of \code{Value}}
+\item{AssessmentYear}{Year of Assessment from which the data was obtained}
 
 }
 }
