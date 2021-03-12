@@ -1,20 +1,14 @@
 Package: assessmentdata
-Title: Pulls data from assessment reports and provides stock SMART data
+Title: Data package. Provides stock SMART data
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Supplies stock SMART data and aids in the extraction of data from reports in pdf format
+Description: Supplies stock SMART data 
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Imports: 
-    magrittr,
-    here,
-    dplyr,
-    tabulizer
-Depends: 
-    R (>= 2.10)
+
