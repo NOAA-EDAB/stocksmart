@@ -33,6 +33,13 @@ data portal and processed. The result is a data frame in long format.
 
 *Date of most recent data pull: 2021-02-01*
 
+## Usage
+
+### Installation
+
+`remotes::install_githuib("NOAA-EDAB/assessmentdata")`
+
+
 ## Contact
 
 | [andybeet](https://github.com/andybeet)                                                         |
