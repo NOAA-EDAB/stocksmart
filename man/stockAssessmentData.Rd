@@ -8,14 +8,20 @@
 A data frame with n rows and m variables
 
 \describe{
-\item{Species}{Common name for the assessed species}
-\item{Region}{Stock Region: The region in which the species is assessed}
+\item{StockName}{Species name and stock area for the assessed species}
+\item{CommonName}{Common name for species}
+\item{ScientificName}{Scientific name for species}
+\item{ITIS}{Species ITIS Taxon Serial Number }
+\item{StockArea}{Stock Area: The region in which the species is assessed}
 \item{Year}{Year the data was collected/generated}
 \item{Value}{Value of \code{Metric}}
 \item{Metric}{Typeof metric: Abundance of species, Index of Biomass, Catch, Recruitment of juvenile individuals, Fmort - Fishing mortality}
 \item{Description}{Description of \code{Metric}}
 \item{Units}{Units of \code{Value}}
 \item{AssessmentYear}{Year of Assessment from which the data was obtained}
+\item{FMP}{Fisheries management plan species is managed under}
+\item{RegionalEcosystem}{The Regional Ecosystem wher stock is found. There are 8 ecosystems defined around the coastal margins of the United States}
+\item{Jurisdiction}{The Fishery Management Council or other group responsible for managing this stock}
 
 }
 }
