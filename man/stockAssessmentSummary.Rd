@@ -77,7 +77,9 @@ A data frame with n rows and m variables
 stockAssessmentSummary
 }
 \description{
-Stock assessment metadata and reference points for species found in waters of the USA. Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
+Stock assessment metadata and reference points for species found in waters of the USA.
+Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
+For description of variable please read the Stock SMART dictionary \url{https://www.st.nmfs.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
 }
 \section{Data download}{
 
@@ -86,8 +88,10 @@ The data were downloaded from {Stock SMART}(https://www.st.nmfs.noaa.gov/stocksm
 \enumerate{
 \item Click the "Download Data" module
 \item Select data to download (dropdown) -> Assessment Summary Data
+\item Select full range of years from Start Calendar Year- End Calanedar Year
 \item Click Search Stocks button
 \item Click Select All Stocks button
+\item Click Select All Fields button
 \item Click Download button
 \item Download all Parts
 }

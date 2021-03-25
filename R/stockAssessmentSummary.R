@@ -1,6 +1,8 @@
 #' Reference points, contact info, assessment metadata for USA assessed stocks
 #'
-#' Stock assessment metadata and reference points for species found in waters of the USA. Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
+#' Stock assessment metadata and reference points for species found in waters of the USA.
+#' Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
+#' For description of variable please read the Stock SMART dictionary \url{https://www.st.nmfs.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
 #'
 #' @format A data frame with n rows and m variables
 #'
@@ -77,10 +79,12 @@
 #'
 #' 1. Click the "Download Data" module
 #' 2. Select data to download (dropdown) -> Assessment Summary Data
-#' 3. Click Search Stocks button
-#' 4. Click Select All Stocks button
-#' 5. Click Download button
-#' 6. Download all Parts
+#' 3. Select full range of years from Start Calendar Year- End Calanedar Year
+#' 4. Click Search Stocks button
+#' 5. Click Select All Stocks button
+#' 6. Click Select All Fields button
+#' 7. Click Download button
+#' 8. Download all Parts
 #'
 #'
 #'
