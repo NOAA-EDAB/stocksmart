@@ -29,6 +29,13 @@ process_stock_smart_summary_data <- function(){
   }
   stockAssessmentSummary <- summaryData
 
+  # remove all spaces and ? in column names
+  #names(stockAssessmentSummary) <- names(stockAssessmentSummary) %>%
+  #  stringr::str_replace_all(.,"\\s+","") %>%
+  #  stringr::str_replace(.,"\\?","") %>%
+  #  stringr::str_replace(.,"\\/","_")
+
+
   stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
 
   usethis::use_data(stockAssessmentSummary,overwrite = T)

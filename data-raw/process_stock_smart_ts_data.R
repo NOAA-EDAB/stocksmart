@@ -29,12 +29,10 @@ process_stock_smart_ts_data <- function() {
     dataf <- readxl::read_xlsx(here::here("data-raw","allAssessments",fn), col_names = F)
     year <- as.numeric(unlist(dataf[6:nrow(dataf),2]))
     for (icol in 3:ncol(dataf)) {
-      # get metadata for this species
+      # get metadata for this species. 1st 5 rows of data
       meta <- as.vector(unlist(dataf[1:5,icol]))
       # parse metadata to extract species name, region, metric, Description. Units
-      spnm_region <- stringr::str_split(meta[1],"-")[[1]]
-      SpeciesNm <- stringr::str_remove(spnm_region[1],"\\s+$")
-      region <- stringr::str_remove(spnm_region[2],"^\\s+")
+      spnm_region <- meta[1]
       AssessmentYear <- as.numeric(meta[2])
       metric <- meta[3]
       description <- meta[4]
@@ -48,8 +46,7 @@ process_stock_smart_ts_data <- function() {
       # length of data vailable
       nYrs <- length(Year)
       # build a tidy tibble
-      speciesData <- tibble::tibble(Species=rep(SpeciesNm,nYrs),
-                                    Region = rep(region,nYrs),
+      speciesData <- tibble::tibble(StockName=rep(spnm_region,nYrs),
                                     Year=Year,Value=ts,
                                     Metric = rep(metric,nYrs),
                                     Description=rep(description,nYrs),
@@ -61,9 +58,14 @@ process_stock_smart_ts_data <- function() {
 
   }
 
-  # process summary data
-  #summaryData <- process_stock_smart_summary_data()
-  # join with processed data and export
+  ## process the summary data and join with time series data
+  # rename variable and remove a bunch
+  summaryData <- process_stock_smart_summary_data()
+  stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("StockName"="Stock Name","AssessmentYear" = "Assessment Year")) %>%
+    dplyr::select(StockName,Year,Value,Metric,Description,Units,AssessmentYear,Jurisdiction,FMP,`Common Name`,`Scientific Name`,`ITIS Taxon Serial Number`,`Update Type`,`Stock Area`,`Regional Ecosystem`) %>%
+    dplyr::rename(CommonName=`Common Name`,ScientificName=`Scientific Name`,ITIS=`ITIS Taxon Serial Number`) %>%
+    dplyr::rename(UpdateType=`Update Type`,StockArea=`Stock Area`,RegionalEcosystem=`Regional Ecosystem`)
+
 
   file.create(here::here("data-raw","datapull.txt"))
 
