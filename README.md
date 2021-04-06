@@ -27,18 +27,17 @@ Summary statistics for these assessments are also available (FMSY, BMSY,
 Ftarget etc) in addition to metadata (Jurisdiction, Point of contact,
 Year of assessment etc)
 
-The data are extracted from NOAA’s [Stock
+The data are extracted and processed from NOAA’s [Stock
 SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) web based
-data portal and processed. The result is a data frame in long format.
+data portal.
+
+Any data issues found in this package should first be checked with the
+web based data portal. If this data package reflects the data found in
+the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
+please create an
+[issue](https://github.com/NOAA-EDAB/assessmentdata/issues)
 
 *Date of most recent data pull: 2021-02-01*
-
-## Usage
-
-### Installation
-
-`remotes::install_githuib("NOAA-EDAB/assessmentdata")`
-
 
 ## Contact
 
