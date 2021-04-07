@@ -39,7 +39,7 @@ the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an
 [issue](https://github.com/NOAA-EDAB/assessmentdata/issues)
 
-*Date of most recent data pull: 2021-02-01*
+*Date of most recent data pull: 2021-04-07*
 
 ## Contact
 
