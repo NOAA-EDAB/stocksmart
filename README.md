@@ -29,7 +29,8 @@ Year of assessment etc)
 
 The data are extracted and processed from NOAA’s [Stock
 SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) web based
-data portal.
+data portal. <sup>1</sup>NOAA Fisheries. 2021. Stock SMART data records.
+Retrieved from www.st.nmfs.noaa.gov/stocksmart.
 
 Any data issues found in this package should first be checked with the
 web based data portal. If this data package reflects the data found in
