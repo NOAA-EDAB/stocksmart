@@ -21,11 +21,11 @@
 
 ## Time series removed
 
-* Atlantic sharpnose shark - Gulf of Mexico"
+* Atlantic sharpnose shark - Gulf of Mexico
 
 ## Summaries added
 
-* Red grouper - Gulf of Mexico,
+* Red grouper - Gulf of Mexico
 * Black sea bass - Mid-Atlantic Coast
 * Scup - Atlantic Coast
 * Atlantic cod - Georges Bank
@@ -33,7 +33,7 @@
 
 ## Summaries removed
 
-* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex, 2019, 12
-* Coho salmon - Oregon Production Index Area: Central California Coast, 2019, 02
-* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery, 2019,02
-* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery, 2019, 02
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex
+* Coho salmon - Oregon Production Index Area: Central California Coast
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery
