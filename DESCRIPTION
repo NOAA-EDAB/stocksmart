@@ -6,6 +6,8 @@ Authors@R:
            email = "andrew.beet@noaa.gov",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Supplies stock SMART data 
+URL: https://github.com/NOAA-EDAB/assessmentdata
+BugReports: https://github.com/NOAA-EDAB/assessmentdata/issues
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
