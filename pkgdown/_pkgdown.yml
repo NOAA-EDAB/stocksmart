@@ -1,12 +1,12 @@
 url: https://noaa-edab.github.io/assessmentdata/
 
-  reference:
-  - title: "Data"
-desc: "Lazydata bundled along with the package"
+reference:
+- title: "Data"
+  desc: "Lazydata bundled along with the package"
 - contents:
   - stockAssessmentData
-- stockAssessmentSummary
+  - stockAssessmentSummary
 - title: "Filtering functions"
-desc: "Functions used to help user extract information from the bundled data"
+  desc: "Functions used to help user extract information from the bundled data"
 - contents:
   - get_latest_full_assessment
