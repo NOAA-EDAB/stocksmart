@@ -17,7 +17,9 @@ read_summary_files <- function(){
 
 #' process summary data
 #'
-process_stock_smart_summary_data <- function(){
+#'@param exportFile Boolean. To save sumamry data file as rda to data folder. (Default = T)
+#'
+process_stock_smart_summary_data <- function(exportFile = T){
   files <- read_summary_files()
 
   summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
@@ -38,7 +40,9 @@ process_stock_smart_summary_data <- function(){
 
   stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
 
-  usethis::use_data(stockAssessmentSummary,overwrite = T)
+  if (exportFile) {
+    usethis::use_data(stockAssessmentSummary,overwrite = T)
+  }
 
   return(stockAssessmentSummary)
 }
