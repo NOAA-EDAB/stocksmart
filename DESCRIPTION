@@ -17,5 +17,7 @@ Depends:
     R (>= 3.6)
 Imports: 
     dplyr,
-    here,
-    tidyr
+    tidyr,
+    magrittr
+Suggests:
+    here
