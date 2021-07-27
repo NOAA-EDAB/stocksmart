@@ -37,3 +37,7 @@
 * Coho salmon - Oregon Production Index Area: Central California Coast
 * Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery
 * Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery
+
+# assessmentdata 0.2.1
+
+* Added `get_latest_full_assessment` function to filter lazydata and return the most recent assessment containing time series data for Abundance, Catch, Fmort, and Recruitment
