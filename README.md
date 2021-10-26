@@ -5,9 +5,8 @@
 
 <!-- badges: start -->
 
-![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)
-
-![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)
+[![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
+[![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
 <!-- badges: end -->
 
