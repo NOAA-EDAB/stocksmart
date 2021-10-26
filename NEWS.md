@@ -1,6 +1,7 @@
 # stocksmart 0.3.1
 
 * Package name change from `assessmentdata` to `stocksmart`
+* Data pull Oct 26, 2021
 
 # assessmentdata 0.2.1
 
