@@ -1,6 +1,10 @@
-# assessmentdata 0.1.0
+# stocksmart 0.3.1
 
-* Initial data pull on April 7, 2021
+* Package name change from `assessmentdata` to `stocksmart`
+
+# assessmentdata 0.2.1
+
+* Added `get_latest_full_assessment` function to filter lazydata and return the most recent assessment containing time series data for Abundance, Catch, Fmort, and Recruitment
 
 # assessmentdata 0.1.1
 
@@ -38,6 +42,6 @@
 * Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery
 * Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery
 
-# assessmentdata 0.2.1
+# assessmentdata 0.1.0
 
-* Added `get_latest_full_assessment` function to filter lazydata and return the most recent assessment containing time series data for Abundance, Catch, Fmort, and Recruitment
+* Initial data pull on April 7, 2021
