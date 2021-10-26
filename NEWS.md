@@ -1,3 +1,11 @@
+
+# stocksmart 0.3.2
+
+## Minor Bugs
+
+* Added missing output variables to documentation
+* Data pull Oct 26, 2021
+
 # stocksmart 0.3.1
 
 * Package name change from `assessmentdata` to `stocksmart`
