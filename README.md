@@ -5,11 +5,10 @@
 
 <!-- badges: start -->
 
-![deploy to github
-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/deploy%20to%20github%20pages/badge.svg)
-![Install on
-windows](https://github.com/NOAA-EDAB/stocksmart/workflows/Install%20on%20windows/badge.svg)
+![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)
+
 ![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)
+[![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
 <!-- badges: end -->
 
 Stock assessments reports are typically lengthy documents containing a

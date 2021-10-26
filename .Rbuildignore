@@ -4,4 +4,10 @@
 #folders
 dataFromReports
 reports
+data-raw
+docs
+other
+pkgdown
+basictests
 ^README\.Rmd$
+^\.github$

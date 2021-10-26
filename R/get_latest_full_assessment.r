@@ -13,36 +13,43 @@
 #' AssessmentYear the data came from, the FirstYear and LastYear of the data and the number of years (numYear) of data retrieved}
 #'
 #' @importFrom magrittr "%>%"
+#' @importFrom rlang .data
 #'
 #' @export
 
 get_latest_full_assessment <- function(itis=NULL) {
 
-  allData <- assessmentdata::stockAssessmentData %>% dplyr::filter(UpdateType %in% c("Benchmark","Full Update"))
+  allData <- stocksmart::stockAssessmentData %>%
+    dplyr::filter(.data$UpdateType %in% c("Benchmark","Full Update"))
 
   # find all distinct ITIS codes
   itiscodes <- allData %>%
-    dplyr::distinct(ITIS) %>%
+    dplyr::distinct(.data$ITIS) %>%
     tidyr::drop_na() %>%
     dplyr::pull()
 
   # find the first and lanst year of each assessment
   allStats <- allData %>%
-    dplyr::group_by(StockName,CommonName,StockArea,ITIS,Metric,AssessmentYear) %>%
-    dplyr::summarise(FirstYear = min(Year), LastYear = max(Year), numYears = LastYear-FirstYear + 1) %>%
-    dplyr::arrange(ITIS,StockName,AssessmentYear,Metric)
+    dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS,
+                    .data$Metric,.data$AssessmentYear) %>%
+    dplyr::summarise(FirstYear = min(.data$Year), LastYear = max(.data$Year),
+                     numYears = .data$LastYear-.data$FirstYear + 1) %>%
+    dplyr::arrange(.data$ITIS,.data$StockName,.data$AssessmentYear,.data$Metric)
 
   # find assessment years in which all 4 metrics are reported. then select the most recent year
   # and join the lastyear, first year to the df
-  stats <- allStats %>% dplyr::group_by(StockName,CommonName,StockArea,ITIS,AssessmentYear) %>%
+  stats <- allStats %>%
+    dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS,
+                    .data$AssessmentYear) %>%
     dplyr::summarise(sumMetric = dplyr::n()) %>%
-    dplyr::filter(sumMetric == 4) %>%
-    dplyr::filter(AssessmentYear == max(AssessmentYear)) %>%
+    dplyr::filter(.data$sumMetric == 4) %>%
+    dplyr::filter(.data$AssessmentYear == max(.data$AssessmentYear)) %>%
     dplyr::left_join(.,allStats,by = c("StockName","ITIS","CommonName","StockArea","AssessmentYear")) %>%
-    dplyr::select(-sumMetric)
+    dplyr::select(-.data$sumMetric)
 
   # select the full time series for the most recent assessments that have all 4 metrics reported
-  data <- stats %>% dplyr::left_join(.,allData,by=c("StockName","ITIS","CommonName","StockArea","Metric","AssessmentYear"))
+  data <- stats %>%
+    dplyr::left_join(.,allData,by=c("StockName","ITIS","CommonName","StockArea","Metric","AssessmentYear"))
 
   # if itis = Null, finished. otherwise filter by itis codes supplied by user
   if (!is.null(itis)) {
@@ -53,9 +60,9 @@ get_latest_full_assessment <- function(itis=NULL) {
     }
 
     stats <- stats %>%
-      dplyr::filter(ITIS %in% itis)
+      dplyr::filter(.data$ITIS %in% itis)
     data <- data %>%
-      dplyr::filter(ITIS %in% itis)
+      dplyr::filter(.data$ITIS %in% itis)
 
   }
 

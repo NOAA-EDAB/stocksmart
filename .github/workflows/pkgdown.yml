@@ -1,4 +1,4 @@
-name: deploy to github pages
+name: gh-pages
 
 on:
   push:
@@ -40,11 +40,11 @@ jobs:
           remotes::install_deps(dependencies = TRUE, type="binary")
         shell: Rscript {0}
 
-      - name: Install pkgdown          
+      - name: Install pkgdown
         run: |
           install.packages("pkgdown", type = "binary")
         shell: Rscript {0}
-        
+
       - name: Install package
         run: R CMD INSTALL .
 
