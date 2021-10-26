@@ -6,6 +6,7 @@
 # assessmentdata 0.2.1
 
 * Added `get_latest_full_assessment` function to filter lazydata and return the most recent assessment containing time series data for Abundance, Catch, Fmort, and Recruitment
+* Data pull July 19, 2021
 
 # assessmentdata 0.1.1
 
