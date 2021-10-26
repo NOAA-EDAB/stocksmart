@@ -19,6 +19,10 @@
 #'   \item{FMP}{Fisheries management plan species is managed under}
 #'   \item{RegionalEcosystem}{The Regional Ecosystem wher stock is found. There are 8 ecosystems defined around the coastal margins of the United States}
 #'   \item{Jurisdiction}{The Fishery Management Council or other group responsible for managing this stock}
+#'   \item{UpdateType}{Describes the level of assessment effort.
+#'    Used for assessments completed in 2018 and earlier.
+#'    New, Benchmark, Full Update, Partial Update}
+#'
 #'
 #'
 #' }

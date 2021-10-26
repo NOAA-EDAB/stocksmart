@@ -27,8 +27,8 @@ A data frame with n rows and m variables
 \item{Model Version}{}
 \item{Lead Lab }{}
 \item{Citation}{}
-\item{Final assessment Report 1}{}
-\item{Final assessment Report 2}{}
+\item{Final Assessment Report 1}{}
+\item{Final Assessment Report 2}{}
 \item{Point of Contact}{}
 \item{Life History Data}{}
 \item{Abundance Data}{}
