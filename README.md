@@ -1,15 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# assessmentdata
+# stocksmart
 
 <!-- badges: start -->
 
 ![deploy to github
-pages](https://github.com/NOAA-EDAB/assessmentdata/workflows/deploy%20to%20github%20pages/badge.svg)
+pages](https://github.com/NOAA-EDAB/stocksmart/workflows/deploy%20to%20github%20pages/badge.svg)
 ![Install on
-windows](https://github.com/NOAA-EDAB/assessmentdata/workflows/Install%20on%20windows/badge.svg)
-![gitleaks](https://github.com/NOAA-EDAB/assessmentdata/workflows/gitleaks/badge.svg)
+windows](https://github.com/NOAA-EDAB/stocksmart/workflows/Install%20on%20windows/badge.svg)
+![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)
 <!-- badges: end -->
 
 Stock assessments reports are typically lengthy documents containing a
@@ -36,10 +36,9 @@ Retrieved from www.st.nmfs.noaa.gov/stocksmart.
 Any data issues found in this package should first be checked with the
 web based data portal. If this data package reflects the data found in
 the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
-please create an
-[issue](https://github.com/NOAA-EDAB/assessmentdata/issues)
+please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues)
 
-*Date of most recent data pull: 2021-05-28*
+*Date of most recent data pull: 2021-10-26*
 
 ## Contact
 

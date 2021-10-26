@@ -19,7 +19,7 @@ read_assessment_files <- function(){
 
 #' process time series data
 #'
-process_stock_smart_ts_data <- function() {
+process_stock_smart_ts_data <- function(exportFile=F) {
   files <- read_assessment_files()
 
   tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
@@ -60,7 +60,7 @@ process_stock_smart_ts_data <- function() {
 
   ## process the summary data and join with time series data
   # rename variable and remove a bunch
-  summaryData <- process_stock_smart_summary_data()
+  summaryData <- process_stock_smart_summary_data(exportFile=exportFile)
   stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("StockName"="Stock Name","AssessmentYear" = "Assessment Year")) %>%
     dplyr::select(StockName,Year,Value,Metric,Description,Units,AssessmentYear,Jurisdiction,FMP,`Common Name`,`Scientific Name`,`ITIS Taxon Serial Number`,`Update Type`,`Stock Area`,`Regional Ecosystem`) %>%
     dplyr::rename(CommonName=`Common Name`,ScientificName=`Scientific Name`,ITIS=`ITIS Taxon Serial Number`) %>%
@@ -70,7 +70,12 @@ process_stock_smart_ts_data <- function() {
   file.create(here::here("data-raw","datapull.txt"))
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
-  usethis::use_data(stockAssessmentData,overwrite = T)
+
+  if (exportFile) {
+    usethis::use_data(stockAssessmentData, overwrite = T)
+  }
+
+  return(stockAssessmentData)
 }
 
 
