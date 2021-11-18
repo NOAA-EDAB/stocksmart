@@ -28,20 +28,20 @@ get_latest_full_assessment <- function(itis=NULL) {
     tidyr::drop_na() %>%
     dplyr::pull()
 
-  # find the first and lanst year of each assessment
+  # find the first and last year of each assessment
   allStats <- allData %>%
     dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS,
                     .data$Metric,.data$AssessmentYear) %>%
     dplyr::summarise(FirstYear = min(.data$Year), LastYear = max(.data$Year),
-                     numYears = .data$LastYear-.data$FirstYear + 1) %>%
+                     numYears = .data$LastYear-.data$FirstYear + 1, .groups="drop") %>%
     dplyr::arrange(.data$ITIS,.data$StockName,.data$AssessmentYear,.data$Metric)
 
   # find assessment years in which all 4 metrics are reported. then select the most recent year
-  # and join the lastyear, first year to the df
+  # and join the last year, first year to the df
   stats <- allStats %>%
     dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS,
                     .data$AssessmentYear) %>%
-    dplyr::summarise(sumMetric = dplyr::n()) %>%
+    dplyr::summarise(sumMetric = dplyr::n(),.groups="drop") %>%
     dplyr::filter(.data$sumMetric == 4) %>%
     dplyr::filter(.data$AssessmentYear == max(.data$AssessmentYear)) %>%
     dplyr::left_join(.,allStats,by = c("StockName","ITIS","CommonName","StockArea","AssessmentYear")) %>%
