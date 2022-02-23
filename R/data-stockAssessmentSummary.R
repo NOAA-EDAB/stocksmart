@@ -79,7 +79,7 @@
 #'
 #' 1. Click the "Download Data" module
 #' 2. Select data to download (dropdown) -> Assessment Summary Data
-#' 3. Select full range of years from Start Calendar Year- End Calanedar Year
+#' 3. Select full range of years from Start Calendar Year- End Calendar Year
 #' 4. Click Search Stocks button
 #' 5. Click Select All Stocks button
 #' 6. Click Select All Fields button

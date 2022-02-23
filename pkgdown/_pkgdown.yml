@@ -10,3 +10,4 @@ reference:
   desc: "Functions used to help user extract information from the bundled data"
 - contents:
   - get_latest_full_assessment
+  - get_latest_metrics
