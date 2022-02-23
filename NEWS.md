@@ -6,9 +6,6 @@
 
 * Added `get_latest_metrics` function to filter lazydata and return the most recent assessment containing time series data for any subset of Abundance, Catch, Fmort, and Recruitment
 
-* Added missing output variables to documentation
-* Data pull Oct 26, 2021
-
 ## Time series added
 
 * Pacific grenadier - Pacific Coast   (165334)
