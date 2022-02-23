@@ -1,9 +1,9 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-10-26T21:11Z
+last_built: 2022-02-23T19:42Z
 urls:
-  reference: https://noaa-edab.github.io/assessmentdata//reference
-  article: https://noaa-edab.github.io/assessmentdata//articles
+  reference: https://noaa-edab.github.io/assessmentdata/reference
+  article: https://noaa-edab.github.io/assessmentdata/articles
 

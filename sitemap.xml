@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://noaa-edab.github.io/assessmentdata//index.html</loc>
+    <loc>https://noaa-edab.github.io/assessmentdata/404.html</loc>
   </url>
   <url>
-    <loc>https://noaa-edab.github.io/assessmentdata//reference/get_latest_full_assessment.html</loc>
+    <loc>https://noaa-edab.github.io/assessmentdata/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://noaa-edab.github.io/assessmentdata//reference/stockAssessmentData.html</loc>
+    <loc>https://noaa-edab.github.io/assessmentdata/authors.html</loc>
   </url>
   <url>
-    <loc>https://noaa-edab.github.io/assessmentdata//reference/stockAssessmentSummary.html</loc>
+    <loc>https://noaa-edab.github.io/assessmentdata/index.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/get_latest_full_assessment.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/get_latest_metrics.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/stockAssessmentData.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/stockAssessmentSummary.html</loc>
   </url>
 </urlset>
