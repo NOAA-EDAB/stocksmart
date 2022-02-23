@@ -39,7 +39,8 @@
 #' 2. Select data to download (dropdown) -> Assessment Time Series Data
 #' 3. Click Search Stocks button
 #' 4. Click Select All Stocks button
-#' 5. Click Download All button
+#' 5. Click Select All Asmts button
+#' 5. Click Download button
 #' 6. Download all Parts
 #'
 #'
