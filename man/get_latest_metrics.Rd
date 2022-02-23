@@ -19,10 +19,6 @@ list of 2 data frames:
 AssessmentYear the data came from, the FirstYear and LastYear of the data and the number of years (numYear) of data retrieved}
 }
 \description{
-\subsection{INCOMPLETE}{
-}
-}
-\details{
 Pulls the most recent data for set of metrics provided.
 Often a benchmark or a Full update contains the longest time series of data
 whereas partial updates only contain data since last benchmark.

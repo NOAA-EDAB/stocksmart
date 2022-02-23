@@ -1,7 +1,5 @@
 #' Filter most recent time series data
 #'
-#' ### INCOMPLETE ###
-#'
 #' Pulls the most recent data for set of metrics provided.
 #' Often a benchmark or a Full update contains the longest time series of data
 #' whereas partial updates only contain data since last benchmark.
@@ -46,7 +44,7 @@ get_latest_metrics <- function(itis=NULL, metrics = c("Catch","Abundance")) {
   # find assessment years in which all selected metrics are reported. then select the most recent year
   # and join the last year, first year to the df
   stats <- allStats %>%
-    dplyr::filter(Metric %in% metrics) %>%
+    dplyr::filter(.data$Metric %in% metrics) %>%
     dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS,
                     .data$AssessmentYear) %>%
     dplyr::summarise(sumMetric = dplyr::n(),.groups="drop") %>%
@@ -54,7 +52,7 @@ get_latest_metrics <- function(itis=NULL, metrics = c("Catch","Abundance")) {
     dplyr::filter(.data$AssessmentYear == max(.data$AssessmentYear)) %>%
     dplyr::left_join(.,allStats,by = c("StockName","ITIS","CommonName","StockArea","AssessmentYear")) %>%
     dplyr::select(-.data$sumMetric) %>%
-    dplyr::filter(Metric %in% metrics)
+    dplyr::filter(.data$Metric %in% metrics)
 
   # select the full time series for the most recent assessments that have all 4 metrics reported
   data <- stats %>%
