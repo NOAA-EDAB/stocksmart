@@ -1,3 +1,29 @@
+# stocksmart 0.3.3
+
+* Data pull Feb 23, 2022
+
+## New Feature
+
+* Added `get_latest_metrics` function to filter lazydata and return the most recent assessment containing time series data for any subset of Abundance, Catch, Fmort, and Recruitment
+
+* Added missing output variables to documentation
+* Data pull Oct 26, 2021
+
+## Time series added
+
+* Pacific grenadier - Pacific Coast   (165334)
+* Pacific sanddab - Pacific Coast     (172716)
+* Rock sole - Gulf of Alaska          (172917)
+* Bank rockfish - California          (166761)
+* Squarespot rockfish - Pacific Coast (166753)
+* Stripetail rockfish - Pacific Coast (166741)
+* Vermilion rockfish - Oregon         (166729)
+* Vermilion rockfish - Washington     (166729)
+* Blue rockfish - Southern California (166730)
+
+## Time series removed
+
+* Gopher rockfish - Northern California (166767)
 
 # stocksmart 0.3.2
 
