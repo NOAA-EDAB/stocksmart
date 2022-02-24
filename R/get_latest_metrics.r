@@ -22,6 +22,13 @@
 
 get_latest_metrics <- function(itis=NULL, metrics = c("Catch","Abundance")) {
 
+
+  #error check for metric names
+  if (!all(metrics %in% c("Catch","Abundance","Fmort","Recruitment"))) {
+    stop("Please check the spelling of metrics used. Only \"Catch\",\"Abundance\",\"Fmort\",\"Recruitment\" are permitted")
+  }
+
+
   # Filter Full Updates or Benchmark assessments
   allData <- stocksmart::stockAssessmentData %>%
     dplyr::filter(.data$UpdateType %in% c("Benchmark","Full Update"))
@@ -49,10 +56,12 @@ get_latest_metrics <- function(itis=NULL, metrics = c("Catch","Abundance")) {
                     .data$AssessmentYear) %>%
     dplyr::summarise(sumMetric = dplyr::n(),.groups="drop") %>%
     dplyr::filter(.data$sumMetric == length(metrics)) %>%
+    dplyr::group_by(.data$StockName,.data$CommonName,.data$StockArea,.data$ITIS) %>%
     dplyr::filter(.data$AssessmentYear == max(.data$AssessmentYear)) %>%
     dplyr::left_join(.,allStats,by = c("StockName","ITIS","CommonName","StockArea","AssessmentYear")) %>%
     dplyr::select(-.data$sumMetric) %>%
-    dplyr::filter(.data$Metric %in% metrics)
+    dplyr::filter(.data$Metric %in% metrics) %>%
+    dplyr::ungroup()
 
   # select the full time series for the most recent assessments that have all 4 metrics reported
   data <- stats %>%
