@@ -1,3 +1,9 @@
+# stocksmart 0.3.4
+
+## Minor Bugs
+
+* Fixed bug in filtering of data in `get_latest_metrics` function
+
 # stocksmart 0.3.3
 
 * Data pull Feb 23, 2022
