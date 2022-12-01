@@ -59,22 +59,27 @@ The most recent year in which Abundance, Catch, Fmort, Recruitment are present i
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_latest_full_assessment</span><span class="op">(</span>itis <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_latest_full_assessment</span><span class="op">(</span>itis <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>itis</dt>
 <dd><p>Numeric vector. Species ITIS code (Default = NULL, all species)</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>list of 2 data frames:</p>
+    
+
+<p>list of 2 data frames:</p>
 <dl><dt>data</dt>
 <dd><p>Data frame consisting of time series values of the most recent Benchmark or Full update for the metrics Abundance, Fmort, Recruitment, and Catch.</p></dd>
+
 <dt>summary</dt>
 <dd><p>Summary of data returned in <code>data</code>. StockName, CommonName, StockArea, ITIS, Metric in addition to the
 AssessmentYear the data came from, the FirstYear and LastYear of the data and the number of years (numYear) of data retrieved</p></dd>
+
 </dl></div>
 
   </div>
@@ -89,7 +94,7 @@ AssessmentYear the data came from, the FirstYear and LastYear of the data and th
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
