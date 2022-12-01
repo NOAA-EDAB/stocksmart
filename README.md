@@ -36,7 +36,7 @@ web based data portal. If this data package reflects the data found in
 the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues)
 
-*Date of most recent data pull: 2022-02-23*
+*Date of most recent data pull: 2022-12-01*
 
 ## Contact
 

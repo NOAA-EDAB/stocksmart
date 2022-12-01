@@ -1,3 +1,7 @@
+# stocksmart 0.3.5
+
+* Data pull Dec 01, 2022
+
 # stocksmart 0.3.4
 
 ## Minor Bugs
