@@ -19,7 +19,7 @@ read_summary_files <- function(){
 #'
 #'@param exportFile Boolean. To save sumamry data file as rda to data folder. (Default = T)
 #'
-process_stock_smart_summary_data <- function(exportFile = T){
+process_stocksmart_summary_data <- function(exportFile = T){
   files <- read_summary_files()
 
   summaryfiles <- files %>% dplyr::filter(grepl("Summary",Files))
