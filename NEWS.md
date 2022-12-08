@@ -1,6 +1,11 @@
+# stocksmart 0.3.6
+
+* Data pull Dec 08, 2022
+
 # stocksmart 0.3.5
 
 * Data pull Dec 01, 2022
+* Bug in release. Entries duplicated
 
 # stocksmart 0.3.4
 
