@@ -127,7 +127,7 @@ query_stocksmart_api <- function() {
   summary$DownloadTool_eco_select <- "%"
   summary$DownloadTool_fssi_select <- ""
   summary$startYear <- "1800"
-  summary$endYear <- "2021"
+  summary$endYear <- "2032"
   summary$asmtYears <- ""
 
   ssummary$crit <- summary
