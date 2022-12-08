@@ -6,8 +6,9 @@
 #'
 #'
 
+
 library(magrittr)
-source(here::here("data-raw","process_stock_smart_summary_data.R"))
+source(here::here("data-raw","process_stocksmart_summary_data.R"))
 
 read_assessment_files <- function(){
   files <- list.files(here::here("data-raw","allAssessments"),pattern="\\.xlsx$") %>%
@@ -19,7 +20,7 @@ read_assessment_files <- function(){
 
 #' process time series data
 #'
-process_stock_smart_ts_data <- function(exportFile=F) {
+process_stocksmart_ts_data <- function(exportFile=F) {
   files <- read_assessment_files()
 
   tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
@@ -60,7 +61,7 @@ process_stock_smart_ts_data <- function(exportFile=F) {
 
   ## process the summary data and join with time series data
   # rename variable and remove a bunch
-  summaryData <- process_stock_smart_summary_data(exportFile=exportFile)
+  summaryData <- process_stocksmart_summary_data(exportFile=exportFile)
   stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("StockName"="Stock Name","AssessmentYear" = "Assessment Year")) %>%
     dplyr::select(StockName,Year,Value,Metric,Description,Units,AssessmentYear,Jurisdiction,FMP,`Common Name`,`Scientific Name`,`ITIS Taxon Serial Number`,`Update Type`,`Stock Area`,`Regional Ecosystem`) %>%
     dplyr::rename(CommonName=`Common Name`,ScientificName=`Scientific Name`,ITIS=`ITIS Taxon Serial Number`) %>%
@@ -68,6 +69,9 @@ process_stock_smart_ts_data <- function(exportFile=F) {
 
 
   file.create(here::here("data-raw","datapull.txt"))
+  cat(paste0("Number of files read = ",nrow(files),"\n"),file=here::here("data-raw","datapull.txt"))
+  cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
+  cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
 
@@ -75,7 +79,8 @@ process_stock_smart_ts_data <- function(exportFile=F) {
     usethis::use_data(stockAssessmentData, overwrite = T)
   }
 
-  return(stockAssessmentData)
+  return(list(tsData=stockAssessmentData,summaryData = summaryData))
+
 }
 
 
