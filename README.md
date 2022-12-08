@@ -10,7 +10,7 @@
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
 <!-- badges: end -->
 
-Stock assessments reports are typically lengthy documents containing a
+Stock assessment reports are typically lengthy documents containing a
 great deal of information. This repo contains time series data for all
 assessed stocks in the United States. The following time series are
 available:
