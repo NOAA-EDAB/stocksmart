@@ -73,6 +73,9 @@ process_stocksmart_ts_data <- function(exportFile=F) {
   cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
   cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
 
+  cat(paste0("number of rows of summary object = ",nrow(summaryData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
+  cat(paste0("number of rows stocksmart summary data object = ",nrow(stocksmart::stockAssessmentSummary),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
+
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
 
   if (exportFile) {

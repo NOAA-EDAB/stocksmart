@@ -1,3 +1,5 @@
 Number of files read = 24
 number of rows of data object = 248144
-number of rows stocksmart data object = 326463
+number of rows stocksmart data object = 248144
+number of rows of summary object = 2863
+number of rows stocksmart summary data object = 2787
