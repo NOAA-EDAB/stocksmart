@@ -10,7 +10,7 @@
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
 <!-- badges: end -->
 
-Stock assessment reports are typically lengthy documents containing a
+Stock assessments reports are typically lengthy documents containing a
 great deal of information. This repo contains time series data for all
 assessed stocks in the United States. The following time series are
 available:
@@ -36,7 +36,7 @@ web based data portal. If this data package reflects the data found in
 the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues)
 
-*Date of most recent data pull: 2022-12-08*
+*Date of most recent data pull: 2022-12-09*
 
 ## Contact
 
