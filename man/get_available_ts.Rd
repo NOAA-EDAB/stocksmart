@@ -9,7 +9,7 @@ get_available_ts(itis = NULL, jurisdiction = NULL)
 \arguments{
 \item{itis}{Numeric vector. Species ITIS code (Default = NULL, all species)}
 
-\item{jurisdction}{Character string. Management council}
+\item{jurisdiction}{Character string. Management council}
 }
 \value{
 data frame (n x 5)

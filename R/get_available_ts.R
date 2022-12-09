@@ -3,7 +3,7 @@
 #' Filters the Summary data to find all time series data
 #'
 #' @param itis Numeric vector. Species ITIS code (Default = NULL, all species)
-#' @param jurisdction Character string. Management council
+#' @param jurisdiction Character string. Management council
 #'
 #' @return  data frame (n x 5)
 #' \item{StockName}{Full name of stock}
@@ -36,7 +36,7 @@ get_available_ts <- function(itis=NULL, jurisdiction=NULL) {
     dplyr::summarise(FirstYear = min(.data$Year), LastYear = max(.data$Year),
                      numYears = .data$LastYear-.data$FirstYear + 1, .groups="drop")  %>%
     dplyr::group_by(.data$StockName,.data$Jurisdiction,.data$ITIS,.data$AssessmentYear) %>%
-    dplyr::summarise(nYrs = mean(numYears),.groups="drop")
+    dplyr::summarise(nYrs = mean(.data$numYears),.groups="drop")
 
 
   return(res)
