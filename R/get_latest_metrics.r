@@ -1,4 +1,4 @@
-#' Filter most recent time series data
+#' Pulls the most recent data for any combination of Abundance, Catch, Recruitment, Mort
 #'
 #' Pulls the most recent data for set of metrics provided.
 #' Often a benchmark or a Full update contains the longest time series of data

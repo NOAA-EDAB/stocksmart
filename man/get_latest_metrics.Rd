@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_latest_metrics.r
 \name{get_latest_metrics}
 \alias{get_latest_metrics}
-\title{Filter most recent time series data}
+\title{Pulls the most recent data for any combination of Abundance, Catch, Recruitment, Mort}
 \usage{
 get_latest_metrics(itis = NULL, metrics = c("Catch", "Abundance"))
 }

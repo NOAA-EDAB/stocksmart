@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_latest_full_assessment.r
 \name{get_latest_full_assessment}
 \alias{get_latest_full_assessment}
-\title{Filter most recent time series data}
+\title{Pulls the most recent full stock assessment data.}
 \usage{
 get_latest_full_assessment(itis = NULL)
 }
@@ -16,7 +16,6 @@ list of 2 data frames:
 AssessmentYear the data came from, the FirstYear and LastYear of the data and the number of years (numYear) of data retrieved}
 }
 \description{
-Pulls the most recent full stock assessment data.
 Often a benchmark or a Full update contains the longest time series of data
 whereas partial updates only contain data since last benchmark.
 The most recent year in which Abundance, Catch, Fmort, Recruitment are present is returned for each species
