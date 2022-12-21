@@ -15,12 +15,11 @@ great deal of information. This repo contains time series data for all
 assessed stocks in the United States. The following time series are
 available:
 
--   Catch - By weight or by number of individuals (species specific)
--   Abundance - By weight or by number of individuals (species specific)
--   Index - An index of abundance (shrimp only)
--   Recruitment - By weight or by number of individuals (species
-    specific)
--   Fishing mortality
+- Catch - By weight or by number of individuals (species specific)
+- Abundance - By weight or by number of individuals (species specific)
+- Index - An index of abundance (shrimp only)
+- Recruitment - By weight or by number of individuals (species specific)
+- Fishing mortality
 
 Summary statistics for these assessments are also available (FMSY, BMSY,
 Ftarget etc) in addition to metadata (Stock Name, Stock Area,
@@ -36,7 +35,7 @@ web based data portal. If this data package reflects the data found in
 the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues)
 
-*Date of most recent data pull: 2022-12-09*
+*Date of most recent data pull: 2022-12-21*
 
 ## Contact
 
