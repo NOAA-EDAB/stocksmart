@@ -1,4 +1,4 @@
-#' Find the available assessment times eries data
+#' Find the available assessment time series data
 #'
 #' Filters the Summary data to find all time series data
 #'

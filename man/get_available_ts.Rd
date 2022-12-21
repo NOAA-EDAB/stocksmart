@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_available_ts.R
 \name{get_available_ts}
 \alias{get_available_ts}
-\title{Find the available assessment times eries data}
+\title{Find the available assessment time series data}
 \usage{
 get_available_ts(itis = NULL, jurisdiction = NULL)
 }
