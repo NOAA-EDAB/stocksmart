@@ -18,9 +18,19 @@ read_assessment_files <- function(){
 }
 
 
+
+#' Process the Timeseries data from stocksmart website
+#'
+#' @param exportFile Boolean. Create rda files and save to data folder (Default = F)
+#' @param isRunLocal Boolean. Is function being run locally (Default = T).
+#'  A different file name is created if running locally that doesn't interfere with git
+#'
+#'@return list of 2 data frames
+
+
 #' process time series data
 #'
-process_stocksmart_ts_data <- function(exportFile=F) {
+process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   files <- read_assessment_files()
 
   tsfiles <- files %>% dplyr::filter(grepl("TimeSeries",Files))
@@ -68,13 +78,21 @@ process_stocksmart_ts_data <- function(exportFile=F) {
     dplyr::rename(UpdateType=`Update Type`,StockArea=`Stock Area`,RegionalEcosystem=`Regional Ecosystem`)
 
 
-  file.create(here::here("data-raw","datapull.txt"))
-  cat(paste0("Number of files read = ",nrow(files),"\n"),file=here::here("data-raw","datapull.txt"))
-  cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
-  cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
+  # create a differnt file if run locally
+  if(isRunLocal){
+    fn <- "localdatapull.txt"
+  } else {
+    fn <- "datapull.txt"
+  }
 
-  cat(paste0("number of rows of summary object = ",nrow(summaryData),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
-  cat(paste0("number of rows stocksmart summary data object = ",nrow(stocksmart::stockAssessmentSummary),"\n"),file=here::here("data-raw","datapull.txt"),append = T)
+  file.create(here::here("data-raw",fn))
+  cat(paste0("Number of files read = ",nrow(files),"\n"),file=here::here("data-raw",fn))
+  cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
+  cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
+
+  cat(paste0("number of rows of summary object = ",nrow(summaryData),"\n"),file=here::here("data-raw",fn),append = T)
+  cat(paste0("number of rows stocksmart summary data object = ",nrow(stocksmart::stockAssessmentSummary),"\n"),file=here::here("data-raw",fn),append = T)
+
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
 
