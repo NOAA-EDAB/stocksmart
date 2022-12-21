@@ -1,3 +1,20 @@
+# stocksmart 0.4.0
+
+## New Feature
+
+* `get_species_itis` - filters summary data to identify stock itis
+* `get_available_ts` -  filters time series data to get an idea of how much data is available in each assessment.
+
+## Minor fixes
+
+* `query_stocksmart_api - url of API changed
+* `process_stocksmart_api.r` - included argument to be able to run locally without creating changes files required for commits
+
+# stocksmart 0.3.7
+
+* Data pull Dec 9, 2022
+* Fixes Summary data missing entries
+
 # stocksmart 0.3.6
 
 * Data pull Dec 08, 2022
