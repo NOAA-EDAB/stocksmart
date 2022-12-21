@@ -16,10 +16,16 @@
     <loc>https://noaa-edab.github.io/assessmentdata/news/index.html</loc>
   </url>
   <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/get_available_ts.html</loc>
+  </url>
+  <url>
     <loc>https://noaa-edab.github.io/assessmentdata/reference/get_latest_full_assessment.html</loc>
   </url>
   <url>
     <loc>https://noaa-edab.github.io/assessmentdata/reference/get_latest_metrics.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-edab.github.io/assessmentdata/reference/get_species_itis.html</loc>
   </url>
   <url>
     <loc>https://noaa-edab.github.io/assessmentdata/reference/index.html</loc>
