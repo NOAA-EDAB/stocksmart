@@ -7,11 +7,11 @@ compareData <- function() {
   current <- readRDS(here::here("data-raw/tempSummary.rds"))
   new <- readRDS(here::here("data-raw/newSummary.rds"))
 
-  #current <- testapi::stockAssessmentSummary
-  #new <- stocksmart::stockAssessmentSummary
+  c1 <- current %>%
+    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
+  n1 <- new %>%
+    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
 
-  #new <- new[,1:(ncol(new)-1)]
-  #current <- tail(current,-25)
   #######################################################
   #######################################################
   ## Checks on summaries
@@ -22,9 +22,8 @@ compareData <- function() {
     # find if columns added or removed
       sumcolsAdded <- setdiff(names(new),names(current))
       sumcolsRemoved <- setdiff(names(current),names(new))
-      sumspeciesAdded <- setdiff(unique(new$`Stock Name`),unique(current$`Stock Name`))
-      sumspeciesRemoved <- setdiff(unique(current$`Stock Name`),unique(new$`Stock Name`))
-      file.create(here::here("change.txt"))
+      sumspeciesAdded <- dplyr::setdiff(n1,c1)
+      sumspeciesRemoved <- dplyr::setdiff(c1,n1)
 
   } else {
     sumcolsAdded <- NULL
@@ -51,15 +50,15 @@ compareData <- function() {
     datcolsRemoved <- setdiff(names(current),names(new))
 
     newsp <- new %>%
-      dplyr::select(StockName,ITIS,AssessmentYear) %>%
+      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
       dplyr::distinct()
     currentsp <- current %>%
-      dplyr::select(StockName,ITIS,AssessmentYear) %>%
+      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
       dplyr::distinct()
 
     datspeciesAdded <- dplyr::setdiff(newsp,currentsp)
     datspeciesRemoved <- dplyr::setdiff(currentsp,newsp)
-    file.create(here::here("change.txt"))
+
 
   } else {
     datcolsAdded <- NULL
