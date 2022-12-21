@@ -1,17 +1,22 @@
-# Save current rda file and compare with new one
+# Compare stocksmart with this repo
 #
 
 library(magrittr)
-compareData <- function() {
+compareDataLocal <- function() {
 
-  current <- readRDS(here::here("data-raw/tempSummary.rds"))
-  new <- readRDS(here::here("data-raw/newSummary.rds"))
+  current <- stocksmart::stockAssessmentSummary
+  new <- testapi::stockAssessmentSummary
 
   c1 <- current %>%
     dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
   n1 <- new %>%
     dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
 
+  #current <- testapi::stockAssessmentSummary
+  #new <- stocksmart::stockAssessmentSummary
+
+  #new <- new[,1:(ncol(new)-1)]
+  #current <- tail(current,-25)
   #######################################################
   #######################################################
   ## Checks on summaries
@@ -39,8 +44,8 @@ compareData <- function() {
   #######################################################
   #######################################################
 
-  current <- readRDS(here::here("data-raw/tempData.rds"))
-  new <- readRDS(here::here("data-raw/newData.rds"))
+  current <- stocksmart::stockAssessmentData
+  new <- testapi::stockAssessmentData
 
   #current <- current[1:(nrow(current)-55000),]
 
@@ -58,7 +63,6 @@ compareData <- function() {
 
     datspeciesAdded <- dplyr::setdiff(newsp,currentsp)
     datspeciesRemoved <- dplyr::setdiff(currentsp,newsp)
-
 
   } else {
     datcolsAdded <- NULL

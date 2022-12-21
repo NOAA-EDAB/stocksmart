@@ -3,7 +3,7 @@
 \docType{data}
 \name{stockAssessmentData}
 \alias{stockAssessmentData}
-\title{Abundance, Catch, fishing mortalit, Recruitment for USA assessed stocks}
+\title{Abundance, Catch, Fishing mortality, Recruitment for USA assessed stocks}
 \format{
 A data frame with n rows and m variables
 

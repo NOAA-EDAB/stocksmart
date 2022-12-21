@@ -1,6 +1,5 @@
-#' Filter most recent time series data
-#'
 #' Pulls the most recent full stock assessment data.
+#'
 #' Often a benchmark or a Full update contains the longest time series of data
 #' whereas partial updates only contain data since last benchmark.
 #' The most recent year in which Abundance, Catch, Fmort, Recruitment are present is returned for each species

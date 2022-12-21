@@ -1,0 +1,63 @@
+---
+title: "Report from stocksmart data pull"
+output: html_document
+params: 
+  sumrowAdd: NA
+  sumrowRem: NA
+  sumcolAdd: NA
+  sumcolRem: NA
+  datrowAdd: NA
+  datrowRem: NA
+  datcolAdd: NA
+  datcolRem: NA
+date: "2022-12-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Summary data changes
+
+### Species Added
+```{r, echo = F}
+kableExtra::kable(params$sumrowAdd)
+```
+
+### Species Removed
+```{r, echo = F}
+kableExtra::kable(params$sumrowRem,col.names =NULL)
+```
+
+### Columns added
+```{r, echo = F}
+kableExtra::kable(params$sumcolAdd,col.names =NULL)
+```
+
+### Columns removed
+```{r, echo = F}
+kableExtra::kable(params$sumcolRem,col.names =NULL)
+```
+
+
+# Time series data changes
+
+### Species Added
+```{r, echo = F}
+kableExtra::kable(params$datrowAdd)
+```
+
+### Species Removed
+```{r, echo = F}
+kableExtra::kable(params$datrowRem,col.names =NULL)
+```
+
+### Columns added
+```{r, echo = F}
+kableExtra::kable(params$datcolAdd,col.names =NULL)
+```
+
+### Columns removed
+```{r, echo = F}
+kableExtra::kable(params$datcolRem,col.names =NULL)
+```
