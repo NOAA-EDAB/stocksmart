@@ -1,0 +1,136 @@
+name: pull and process data from stocksmart website
+
+on:
+  schedule:
+    # uses UTC/GMT time (+ 5 hrs)
+    #- cron: "0 */4 * * *" # Every 4th hour on
+    #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
+    #- cron: "0 * * * *" # Every hour on hour
+    #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
+    - cron: "0 17 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Install command line packages
+        run: |
+          sudo apt update
+          sudo apt-get install libcurl4-openssl-dev
+#          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
+        shell: bash
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0'
+
+      - name: Install packages
+        run: |
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
+          remotes::install_github("NOAA-EDAB/stocksmart")
+        shell: Rscript {0}
+
+      - name: Save current rdas
+        run: |
+          load(here::here("data/stockAssessmentSummary.rda"))
+          load(here::here("data/stockAssessmentData.rda"))
+          saveRDS(stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
+          saveRDS(stockAssessmentData,here::here("data-raw/tempData.rds"))
+          rm(stockAssessmentData)
+          rm(stockAssessmentSummary)
+        shell: Rscript {0}
+
+      - name: Pull stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/query_stocksmart_api.R"))
+          query_stocksmart_api()
+        shell: Rscript {0}
+
+      - name: Process stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/process_stocksmart_ts_data.R"))
+          out <- process_stocksmart_ts_data(exportFile=TRUE,isRunLocal=F)
+          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
+#         incorporate difference check (below) prior to writing to repo or save as RDS and
+#         and write to repo later
+        shell: Rscript {0}
+
+      - name: Compare current pull with existing
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/compareData.r"))
+          compareData()
+        shell: Rscript {0}
+
+      - name: render readme.rmd
+        run: |
+          options(timeout = 60 * 60 * 6)
+          rmarkdown::render(here::here("README.Rmd"))
+        shell: Rscript {0}
+
+      #- name: Find differences
+      # Create text explaining differences and append to news.md and release notes
+
+      #- name: Find differences
+      # Create text explaining differences and append to news.md and release notes
+
+      # Send email indicating if anything has changed
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
+          subject: Github Actions job result
+          to: andrew.beet@noaa.gov
+
+          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+
+          #body: ${{ github.repository }} test!
+
+          html_body: file://${{github.workspace}}/data-raw/datapull.txt
+
+          attachments: ./data-raw/sendAsEmail.html
+
+      - name: commit data files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/stockAssessmentData.rda
+          git add data/stockAssessmentSummary.rda
+          git add data-raw/datapull.txt
+          git add README.md
+          git commit -m "automated commit from api yml"
+          git push
+
+
+
+#       - name: Autoincrement a new patch version
+      #   run: |
+      #     echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
+      # - name: Update patch version
+      #   uses: hmanzur/actions-set-secret@v2.0.0
+      #   with:
+      #     name: 'PATCH_VERSION'
+      #     value: ${{ env.NEW_PATCH_VERSION }}
+      #     repository: ${{ github.repository }}
+      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}
