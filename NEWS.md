@@ -1,3 +1,60 @@
+# stocksmart 0.4.1
+
+* Data pull Dec 21,2022
+
+## Time series added
+
+* American plaice - Gulf of Maine / Georges Bank	(172877):		2022
+* Atlantic cod - Eastern Georges Bank	(164712):	2022
+* Atlantic halibut - Northwestern Atlantic Coast	(172933):		2022
+* Atlantic salmon - Gulf of Maine	(161996):	2021
+* Atlantic wolffish - Gulf of Maine / Georges Bank	(171341):		2022
+* Barndoor skate - Georges Bank / Southern New England	(564139):	2022
+* Clearnose skate - Southern New England / Mid-Atlantic	(160855):	2022
+* Goosefish - Gulf of Maine / Northern Georges Bank	(164499):		2022
+* Goosefish - Southern Georges Bank / Mid-Atlantic	(164499):	2022
+* Little skate - Georges Bank / Southern New England	(564130):		2022
+* Ocean pout - Northwestern Atlantic Coast	(630979):	2022
+* Rosette skate - Southern New England / Mid-Atlantic	(564136):		2022
+* Smooth skate - Gulf of Maine	(564151):		2022
+* Thorny skate - Gulf of Maine	(564149):	2022
+* White hake - Gulf of Maine / Georges Bank	(164732):	2022
+* Winter flounder - Gulf of Maine	(172905):	2022
+* Winter skate - Georges Bank / Southern New England	(564145): 2022
+* Witch flounder - Northwestern Atlantic Coast	(172873):		2022
+* Yellowtail flounder - Georges Bank	(172909):		2022
+* Yellowtail flounder - Southern New England / Mid-Atlantic	(172909):	2022
+
+## Summaries added
+
+* Atlantic salmon - Gulf of Maine	(161996):	2021
+* American plaice - Gulf of Maine / Georges Bank	(172877):	2022
+* Atlantic cod - Eastern Georges Bank	(164712):	2022
+* Atlantic halibut - Northwestern Atlantic Coast	(172933):	2022
+* Atlantic wolffish - Gulf of Maine / Georges Bank	(171341):	2022
+* Haddock - Eastern Georges Bank	(164744):	2022
+* Haddock - Georges Bank	(164744):	2022
+* Haddock - Gulf of Maine	(164744):	2022
+* Ocean pout - Northwestern Atlantic Coast	(630979):	2022
+* Pollock - Gulf of Maine / Georges Bank	(164727):	2022
+* White hake - Gulf of Maine / Georges Bank	(164732):	2022
+* Winter flounder - Georges Bank	(172905):	2022
+* Winter flounder - Gulf of Maine	(172905):	2022
+* Witch flounder - Northwestern Atlantic Coast	(172873):	2022
+* Yellowtail flounder - Cape Cod / Gulf of Maine	(172909):	2022
+* Yellowtail flounder - Georges Bank	(172909):	2022
+* Yellowtail flounder - Southern New England / Mid-Atlantic	(172909):	2022
+* Barndoor skate - Georges Bank / Southern New England	(564139):	2022
+* Clearnose skate - Southern New England / Mid-Atlantic	(160855):	2022
+* Little skate - Georges Bank / Southern New England	(564130):	2022
+* Rosette skate - Southern New England / Mid-Atlantic	(564136):	2022
+* Smooth skate - Gulf of Maine	(564151):	2022
+* Thorny skate - Gulf of Maine	(564149):	2022
+* Winter skate - Georges Bank / Southern New England	(564145):	2022
+* Goosefish - Gulf of Maine / Northern Georges Bank	(164499):	2022
+* Goosefish - Southern Georges Bank / Mid-Atlantic	(164499):	2022
+
+
 # stocksmart 0.4.0
 
 ## New Feature
