@@ -12,30 +12,47 @@
 
 Stock assessments reports are typically lengthy documents containing a
 great deal of information. This repo contains time series data for all
-assessed stocks in the United States. The following time series are
-available:
+Federally assessed stocks in the United States. The following time
+series are available:
 
-- Catch - By weight or by number of individuals (species specific)
-- Abundance - By weight or by number of individuals (species specific)
-- Index - An index of abundance (shrimp only)
-- Recruitment - By weight or by number of individuals (species specific)
-- Fishing mortality
+-   Catch - By weight or by number of individuals (species specific)
+-   Abundance - By weight or by number of individuals (species specific)
+-   Index - An index of abundance (shrimp only)
+-   Recruitment - By weight or by number of individuals (species
+    specific)
+-   Fishing mortality
 
 Summary statistics for these assessments are also available (FMSY, BMSY,
 Ftarget etc) in addition to metadata (Stock Name, Stock Area,
 Jurisdiction, Point of contact, Year of assessment etc)
 
 The data are extracted and processed from NOAA’s [Stock
-SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) web based
-data portal. <sup>1</sup>NOAA Fisheries. 2021. Stock SMART data records.
-Retrieved from www.st.nmfs.noaa.gov/stocksmart.
+SMART](https://apps-st.fisheries.noaa.gov/stocksmart) web based data
+portal (www.st.nmfs.noaa.gov/stocksmart).
 
 Any data issues found in this package should first be checked with the
 web based data portal. If this data package reflects the data found in
 the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
-please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues)
+please create an
+[issue](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 
 *Date of most recent data pull: 2022-12-21*
+
+Note: Data is retrieved and processed every Wednesday at 1200 EST. Any
+changes to the [Stock
+SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) website
+will be reflected in this data package at that time. The history of
+changes can be found in the
+[changelog](https://noaa-edab.github.io/stocksmart/news/index.html)
+
+## Feature requests/Data Issues/Bugs
+
+If you find any [issue with the
+data](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose),
+[bugs](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose) in any
+of the code, or want to request [new
+features](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
+please let us know
 
 ## Contact
 
