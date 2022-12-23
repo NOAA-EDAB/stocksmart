@@ -105,9 +105,9 @@ jobs:
 
           from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
-          #body: ${{ github.repository }} test!
+          body: file://${{github.workspace}}/data-raw/datapull.txt
 
-          html_body: file://${{github.workspace}}/data-raw/datapull.txt
+          #html_body: file://${{github.workspace}}/data-raw/datapull.txt
 
           attachments: ./data-raw/sendAsEmail.html
 
