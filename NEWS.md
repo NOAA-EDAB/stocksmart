@@ -1,3 +1,17 @@
+# stocksmart 0.4.2
+
+* Data pull Dec 28,2022
+
+## Time series added
+
+* Blue king crab - Saint Matthew Island	(97936):	2022
+* Snow crab - Bering Sea	(98428):	2022
+
+## Summaries added
+
+* Blue king crab - Saint Matthew Island	(97936):	2022
+* Snow crab - Bering Sea	(98428):	2022
+
 # stocksmart 0.4.1
 
 * Data pull Dec 21,2022
