@@ -1,0 +1,76 @@
+---
+title: "stocksmart"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{stocksmart}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(stocksmart)
+library(magrittr)
+```
+
+
+# Stock assessment time series data
+
+Time series data for all federally managed stocks are bundled with the package
+
+[stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
+
+```{r sad, echo = F}
+stockAssessmentData %>%
+  tibble::as_tibble() 
+
+```
+
+Several functions are bundled with the package to aid in filtering the data by species, region, time range, metric etc. Most functions filter using the unique species ITIS code.
+
+## Example
+
+Problem: we want to find the latest catch data for Atlantic cod in the Gulf of Maine from either a Benchmark assessment or a full update.
+
+We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis` function to find this
+
+```{r itis, echo = T}
+get_species_itis(stock = "Atlantic cod")
+
+```
+There are three stocks under the jurisdiction of the NEFMC, a Georges Bank, an Eastern Georges Bank, and a Gulf of Maine stock.
+
+We can now use the ITIS code for search for the most recent Catch time series data that comes from either a Benchmark assessment or a full update. We will use the `get_latest_metrics` function. A list containing two data frames are returned. 
+
+*   A summary table containing relevant metadata including the number of years of data available and the date range.
+
+```{r catchsummary, echo = T}
+cod <- get_latest_metrics(itis = 164712, metrics = "Catch")
+cod$summary 
+
+```
+
+*   A data table containing the time series data along with additional metadata
+
+```{r catchdata, echo = T}
+cod$data 
+```
+
+We can then filter the the data by the Gulf of Maine stock and plot it.
+
+``` {r gom, echoo = T}
+cod$data %>% 
+  dplyr::filter(StockArea == "Gulf of Maine") %>%
+  {. ->> filteredData} %>% 
+  ggplot2::ggplot(.) +
+  ggplot2::geom_line(ggplot2::aes(x=Year,y = Value)) + 
+  ggplot2::ylab(filteredData %>% dplyr::distinct(Units)) +
+  ggplot2::ggtitle(paste0("Assessment Year = ",filteredData %>% dplyr::distinct(AssessmentYear)))
+
+```

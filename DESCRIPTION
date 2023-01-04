@@ -21,4 +21,8 @@ Imports:
     magrittr,
     rlang
 Suggests:
-    here
+    here,
+    knitr,
+    rmarkdown,
+    ggplot2
+VignetteBuilder: knitr
