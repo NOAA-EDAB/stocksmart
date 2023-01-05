@@ -13,7 +13,9 @@
 #' whereas other assessments may be in thousand metric tons. This is not resolved in the plotting. When this arises it is best
 #' to use \code{plotAs = "facet"} since each facet uses its own yaxis scale
 #'
-#' @return A ggplot object is returned. A figure is also returned
+#' @return A list of two items is returned
+#' \item{plot}{ggplot object}
+#' \item{data}{dataframe used in the plotting}
 #'
 #' @importFrom magrittr "%>%"
 #' @importFrom rlang .data
@@ -97,7 +99,7 @@ plot_ts <- function(itis=NULL, stock=NULL, metric = "Catch", plotAs="one") {
 
   print(p)
 
-  return(p)
+  return(list(plot=p,data=stockToPlot))
 
 
 }

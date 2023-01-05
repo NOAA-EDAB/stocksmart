@@ -17,7 +17,9 @@ plot_ts(itis = NULL, stock = NULL, metric = "Catch", plotAs = "one")
 plot each assessment in its own facet ("facet")}
 }
 \value{
-A ggplot object is returned. A figure is also returned
+A list of two items is returned
+\item{plot}{ggplot object}
+\item{data}{dataframe used in the plotting}
 }
 \description{
 Exploratory plots of Catch, Abundance, F, Recruitment for all assessments for a particular species
