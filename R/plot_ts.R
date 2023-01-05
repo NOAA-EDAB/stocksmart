@@ -34,8 +34,8 @@ plot_ts <- function(itis=NULL, stock=NULL, metric = "Catch", plotAs="one") {
 
   # filter by ITIS and Metric
   dataToPlot <- stocksmart::stockAssessmentData %>%
-    dplyr::filter(.data$ITIS == itis,Metric == metric) %>%
-    dplyr::mutate(AssessmentYear = as.factor(AssessmentYear))
+    dplyr::filter(.data$ITIS == itis,.data$Metric == metric) %>%
+    dplyr::mutate(AssessmentYear = as.factor(.data$AssessmentYear))
 
   if(nrow(dataToPlot) ==0){
     message("The metric you selected doesn't exist for this stock")
@@ -44,7 +44,7 @@ plot_ts <- function(itis=NULL, stock=NULL, metric = "Catch", plotAs="one") {
 
   # select stocks for this ITIS
   stocks <- dataToPlot %>%
-    dplyr::distinct(StockName)
+    dplyr::distinct(.data$StockName)
 
   # if multiple stocks and user argument - NULL
   if ((nrow(stocks) > 1) && (is.null(stock))){
@@ -72,7 +72,7 @@ plot_ts <- function(itis=NULL, stock=NULL, metric = "Catch", plotAs="one") {
 
   # filter out stock
   stockToPlot <- dataToPlot %>%
-    dplyr::filter(StockName == stock)
+    dplyr::filter(.data$StockName == stock)
 
   # units check and standardize
   # eg if units change over time from say mt to thousands mt
@@ -81,19 +81,19 @@ plot_ts <- function(itis=NULL, stock=NULL, metric = "Catch", plotAs="one") {
   # plot data
   if (plotAs == "facet"){
     p <- ggplot2::ggplot(stockToPlot) +
-      ggplot2::geom_line(ggplot2::aes(x=Year,y=Value)) +
-      ggplot2::facet_wrap(~AssessmentYear,scales = "free_y")
+      ggplot2::geom_line(ggplot2::aes(x=.data$Year,y=.data$Value)) +
+      ggplot2::facet_wrap(~.data$AssessmentYear,scales = "free_y")
   } else {
-    if ((stockToPlot %>% dplyr::distinct(Units) %>% nrow()) >1) {
+    if ((stockToPlot %>% dplyr::distinct(.data$Units) %>% nrow()) >1) {
       message("The units change over time. Plotting as a facet plot will be better")
     }
     p <- ggplot2::ggplot(stockToPlot) +
-      ggplot2::geom_line(ggplot2::aes(x=Year,y=Value,color = AssessmentYear))
+      ggplot2::geom_line(ggplot2::aes(x=.data$Year,y=.data$Value,color = .data$AssessmentYear))
   }
 
   p <- p +
-    ggplot2::ylab(paste0(metric," (",stockToPlot %>% dplyr::distinct(Units),")")) +
-    ggplot2::ggtitle(stockToPlot %>% dplyr::distinct(StockName))
+    ggplot2::ylab(paste0(metric," (",stockToPlot %>% dplyr::distinct(.data$Units),")")) +
+    ggplot2::ggtitle(stockToPlot %>% dplyr::distinct(.data$StockName))
 
   print(p)
 
