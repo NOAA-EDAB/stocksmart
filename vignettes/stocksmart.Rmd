@@ -24,7 +24,7 @@ library(magrittr)
 
 Time series data for all federally managed stocks are bundled with the package
 
-[stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
+The [stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
 
 ```{r sad, echo = F}
 stockAssessmentData %>%
