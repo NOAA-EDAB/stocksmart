@@ -4,7 +4,13 @@
 \alias{plot_ts}
 \title{Plot time series data for a particular species}
 \usage{
-plot_ts(itis = NULL, stock = NULL, metric = "Catch", plotAs = "one")
+plot_ts(
+  itis = NULL,
+  stock = NULL,
+  metric = "Catch",
+  facetplot = F,
+  printfig = T
+)
 }
 \arguments{
 \item{itis}{Numeric. Species ITIS code}
@@ -13,8 +19,10 @@ plot_ts(itis = NULL, stock = NULL, metric = "Catch", plotAs = "one")
 
 \item{metric}{Character vector. Specifying which metric to plot (Catch, Abundance, Fmort, Recruitment)}
 
-\item{plotAs}{Character. How to plpot results. Plot all assessments on a single plot ("one") or
-plot each assessment in its own facet ("facet")}
+\item{facetplot}{Boolean. How to plot results. Plot each assessment in its own facet (T) or
+pplot all assessments on a single plot (default = F)}
+
+\item{printfig}{Boolean. Print figure to figure window (Default = T)}
 }
 \value{
 A list of two items is returned
@@ -28,6 +36,6 @@ Exploratory plots of Catch, Abundance, F, Recruitment for all assessments for a 
 
 The units of some of the metrics change over time. For example, catch for one assessment may be presented in metric tons
 whereas other assessments may be in thousand metric tons. This is not resolved in the plotting. When this arises it is best
-to use \code{plotAs = "facet"} since each facet uses its own yaxis scale
+to use \code{facet = T} since each facet uses its own yaxis scale
 }
 
