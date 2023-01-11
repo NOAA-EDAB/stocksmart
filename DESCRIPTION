@@ -1,11 +1,11 @@
 Package: stocksmart
 Title: Provides access to NOAAs stock SMART data
-Version: 0.4.2
+Version: 0.5.0
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
            comment = c(ORCID = "0000-0001-8270-7090"))
-Description: A data package contianing all data found on NOAAs stock SMART website
+Description: A data package serving all data found on NOAAs stock SMART website
 URL: https://github.com/NOAA-EDAB/stocksmart
 BugReports: https://github.com/NOAA-EDAB/stocksmart/issues
 License: file LICENSE
@@ -19,6 +19,7 @@ Imports:
     dplyr,
     tidyr,
     magrittr,
-    rlang
+    rlang,
+    ggplot2
 Suggests:
     here
