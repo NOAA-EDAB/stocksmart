@@ -1,3 +1,15 @@
+# stocksmart 0.5.0
+
+* Data pull Jan 11, 2023
+
+## New Feature
+
+* `plot_ts` -  plots multiple time series of assessment data metrics (Abundance, Catch, Fmort, Recruitment) by species ITIS/stock in either a single plot or facet plot
+
+## Time series removed
+
+* Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
+
 # stocksmart 0.4.2
 
 * Data pull Dec 28,2022
