@@ -86,7 +86,9 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   }
 
   file.create(here::here("data-raw",fn))
-  cat(paste0("Number of files read = ",nrow(files),"\n"),file=here::here("data-raw",fn))
+  dateCreated <- Sys.Date()
+  cat(paste0(dateCreated,"\n"),file=here::here("data-raw",fn))
+  cat(paste0("Number of files read = ",nrow(files),"\n"),file=here::here("data-raw",fn),append=T)
   cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
   cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
 

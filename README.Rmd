@@ -38,7 +38,7 @@ The data are extracted and processed from NOAA's [Stock SMART](https://apps-st.f
 Any data issues found in this package should first be checked with the web based data portal. If this data package reflects the data found in the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise please create an [issue](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 
 
-*Date of most recent data pull: `r strsplit(as.character(file.mtime(here::here("data-raw","datapull.txt")))," ")[[1]][1]`* 
+*Date of most recent data pull: `r readLines(here::here("data-raw","datapull.txt"),n=1)`* 
 
 Note: Data is retrieved and processed every Wednesday at 1200 EST. Any changes to the [Stock SMART](https://apps-st.fisheries.noaa.gov/stocksmart) website will be reflected in this data package at that time. The history of changes can be found in the [changelog](https://noaa-edab.github.io/stocksmart/news/index.html)
 
@@ -46,7 +46,15 @@ Note: Data is retrieved and processed every Wednesday at 1200 EST. Any changes t
 
 If you find any [issue with the data](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose), [bugs](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose) in any of the code, or want to request [new features](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose) please let us know
 
+## Usage
 
+### Installation
+
+```remotes::install_github("NOAA-EDAB/stocksmart")```
+
+<!-- ### Getting started -->
+
+<!-- Please see the [getting started guide](tbd) in the package documentation -->
 
 
 ## Contact
