@@ -1,3 +1,11 @@
+# stocksmart 0.5.1
+
+* Data pull Jan 18, 2023
+
+## Summaries removed
+
+* Winter flounder - Southern New England / Mid-Atlantic	(172905): 2022
+
 # stocksmart 0.5.0
 
 * Data pull Jan 11, 2023
