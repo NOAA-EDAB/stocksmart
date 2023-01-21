@@ -36,7 +36,7 @@ Several functions are bundled with the package to aid in filtering the data by s
 
 ## Example
 
-Problem: we want to find the latest catch data for Atlantic cod in the Gulf of Maine from either a Benchmark assessment or a full update.
+Problem: we want to find the latest catch data for Atlantic cod in Georges Bank from either a Benchmark assessment or a full update.
 
 We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis` function to find this
 
@@ -46,7 +46,40 @@ get_species_itis(stock = "Atlantic cod")
 ```
 There are three stocks under the jurisdiction of the NEFMC, a Georges Bank, an Eastern Georges Bank, and a Gulf of Maine stock.
 
-We can now use the ITIS code for search for the most recent Catch time series data that comes from either a Benchmark assessment or a full update. We will use the `get_latest_metrics` function. A list containing two data frames are returned. 
+### Visualize data
+
+Lets visualize all the Catch data for every assessment of the Georges Bank stock
+
+```{r codcatch,echo = T}
+p <- plot_ts(itis = 164712,stock = "Atlantic cod - Georges Bank",metric ="Catch",printfig=F)
+p$plot
+```
+
+We can also plot each assessment year in its own facet
+
+```{r codcatchfacet,echo = T}
+p <- plot_ts(itis = 164712,
+             stock = "Atlantic cod - Georges Bank",
+             metric ="Catch",
+             facetplot=T,
+             printfig=F)
+p$plot
+```
+
+The facet plot is particularly useful when assessment methods have changed over time and consequently the units have also. If we plot the `Abundance` instead of `Catch` we can see how the assessment data has changed over time from Metric tons prior to 2017 to kg/tow from 2017 onward
+
+```{r codabundfacet,echo = T}
+p <- plot_ts(itis = 164712,stock = "Atlantic cod - Georges Bank",metric ="Abundance",facetplot=T,printfig=F)
+p$plot
+```
+
+The [`plot_ts`](plot_ts) function returns a list of two items, a ggplot object and data frame containing the data used in the plot.
+
+### Extract latest data
+
+Some of the assessments visualized above may not be considered `Operational` (Analyses conducted to provide scientific advice to fishery managers with particular focus on determining stock status and recommending catch limits - from stockSMART [Data Dictionary](https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf)).
+
+We can use the ITIS code to search for the most recent Catch time series data that comes from an `Operational` assessment using the `get_latest_metrics` function. A list containing two data frames are returned. 
 
 *   A summary table containing relevant metadata including the number of years of data available and the date range.
 
@@ -66,7 +99,7 @@ We can then filter the the data by the Gulf of Maine stock and plot it.
 
 ``` {r gom, echoo = T}
 cod$data %>% 
-  dplyr::filter(StockArea == "Gulf of Maine") %>%
+  dplyr::filter(StockArea == "Georges Bank") %>%
   {. ->> filteredData} %>% 
   ggplot2::ggplot(.) +
   ggplot2::geom_line(ggplot2::aes(x=Year,y = Value)) + 
