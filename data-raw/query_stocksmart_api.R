@@ -71,7 +71,7 @@ query_stocksmart_api <- function() {
   excel$minYear <- "1872"
   excel$maxYear <- "2032"
 
-  n <- 100
+  n <- 60
   # loop over the assessment ids in chunks of 100.
   # Server will crash if n is too much bigger
   for (ifile in 1:ceiling(length(asmtids)/n)) {
