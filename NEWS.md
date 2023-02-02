@@ -1,3 +1,19 @@
+# stocksmart 0.5.2
+
+* Data pull Feb 01, 2023
+
+
+## Time series added
+
+* Pacific bluefin tuna - Pacific (172422): 2022
+* Pacific hake - Pacific Coast	(164792): 2022
+* Scamp - Gulf of Mexico	(167763):	2022
+
+## Summaries added
+
+* Scamp - Gulf of Mexico	(167763):	2022
+* Pacific hake - Pacific Coast	(164792):	2022
+
 # stocksmart 0.5.1
 
 * Data pull Jan 18, 2023

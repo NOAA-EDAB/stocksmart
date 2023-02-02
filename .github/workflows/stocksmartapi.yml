@@ -7,8 +7,7 @@ on:
     #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
     #- cron: "0 * * * *" # Every hour on hour
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
-#    - cron: "0 17 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
-    - cron: "30 23 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
+    - cron: "0 17 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
 
 jobs:
 
