@@ -10,7 +10,7 @@ params:
   datrowRem: NA
   datcolAdd: NA
   datcolRem: NA
-date: "`r Sys.Date()`"
+date: "`r Sys.time()`"
 ---
 
 ```{r setup, include=FALSE}
