@@ -10,7 +10,7 @@ params:
   datrowRem: NA
   datcolAdd: NA
   datcolRem: NA
-date: "2022-12-06"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,16 +21,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Species Added
 ```{r, echo = F}
-params$sumrowAdd %>%
-  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
-  kableExtra::kable()
+if(!is.null(params$sumrowAdd)) {
+  params$sumrowAdd %>%
+    dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
+    kableExtra::kable()
+}
 ```
 
 ### Species Removed
 ```{r, echo = F}
+if(!is.null(params$sumrowRem)){
 params$sumrowRem %>%
   dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
   kableExtra::kable(col.names =NULL)
+}
 ```
 
 ### Columns added
@@ -48,18 +52,22 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 
 ### Species Added
 ```{r, echo = F}
-params$datrowAdd %>% 
-  dplyr::select(-StockArea) %>%
-  dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
-  kableExtra::kable()
+if(!is.null(params$datrowAdd)){
+  params$datrowAdd %>% 
+    dplyr::select(-StockArea) %>%
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+    kableExtra::kable()
+}
 ```
 
 ### Species Removed
 ```{r, echo = F}
-params$datrowRem %>% 
-  dplyr::select(-StockArea) %>%
-  dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
-  kableExtra::kable(col.names =NULL)
+if(!is.null(params$datrowRem)) {
+  params$datrowRem %>% 
+    dplyr::select(-StockArea) %>%
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+    kableExtra::kable(col.names =NULL)
+}
 ```
 
 ### Columns added
