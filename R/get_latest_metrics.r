@@ -39,9 +39,11 @@ get_latest_metrics <- function(itis=NULL, metrics = c("Catch","Abundance")) {
   }
 
 
-  # Filter Full Updates or Benchmark assessments
+  # Filter Operational Assesments (old codes = New, Full Updates, Benchmark assessments)
   allData <- stocksmart::stockAssessmentData %>%
-    dplyr::filter(.data$UpdateType %in% c("Benchmark","Full Update"))
+    dplyr::filter(.data$AssessmentType %in% c("New","Benchmark","Full Update",
+                                              "Research & Operational",
+                                              "Operational"))
 
   # find all distinct ITIS codes
   itiscodes <- allData %>%
