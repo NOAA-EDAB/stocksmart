@@ -38,27 +38,33 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   for (fn in unlist(tsfiles)) {
     print(fn)
     dataf <- readxl::read_xlsx(here::here("data-raw","allAssessments",fn), col_names = F)
-    year <- as.numeric(unlist(dataf[6:nrow(dataf),2]))
+    year <- as.numeric(unlist(dataf[9:nrow(dataf),2]))
     for (icol in 3:ncol(dataf)) {
       # get metadata for this species. 1st 5 rows of data
-      meta <- as.vector(unlist(dataf[1:5,icol]))
+      meta <- as.vector(unlist(dataf[1:8,icol]))
       # parse metadata to extract species name, region, metric, Description. Units
       spnm_region <- meta[1]
-      AssessmentYear <- as.numeric(meta[2])
-      metric <- meta[3]
-      description <- meta[4]
-      units <- meta[5]
+      stockid <- as.numeric(meta[2])
+      assessmentid <- as.numeric(meta[3])
+      AssessmentYear <- as.numeric(meta[4])
+      AssessmentMonth <- as.numeric(meta[5])
+      metric <- meta[6]
+      description <- meta[7]
+      units <- meta[8]
       # time series data
-      ts <- as.numeric(unlist(dataf[6:nrow(dataf),icol]))
+      ts <- as.numeric(unlist(dataf[9:nrow(dataf),icol]))
       # select years where data is available
       ind <- !is.na(ts)
       Year <- year[ind]
       ts <- ts[ind]
-      # length of data vailable
+      # length of data available
       nYrs <- length(Year)
       # build a tidy tibble
       speciesData <- tibble::tibble(StockName=rep(spnm_region,nYrs),
-                                    Year=Year,Value=ts,
+                                    Stockid = rep(stockid,nYrs),
+                                    Assessmentid = rep(assessmentid,nYrs),
+                                    Year=Year,
+                                    Value=ts,
                                     Metric = rep(metric,nYrs),
                                     Description=rep(description,nYrs),
                                     Units=rep(units,nYrs),
@@ -72,10 +78,35 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   ## process the summary data and join with time series data
   # rename variable and remove a bunch
   summaryData <- process_stocksmart_summary_data(exportFile=exportFile)
-  stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("StockName"="Stock Name","AssessmentYear" = "Assessment Year")) %>%
-    dplyr::select(StockName,Year,Value,Metric,Description,Units,AssessmentYear,Jurisdiction,FMP,`Common Name`,`Scientific Name`,`ITIS Taxon Serial Number`,`Update Type`,`Stock Area`,`Regional Ecosystem`) %>%
-    dplyr::rename(CommonName=`Common Name`,ScientificName=`Scientific Name`,ITIS=`ITIS Taxon Serial Number`) %>%
-    dplyr::rename(UpdateType=`Update Type`,StockArea=`Stock Area`,RegionalEcosystem=`Regional Ecosystem`)
+  # stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("StockName"="Stock Name","AssessmentYear" = "Assessment Year")) %>%
+  #   dplyr::select(StockName,Year,Value,Metric,Description,Units,AssessmentYear,Jurisdiction,FMP,`Common Name`,`Scientific Name`,`ITIS Taxon Serial Number`,`Update Type`,`Stock Area`,`Regional Ecosystem`) %>%
+  #   dplyr::rename(CommonName=`Common Name`,ScientificName=`Scientific Name`,ITIS=`ITIS Taxon Serial Number`) %>%
+  #   dplyr::rename(UpdateType=`Update Type`,StockArea=`Stock Area`,RegionalEcosystem=`Regional Ecosystem`)
+  stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("Assessmentid" = "Assessment ID")) %>%
+    dplyr::select(StockName,
+                  Stockid,
+                  Assessmentid,
+                  Year,
+                  Value,
+                  Metric,
+                  Description,
+                  Units,
+                  AssessmentYear,
+                  Jurisdiction,
+                  FMP,
+                  `Common Name`,
+                  `Scientific Name`,
+                  `ITIS Taxon Serial Number`,
+                  `Assessment Type`,
+                  `Stock Area`,
+                  `Regional Ecosystem`) %>%
+    dplyr::rename(CommonName=`Common Name`,
+                  ScientificName=`Scientific Name`,
+                  ITIS=`ITIS Taxon Serial Number`,
+                  AssessmentType =`Assessment Type`,
+                  StockArea=`Stock Area`,
+                  RegionalEcosystem=`Regional Ecosystem`)
+
 
 
   # create a differnt file if run locally
