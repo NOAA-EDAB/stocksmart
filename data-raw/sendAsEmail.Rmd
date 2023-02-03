@@ -21,12 +21,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$sumrowAdd)
+params$sumrowAdd %>%
+  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
+  kableExtra::kable()
 ```
 
 ### Species Removed
 ```{r, echo = F}
-kableExtra::kable(params$sumrowRem,col.names =NULL)
+params$sumrowRem %>%
+  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
+  kableExtra::kable(col.names =NULL)
 ```
 
 ### Columns added
@@ -44,12 +48,18 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$datrowAdd)
+params$datrowAdd %>% 
+  dplyr::select(-StockArea) %>%
+  dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+  kableExtra::kable()
 ```
 
 ### Species Removed
 ```{r, echo = F}
-kableExtra::kable(params$datrowRem,col.names =NULL)
+params$datrowRem %>% 
+  dplyr::select(-StockArea) %>%
+  dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+  kableExtra::kable(col.names =NULL)
 ```
 
 ### Columns added
