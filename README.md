@@ -27,7 +27,7 @@ Jurisdiction, Point of contact, Year of assessment etc)
 
 The data are extracted and processed from NOAA’s [Stock
 SMART](https://apps-st.fisheries.noaa.gov/stocksmart) web based data
-portal (www.st.nmfs.noaa.gov/stocksmart).
+portal (<https://apps-st.fisheries.noaa.gov/stocksmart>).
 
 Any data issues found in this package should first be checked with the
 web based data portal. If this data package reflects the data found in
@@ -35,13 +35,13 @@ the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an
 [issue](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 
-*Date of most recent data pull: 2022-12-28*
+*Date of most recent data pull: 2023-02-04 21:56:00*
 
 Note: Data is retrieved and processed every Wednesday at 1200 EST. Any
 changes to the [Stock
-SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) website
-will be reflected in this data package at that time. The history of
-changes can be found in the
+SMART](https://apps-st.fisheries.noaa.gov/stocksmart) website will be
+reflected in this data package at that time. The history of changes can
+be found in the
 [changelog](https://noaa-edab.github.io/stocksmart/news/index.html)
 
 ## Feature requests/Data Issues/Bugs
@@ -52,6 +52,15 @@ data](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose),
 of the code, or want to request [new
 features](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 please let us know
+
+## Usage
+
+### Installation
+
+`remotes::install_github("NOAA-EDAB/stocksmart")`
+
+<!-- ### Getting started -->
+<!-- Please see the [getting started guide](tbd) in the package documentation -->
 
 ## Contact
 

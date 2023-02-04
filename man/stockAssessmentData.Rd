@@ -9,6 +9,8 @@ A data frame with n rows and m variables
 
 \describe{
 \item{StockName}{Species name and stock area for the assessed species}
+\item{Stockid}{Unique stock identifier}
+\item{Assessmentid}{Unique assessment identifier}
 \item{CommonName}{Common name for species}
 \item{ScientificName}{Scientific name for species}
 \item{ITIS}{Species ITIS Taxon Serial Number }
@@ -22,14 +24,13 @@ A data frame with n rows and m variables
 \item{FMP}{Fisheries management plan species is managed under}
 \item{RegionalEcosystem}{The Regional Ecosystem wher stock is found. There are 8 ecosystems defined around the coastal margins of the United States}
 \item{Jurisdiction}{The Fishery Management Council or other group responsible for managing this stock}
-\item{UpdateType}{Describes the level of assessment effort.
-Used for assessments completed in 2018 and earlier.
-New, Benchmark, Full Update, Partial Update}
+\item{AssessmentType}{Describes the level of assessment effort. For assessments completed prior to 2018
+:New, Benchmark, Full Update, Partial Update, for post 2018: Operational, Stock Monitoring Update, Research & Operational}
 
 }
 }
 \source{
-\url{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}
+\url{https://apps-st.fisheries.noaa.gov/stocksmart?app=homepage}
 }
 \usage{
 stockAssessmentData
@@ -40,7 +41,9 @@ Stock assessment data for species found in waters of the USA. Data is provided f
 \section{Data download}{
 
 
-The data were downloaded from \href{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}{Stock SMART} - Status, Management, Assessments & Resource Trends. Follow these steps:
+The data were downloaded from \href{https://apps-st.fisheries.noaa.gov/stocksmart?app=browse-by-stock}{Stock SMART} - Status, Management, Assessments & Resource Trends.
+
+For Manual download:
 \enumerate{
 \item Click the "Download Data" module
 \item Select data to download (dropdown) -> Assessment Time Series Data

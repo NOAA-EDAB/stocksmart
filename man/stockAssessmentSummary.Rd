@@ -9,6 +9,8 @@ A data frame with n rows and m variables
 
 \describe{
 \item{Stock Name}{}
+\item{Stock ID}{Unique Stock identifier}
+\item{Assessment ID}{Unique Assessment identifer}
 \item{Jurisdiction}{}
 \item{FMP}{}
 \item{Science Center}{}
@@ -21,7 +23,7 @@ A data frame with n rows and m variables
 \item{Assessment Year}{}
 \item{Assessment Month}{}
 \item{Last Data Year }{}
-\item{Update Type}{}
+\item{Assessment Type}{Joining of Update Type and Assessment Type: Describes the level of assessment effort}
 \item{Review Result }{}
 \item{Assessment Model}{}
 \item{Model Version}{}
@@ -71,7 +73,7 @@ A data frame with n rows and m variables
 }
 }
 \source{
-\url{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}
+\url{https://apps-st.fisheries.noaa.gov/stocksmart?app=homepage}
 }
 \usage{
 stockAssessmentSummary
@@ -84,7 +86,9 @@ For a description of all variables please refer to the Stock SMART data dictiona
 \section{Data download}{
 
 
-The data were downloaded from {Stock SMART}(https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock) - Status, Management, Assessments & Resource Trends. Follow these steps:
+The data were downloaded from {Stock SMART}(https://apps-st.fisheries.noaa.gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments & Resource Trends.
+
+For Manual download:
 \enumerate{
 \item Click the "Download Data" module
 \item Select data to download (dropdown) -> Assessment Summary Data
