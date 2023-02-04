@@ -1,6 +1,6 @@
 Package: stocksmart
 Title: Provides access to NOAAs stock SMART data
-Version: 0.5.2
+Version: 0.6.0
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
@@ -20,10 +20,10 @@ Imports:
     tidyr,
     magrittr,
     rlang,
-    ggplot2
+    ggplot2,
+    tibble
 Suggests:
     here,
     knitr,
-    rmarkdown,
-    ggplot2
+    rmarkdown
 VignetteBuilder: knitr

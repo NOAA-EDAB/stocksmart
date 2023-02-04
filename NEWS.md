@@ -1,3 +1,33 @@
+# stocksmart 0.6.0
+
+* Data pull Feb 04, 2023
+
+## Minor Update 
+
+* Two additional columns are added to `stockAssessmentSummary` (`Stock ID,` `Assessment ID`) 
+* Three additional columns are added to `stockAssessmentData` (`Stockid`, `Assessmentid`, `AssessmentType`).
+* `UpdateType` field removed from both `stockAssessmentSummary` and `stockAssessmentData` replaced with `AssessmentType`. This field is a combination of the old `UpdateType` and the new `AssessmentType` which describes the level of assessment effort
+* `get_latest_metrics.r` now filters by `AssessmentType` which replaces `UpdateType`
+* `RegionalEcosystem` field included in output from `get_latest_metrics.r`.
+
+## Time series changes
+
+ITIS codes replace previous NA values
+
+* Rex sole - Gulf of Alaska	(172978):	2019
+* Rex sole - Gulf of Alaska	(172978):	2018
+* Rex sole - Gulf of Alaska	(172978):	2017
+* Spiny dogfish - Pacific Coast	(160617):	2011
+* Winter flounder - Southern New England / Mid-Atlantic	(172905):	2022
+
+## Summaries added
+
+* Winter flounder - Southern New England / Mid-Atlantic	(172905):	2022
+* Rex sole - Gulf of Alaska	(172978):	2017
+* Rex sole - Gulf of Alaska	(172978):	2018
+* Rex sole - Gulf of Alaska	(172978):	2019
+* Spiny dogfish - Pacific Coast	(160617):	2011
+
 # stocksmart 0.5.2
 
 * Data pull Feb 01, 2023
