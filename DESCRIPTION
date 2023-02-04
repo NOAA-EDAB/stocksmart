@@ -22,4 +22,8 @@ Imports:
     rlang,
     ggplot2
 Suggests:
-    here
+    here,
+    knitr,
+    rmarkdown,
+    ggplot2
+VignetteBuilder: knitr

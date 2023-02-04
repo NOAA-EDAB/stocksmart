@@ -81,7 +81,7 @@ stockAssessmentSummary
 \description{
 Stock assessment metadata and reference points for species found in waters of the USA.
 Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
-For a description of all variables please refer to the Stock SMART data dictionary \url{https://www.st.nmfs.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
+For a description of all variables please refer to the Stock SMART data dictionary \url{https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
 }
 \section{Data download}{
 
