@@ -3,16 +3,13 @@
 #' Pulls the most recent data for set of metrics provided.
 #' Often a benchmark or a Full update contains the longest time series of data
 #' whereas partial updates only contain data since last benchmark.
-#' Data from the most recent Full Update or Benchmark is returned.
+#' Data is pulled from assessments defined as Operational. See \code{\link{stockAssessmentData}}
 #'
 #' @section Incomplete Results:
 #'
 #' The document "Implementing a Next Generation Stock Assessment Enterprise" (NOAA, 2018)
 #' provides classification categories for assessments completed in FY2019 and later to
 #' offer a consistent language for the types of assessment analyses conducted.
-#'
-#' Assessment Time sereis data under this new classification system can not, at this time,
-#' be reliably filtered from the tables.
 #'
 #'
 #'
