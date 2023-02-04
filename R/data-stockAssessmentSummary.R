@@ -36,7 +36,6 @@
 #'   \item{Catch Data}{}
 #'   \item{Assessment Level}{}
 #'   \item{Assessment Frequency}{}
-#'   \item{Assessment Type}{}
 #'   \item{Model Category }{}
 #'   \item{Catch Input Data}{}
 #'   \item{Abundance Input Data}{}
