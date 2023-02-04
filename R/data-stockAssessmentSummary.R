@@ -8,6 +8,8 @@
 #'
 #' \describe{
 #'   \item{Stock Name}{}
+#'   \item{Stock ID}{Unique Stock identifier}
+#'   \item{Assessment ID}{Unique Assessment identifer}
 #'   \item{Jurisdiction}{}
 #'   \item{FMP}{}
 #'   \item{Science Center}{}
@@ -20,7 +22,7 @@
 #'   \item{Assessment Year}{}
 #'   \item{Assessment Month}{}
 #'   \item{Last Data Year }{}
-#'   \item{Update Type}{}
+#'   \item{Assessment Type}{Joining of Update Type and Assessment Type: Describes the level of assessment effort}
 #'   \item{Review Result }{}
 #'   \item{Assessment Model}{}
 #'   \item{Model Version}{}
@@ -69,14 +71,16 @@
 #'
 #' }
 #'
-#' @source \url{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}
+#' @source \url{https://apps-st.fisheries.noaa.gov/stocksmart?app=homepage}
 #'
 #' @family stockAssessments
 #'
 #' @section Data download:
 #'
-#' The data were downloaded from {Stock SMART}(https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock) - Status, Management, Assessments & Resource Trends. Follow these steps:
+#' The data were downloaded from {Stock SMART}(https://apps-st.fisheries.noaa.gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments & Resource Trends.
 #'
+#'
+#'For Manual download:
 #' 1. Click the "Download Data" module
 #' 2. Select data to download (dropdown) -> Assessment Summary Data
 #' 3. Select full range of years from Start Calendar Year- End Calendar Year
