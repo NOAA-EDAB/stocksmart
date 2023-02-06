@@ -1,5 +1,11 @@
 url: https://noaa-edab.github.io/assessmentdata/
 
+template:
+ bootstrap: 5
+
+deploy:
+  install_metadata: true
+
 reference:
 - title: "Data"
   desc: "Lazydata bundled along with the package"
@@ -17,3 +23,5 @@ reference:
   desc: "Functions used to help user visualize the bundled data"
 - contents:
   - plot_ts
+
+
