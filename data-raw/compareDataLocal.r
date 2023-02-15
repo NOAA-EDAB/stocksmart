@@ -55,10 +55,10 @@ compareDataLocal <- function() {
     datcolsRemoved <- setdiff(names(current),names(new))
 
     newsp <- new %>%
-      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
+      dplyr::select(StockName,ITIS,StockArea,Assessmentid,AssessmentYear) %>%
       dplyr::distinct()
     currentsp <- current %>%
-      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
+      dplyr::select(StockName,ITIS,StockArea,Assessmentid,AssessmentYear) %>%
       dplyr::distinct()
 
     datspeciesAdded <- dplyr::setdiff(newsp,currentsp)
