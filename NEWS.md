@@ -1,3 +1,19 @@
+# stocksmart 0.6.1
+
+* Data pull Mar 01, 2023
+
+## Time series added
+
+* Atlantic salmon - Gulf of Maine	(161996):	2022
+* Haddock - Georges Bank	(164744):	2022
+* Haddock - Gulf of Maine	(164744):	2022
+* Winter flounder - Georges Bank	(172905):	2022
+* Yellowtail flounder - Cape Cod / Gulf of Maine	(172909):	2022
+
+## Summaries added
+
+* Atlantic salmon - Gulf of Maine	(161996):	2022
+
 # stocksmart 0.6.0
 
 * Data pull Feb 04, 2023
