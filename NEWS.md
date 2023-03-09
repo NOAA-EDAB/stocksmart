@@ -1,3 +1,15 @@
+# stocksmart 0.6.2
+
+* Data pull Mar 08, 2023
+
+## Time series added
+
+Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
+
+## Summaries added
+
+Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
+
 # stocksmart 0.6.1
 
 * Data pull Mar 01, 2023
