@@ -1,3 +1,11 @@
+# stocksmart 0.6.3
+
+* Data pull Mar 15, 2023
+
+## Summaries added
+
+Skipjack tuna - Western Atlantic	(172401):	2022
+
 # stocksmart 0.6.2
 
 * Data pull Mar 08, 2023
