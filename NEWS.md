@@ -1,3 +1,19 @@
+# stocksmart 0.6.4
+
+* Data pull April 26, 2023
+
+## Time series added
+
+* Arrowtooth flounder - Bering Sea / Aleutian Islands	(616029):	2022
+* Pacific cod - Aleutian Islands	(164711):	2022
+* Arrowtooth flounder - Gulf of Alaska	(616029):	2022
+
+## Summaries added
+
+* Arrowtooth flounder - Bering Sea / Aleutian Islands	(616029):	2022
+* Arrowtooth flounder - Gulf of Alaska	(616029):	2022
+* Pacific cod - Aleutian Islands	(164711):	2022
+
 # stocksmart 0.6.3
 
 * Data pull Mar 15, 2023
