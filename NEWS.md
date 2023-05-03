@@ -1,3 +1,69 @@
+# stocksmart 0.6.5
+
+* Data pull May 3, 2023
+
+## Time series added
+
+* Alaska plaice - Bering Sea / Aleutian Islands	(172901):	2022
+* Alaska skate - Bering Sea / Aleutian Islands	(160939):	2022
+* Bering Sea / Aleutian Islands Other Rockfish Complex	(NA):	2022
+* Bering Sea / Aleutian Islands Other Skates Complex	(NA):	2022
+* Flathead sole - Bering Sea / Aleutian Islands	(172875):	2022
+* Flathead sole - Gulf of Alaska	(172875):	2022
+* Giant octopus - Bering Sea / Aleutian Islands	(557227):	2022
+* Greenland halibut - Bering Sea / Aleutian Islands	(172930):	2022
+* Kamchatka flounder - Bering Sea / Aleutian Islands	(616027):	2022
+* North Pacific spiny dogfish - Gulf of Alaska	(160620):	2022
+* Northern rock sole - Bering Sea / Aleutian Islands	(616392):	2022
+* Northern rockfish - Bering Sea / Aleutian Islands	(166735):	2022
+* Northern rockfish - Western / Central Gulf of Alaska	(166735):	2022
+* Pacific cod - Bering Sea	(164711):	2022
+* Pacific cod - Gulf of Alaska	(164711):	2022
+* Pacific ocean perch - Bering Sea / Aleutian Islands	(166707):	2022
+* Pacific ocean perch - Gulf of Alaska	(166707):	2022
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska	(167123):	2022
+* Shortraker rockfish - Bering Sea / Aleutian Islands	(166712):	2022
+* Shortspine thornyhead - Gulf of Alaska	(166783):	2022
+* Walleye pollock - Aleutian Islands	(934083):	2022
+* Walleye pollock - Bogoslof	(934083):	2022
+* Walleye pollock - Southeast Gulf of Alaska	(934083):	2022
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska	(934083):	2022
+* Yelloweye rockfish - Gulf of Alaska	(166740):	2022
+* Yellowfin sole - Bering Sea / Aleutian Islands	(172907):	2022
+
+## Summaries added
+
+* Alaska plaice - Bering Sea / Aleutian Islands	(172901):	2022
+* Alaska skate - Bering Sea / Aleutian Islands	(160939):	2022
+* Bering Sea / Aleutian Islands Other Rockfish Complex	(NA):	2022
+* Bering Sea / Aleutian Islands Other Skates Complex	(NA):	2022
+* Flathead sole - Bering Sea / Aleutian Islands	(172875):	2022
+* Giant octopus - Bering Sea / Aleutian Islands	(557227):	2022
+* Greenland halibut - Bering Sea / Aleutian Islands	(172930):	2022
+* Kamchatka flounder - Bering Sea / Aleutian Islands	(616027):	2022
+* Northern rock sole - Bering Sea / Aleutian Islands	(616392):	2022
+* Northern rockfish - Bering Sea / Aleutian Islands	(166735):	2022
+* Pacific cod - Bering Sea	(164711):	2022
+* Pacific ocean perch - Bering Sea / Aleutian Islands	(166707):	2022
+* Shortraker rockfish - Bering Sea / Aleutian Islands	(166712):	2022
+* Walleye pollock - Aleutian Islands	(934083):	2022
+* Walleye pollock - Bogoslof	(934083):	2022
+* Yellowfin sole - Bering Sea / Aleutian Islands	(172907):	2022
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska	(167123):	2022
+* Flathead sole - Gulf of Alaska	(172875):	2022
+* North Pacific spiny dogfish - Gulf of Alaska	(160620):	2022
+* Northern rock sole - Central Gulf of Alaska	(616392):	2022
+* Northern rock sole - Western Gulf of Alaska	(616392):	2022
+* Northern rockfish - Western / Central Gulf of Alaska	(166735):	2022
+* Pacific cod - Gulf of Alaska	(164711):	2022
+* Pacific ocean perch - Gulf of Alaska	(166707):	2022
+* Rock sole - Central Gulf of Alaska	(172917):	2022
+* Rock sole - Western Gulf of Alaska	(172917):	2022
+* Shortspine thornyhead - Gulf of Alaska	(166783):	2022
+* Walleye pollock - Southeast Gulf of Alaska	(934083):	2022
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska	(934083):	2022
+* Yelloweye rockfish - Gulf of Alaska	(166740):	2022
+
 # stocksmart 0.6.4
 
 * Data pull April 26, 2023
