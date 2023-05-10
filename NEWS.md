@@ -1,3 +1,11 @@
+# stocksmart 0.6.6
+
+* Data pull May 10, 2023
+
+## Time series added
+
+* Southern Tanner crab - Bering Sea	(98429):	2021
+
 # stocksmart 0.6.5
 
 * Data pull May 3, 2023
@@ -86,7 +94,7 @@
 
 ## Summaries added
 
-Skipjack tuna - Western Atlantic	(172401):	2022
+* Skipjack tuna - Western Atlantic	(172401):	2022
 
 # stocksmart 0.6.2
 
@@ -94,11 +102,11 @@ Skipjack tuna - Western Atlantic	(172401):	2022
 
 ## Time series added
 
-Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
+* Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
 
 ## Summaries added
 
-Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
+* Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
 
 # stocksmart 0.6.1
 
