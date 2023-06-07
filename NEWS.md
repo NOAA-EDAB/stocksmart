@@ -1,3 +1,23 @@
+# stocksmart 0.6.8
+
+* Data pull June 07, 2023
+
+## Time series added
+
+* Coho salmon - Washington Coast: Quinault Hatchery	(161977):	2023
+* Coho salmon - Washington Coast: Strait of Juan de Fuca	(161977):	2023
+* Coho salmon - Washington Coast: Willapa Bay Hatchery	(161977):	2023
+* Coho salmon - Washington Coast: Willapa Bay Natural	(161977):	2023
+* Pink salmon - Puget Sound	(161975):	2023
+
+## Summaries added
+
+* Coho salmon - Washington Coast: Quinault Hatchery	(161977):	2023
+* Coho salmon - Washington Coast: Strait of Juan de Fuca	(161977):	2023
+* Coho salmon - Washington Coast: Willapa Bay Hatchery	(161977):	2023
+* Coho salmon - Washington Coast: Willapa Bay Natural	(161977):	2023
+* Pink salmon - Puget Sound	(161975):	2023
+
 # stocksmart 0.6.7
 
 * Data pull May 31, 2023
