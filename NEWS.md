@@ -1,3 +1,9 @@
+# stocksmart 0.6.9
+
+## Summaries added
+
+* Guam Bottomfish Multi-species Complex	(NA):	2007
+
 # stocksmart 0.6.8
 
 * Data pull June 07, 2023
