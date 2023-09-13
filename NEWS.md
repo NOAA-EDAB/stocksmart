@@ -1,4 +1,55 @@
+# stocksmart 0.6.10
+
+* Data pull September 13, 2023
+
+## Summaries added
+
+* Atka mackerel - Bering Sea / Aleutian Islands	(167120):	2022
+* Atlantic cod - Eastern Georges Bank	(164712):	2023
+* Bluefish - Atlantic Coast	(168559):	2023
+* Dusky rockfish - Gulf of Alaska	(644604):	2022
+* Golden king crab - Eastern Aleutian Islands	(660179):	2023
+* Golden king crab - Western Aleutian Islands	(660179):	2023
+* Haddock - Eastern Georges Bank	(164744):	2023
+* Longfin inshore squid - Georges Bank / Cape Hatteras	(82372):	2023
+* Red deepsea crab - Northwestern Atlantic	(620992):	2023
+* Red king crab - Bristol Bay	(97935):	2022
+* Red king crab - Norton Sound	(97935):	2023
+* Red king crab - Pribilof Islands	(97935):	2022
+* Scamp - Southern Atlantic Coast	(167763):	2023
+* Scup - Atlantic Coast	(169182):	2023
+* Southern Tanner crab - Bering Sea	(98429):	2022
+* Spanish mackerel - Southern Atlantic Coast	(172436):	2023
+* Summer flounder - Mid-Atlantic Coast	(172735):	2023
+* Walleye pollock - Eastern Bering Sea	(934083):	2022
+* Weathervane scallop - Alaska	(79757):	2023
+* Yellowtail flounder - Georges Bank	(172909):	2023
+
+## Time series added
+
+* Atka mackerel - Bering Sea / Aleutian Islands	(167120):	2022
+* Atlantic cod - Eastern Georges Bank	(164712):	2023
+* Bluefish - Atlantic Coast	(168559):	2023
+* Dusky rockfish - Gulf of Alaska	(644604):	2022
+* Golden king crab - Western Aleutian Islands	(660179):	2023
+* Haddock - Eastern Georges Bank	(164744):	2023
+* Haddock - Eastern Georges Bank	(164744):	2022
+* Longfin inshore squid - Georges Bank / Cape Hatteras	(82372):	2023
+* Red deepsea crab - Northwestern Atlantic	(620992):	2023
+* Red king crab - Bristol Bay	(97935):	2022
+* Red king crab - Pribilof Islands	(97935):	2022
+* Scamp - Southern Atlantic Coast	(167763):	2023
+* Scup - Atlantic Coast	(169182):	2023
+* Southern Tanner crab - Bering Sea	(98429):	2022
+* Spanish mackerel - Southern Atlantic Coast	(172436):	2023
+* Summer flounder - Mid-Atlantic Coast	(172735):	2023
+* Walleye pollock - Eastern Bering Sea	(934083):	2022
+* Weathervane scallop - Alaska	(79757):	2023
+* Yellowtail flounder - Georges Bank	(172909):	2023
+
 # stocksmart 0.6.9
+
+* Data pull June 21, 2023
 
 ## Summaries added
 

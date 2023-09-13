@@ -1,6 +1,6 @@
 Package: stocksmart
 Title: Provides access to NOAAs stock SMART data
-Version: 0.6.9
+Version: 0.6.10
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
@@ -12,7 +12,7 @@ License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Depends: 
     R (>= 3.6)
 Imports: 
