@@ -34,7 +34,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">stocksmart</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.9</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.10</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +95,7 @@
 the package</p>
 <p>The <a href="../reference/stockAssessmentData.html">stockAssessmentData</a>
 looks like this:</p>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 259,244 × 17</span></span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 261,722 × 17</span></span></span>
 <span><span class="co">#&gt;    StockName           Stockid Assessmentid  Year Value Metric Description Units</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">10</span>643  <span style="text-decoration: underline;">1</span>913     7 Catch  Reported C… Metr…</span></span>
@@ -108,7 +108,7 @@ looks like this:</p>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">10</span>643  <span style="text-decoration: underline;">1</span>920    31 Catch  Reported C… Metr…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">10</span>643  <span style="text-decoration: underline;">1</span>921    13 Catch  Reported C… Metr…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">10</span>643  <span style="text-decoration: underline;">1</span>922     9 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 259,234 more rows</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 261,712 more rows</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 9 more variables: AssessmentYear &lt;dbl&gt;, Jurisdiction &lt;chr&gt;, FMP &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   CommonName &lt;chr&gt;, ScientificName &lt;chr&gt;, ITIS &lt;dbl&gt;, AssessmentType &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   StockArea &lt;chr&gt;, RegionalEcosystem &lt;chr&gt;</span></span></span></code></pre>
@@ -185,7 +185,7 @@ years of data available and the date range.</li>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 10</span></span></span>
 <span><span class="co">#&gt;   StockName  CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic … Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic … Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic … Atlantic … Georges … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>021 Northeast Shelf   Catch </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic … Atlantic … Gulf of … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>021 Northeast Shelf   Catch </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 3 more variables: FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;, numYears &lt;dbl&gt;</span></span></span></code></pre></div>
@@ -195,20 +195,20 @@ metadata</li>
 </ul>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span> </span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 122 × 20</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 123 × 20</span></span></span>
 <span><span class="co">#&gt;    StockName CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>022 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 112 more rows</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 113 more rows</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 13 more variables: FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;, numYears &lt;dbl&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   Stockid &lt;dbl&gt;, Assessmentid &lt;dbl&gt;, Year &lt;dbl&gt;, Value &lt;dbl&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   Description &lt;chr&gt;, Units &lt;chr&gt;, Jurisdiction &lt;chr&gt;, FMP &lt;chr&gt;,</span></span></span>
