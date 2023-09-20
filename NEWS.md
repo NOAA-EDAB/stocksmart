@@ -1,3 +1,21 @@
+# stocksmart 0.6.11
+
+* Data pull September 20, 2023
+
+## Summaries added
+
+* Pacific sleeper shark - Bering Sea / Aleutian Islands	(160610):	2022
+* Queen triggerfish - St. Croix	(173139):	2022
+* Pacific chub mackerel - Pacific Coast	(172412):	2023
+* Spanish mackerel - Gulf of Mexico	(172436):	2023
+
+## Time series added
+
+* Golden king crab - Eastern Aleutian Islands	(660179):	2023
+* Pacific chub mackerel - Pacific Coast	(172412):	2023
+* Pacific sleeper shark - Bering Sea / Aleutian Islands	(160610):	2022
+* Spanish mackerel - Gulf of Mexico	(172436):	2023
+
 # stocksmart 0.6.10
 
 * Data pull September 13, 2023
