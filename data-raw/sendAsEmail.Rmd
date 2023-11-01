@@ -17,11 +17,20 @@ date: "`r Sys.time()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Summary
+
+```{r datapull,echo=F,eval=T}
+a <- readLines(con=here::here("data-raw/datapull.txt"))
+writeLines(a)
+
+```
+
+
 # Summary data changes
 
 ### Species Added
 ```{r, echo = F}
-if(!is.null(params$sumrowAdd)) {
+if(nrow(params$sumrowAdd)>0) {
   params$sumrowAdd %>%
     dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
     kableExtra::kable()
@@ -30,7 +39,7 @@ if(!is.null(params$sumrowAdd)) {
 
 ### Species Removed
 ```{r, echo = F}
-if(!is.null(params$sumrowRem)){
+if(nrow(params$sumrowRem)>0){
 params$sumrowRem %>%
   dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
   kableExtra::kable(col.names =NULL)
@@ -52,19 +61,20 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 
 ### Species Added
 ```{r, echo = F}
-if(!is.null(params$datrowAdd)){
+if(nrow(params$datrowAdd)>0){
   params$datrowAdd %>% 
-    dplyr::select(-StockArea) %>%
     dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
     kableExtra::kable()
 }
 ```
 
+
+
+
 ### Species Removed
 ```{r, echo = F}
-if(!is.null(params$datrowRem)) {
+if(nrow(params$datrowRem)>0) {
   params$datrowRem %>% 
-    dplyr::select(-StockArea) %>%
     dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
     kableExtra::kable(col.names =NULL)
 }
@@ -79,3 +89,10 @@ kableExtra::kable(params$datcolAdd,col.names =NULL)
 ```{r, echo = F}
 kableExtra::kable(params$datcolRem,col.names =NULL)
 ```
+
+
+## Links to repos:
+
+* [test Stocksmart](https://github.com/andybeet/teststocksmartapi)
+
+* [main stocksmart](https://github.com/NOAA-EDAB/stocksmart)

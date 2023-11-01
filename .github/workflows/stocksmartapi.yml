@@ -3,7 +3,7 @@ name: pull and process data from stocksmart website
 on:
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
-    - cron: "0 17 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
+    - cron: "0 17 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
     #- cron: "26 * * * *" # Every hour on hour
@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -74,7 +74,9 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/compareData.r"))
-          compareData()
+          diffs <- compareData()
+          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),params = diffs)
+
         shell: Rscript {0}
 
       - name: render readme.rmd
@@ -105,11 +107,11 @@ jobs:
 
           from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
-          body: file://${{github.workspace}}/data-raw/datapull.txt
+          #body: file://${{github.workspace}}/data-raw/datapull.txt
 
-          #html_body: file://${{github.workspace}}/data-raw/datapull.txt
+          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
 
-          attachments: ./data-raw/sendAsEmail.html
+          #attachments: ./data-raw/sendAsEmail.html
 
       - name: commit data files
         run: |
