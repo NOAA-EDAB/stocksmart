@@ -2,12 +2,12 @@
 
 * Data pull November 8, 2023 
 
-### Summaries removed
+### Summaries added
 
 * Pacific halibut - Pacific Coast / Alaska	(172932):	2021
 * Pacific halibut - Pacific Coast / Alaska	(172932):	2022
 
-### Time series removed
+### Time series added
 
 * Pacific halibut - Pacific Coast / Alaska	(172932):	2021
 * Pacific halibut - Pacific Coast / Alaska	(172932):	2022
