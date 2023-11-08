@@ -1,12 +1,27 @@
+# stocksmart 0.6.15
+
+* Data pull November 8, 2023 
+
+### Summaries removed
+
+* Pacific halibut - Pacific Coast / Alaska	(172932):	2021
+* Pacific halibut - Pacific Coast / Alaska	(172932):	2022
+
+### Time series removed
+
+* Pacific halibut - Pacific Coast / Alaska	(172932):	2021
+* Pacific halibut - Pacific Coast / Alaska	(172932):	2022
+
+
 # stocksmart 0.6.14
 
 * Data pull October 25, 2023 
 
-## Summaries removed
+### Summaries removed
 
 * Lingcod - Southern Pacific Coast	(167116):	2019
 
-## Time series removed
+### Time series removed
 
 * Lingcod - Southern Pacific Coast	(167116):	2019
 
@@ -15,11 +30,11 @@
 
 * Data pull October 11, 2023 
 
-## Summaries removed
+### Summaries removed
 
 * Pacific chub mackerel - Pacific Coast	(172412):	2023
 
-## Time series removed
+### Time series removed
 
 * Pacific chub mackerel - Pacific Coast	(172412):	2023
 
@@ -27,12 +42,12 @@
 
 * Data pull September 27, 2023
 
-## Summaries removed
+### Summaries removed
 
 * American Samoa Bottomfish Multi-species Complex	(NA):	2019
 * American Samoa Bottomfish Multi-species Complex	(NA):	2015
 
-## Time series removed
+### Time series removed
 
 * American Samoa Bottomfish Multi-species Complex	(NA):	2015
 * American Samoa Bottomfish Multi-species Complex	(NA):	2019
@@ -41,14 +56,14 @@
 
 * Data pull September 20, 2023
 
-## Summaries added
+### Summaries added
 
 * Pacific sleeper shark - Bering Sea / Aleutian Islands	(160610):	2022
 * Queen triggerfish - St. Croix	(173139):	2022
 * Pacific chub mackerel - Pacific Coast	(172412):	2023
 * Spanish mackerel - Gulf of Mexico	(172436):	2023
 
-## Time series added
+### Time series added
 
 * Golden king crab - Eastern Aleutian Islands	(660179):	2023
 * Pacific chub mackerel - Pacific Coast	(172412):	2023
@@ -59,7 +74,7 @@
 
 * Data pull September 13, 2023
 
-## Summaries added
+### Summaries added
 
 * Atka mackerel - Bering Sea / Aleutian Islands	(167120):	2022
 * Atlantic cod - Eastern Georges Bank	(164712):	2023
@@ -82,7 +97,7 @@
 * Weathervane scallop - Alaska	(79757):	2023
 * Yellowtail flounder - Georges Bank	(172909):	2023
 
-## Time series added
+### Time series added
 
 * Atka mackerel - Bering Sea / Aleutian Islands	(167120):	2022
 * Atlantic cod - Eastern Georges Bank	(164712):	2023
@@ -108,7 +123,7 @@
 
 * Data pull June 21, 2023
 
-## Summaries added
+### Summaries added
 
 * Guam Bottomfish Multi-species Complex	(NA):	2007
 
@@ -116,7 +131,7 @@
 
 * Data pull June 07, 2023
 
-## Time series added
+### Time series added
 
 * Coho salmon - Washington Coast: Quinault Hatchery	(161977):	2023
 * Coho salmon - Washington Coast: Strait of Juan de Fuca	(161977):	2023
@@ -124,7 +139,7 @@
 * Coho salmon - Washington Coast: Willapa Bay Natural	(161977):	2023
 * Pink salmon - Puget Sound	(161975):	2023
 
-## Summaries added
+### Summaries added
 
 * Coho salmon - Washington Coast: Quinault Hatchery	(161977):	2023
 * Coho salmon - Washington Coast: Strait of Juan de Fuca	(161977):	2023
@@ -136,7 +151,7 @@
 
 * Data pull May 31, 2023
 
-## Time series added
+### Time series added
 
 * Chinook salmon - California Central Valley: Sacramento River Fall	(161980):	2023
 * Chinook salmon - California Central Valley: Sacramento River Spring	(161980):	2023
@@ -184,7 +199,7 @@
 * Coho salmon - Washington Coast: Quillayute Fall	(161977):	2023
 * Coho salmon - Washington Coast: Quillayute Summer Hatchery	(161977):	2023
 
-## Summaries added
+### Summaries added
 
 * Chinook salmon - California Central Valley: Sacramento River Fall	(161980):	2023
 * Chinook salmon - California Central Valley: Sacramento River Spring	(161980):	2023
@@ -246,7 +261,7 @@
 
 * Data pull May 10, 2023
 
-## Time series added
+### Time series added
 
 * Southern Tanner crab - Bering Sea	(98429):	2021
 
@@ -254,7 +269,7 @@
 
 * Data pull May 3, 2023
 
-## Time series added
+### Time series added
 
 * Alaska plaice - Bering Sea / Aleutian Islands	(172901):	2022
 * Alaska skate - Bering Sea / Aleutian Islands	(160939):	2022
@@ -283,7 +298,7 @@
 * Yelloweye rockfish - Gulf of Alaska	(166740):	2022
 * Yellowfin sole - Bering Sea / Aleutian Islands	(172907):	2022
 
-## Summaries added
+### Summaries added
 
 * Alaska plaice - Bering Sea / Aleutian Islands	(172901):	2022
 * Alaska skate - Bering Sea / Aleutian Islands	(160939):	2022
@@ -320,13 +335,13 @@
 
 * Data pull April 26, 2023
 
-## Time series added
+### Time series added
 
 * Arrowtooth flounder - Bering Sea / Aleutian Islands	(616029):	2022
 * Pacific cod - Aleutian Islands	(164711):	2022
 * Arrowtooth flounder - Gulf of Alaska	(616029):	2022
 
-## Summaries added
+### Summaries added
 
 * Arrowtooth flounder - Bering Sea / Aleutian Islands	(616029):	2022
 * Arrowtooth flounder - Gulf of Alaska	(616029):	2022
@@ -336,7 +351,7 @@
 
 * Data pull Mar 15, 2023
 
-## Summaries added
+### Summaries added
 
 * Skipjack tuna - Western Atlantic	(172401):	2022
 
@@ -344,11 +359,11 @@
 
 * Data pull Mar 08, 2023
 
-## Time series added
+### Time series added
 
 * Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
 
-## Summaries added
+### Summaries added
 
 * Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
 
@@ -356,7 +371,7 @@
 
 * Data pull Mar 01, 2023
 
-## Time series added
+### Time series added
 
 * Atlantic salmon - Gulf of Maine	(161996):	2022
 * Haddock - Georges Bank	(164744):	2022
@@ -364,7 +379,7 @@
 * Winter flounder - Georges Bank	(172905):	2022
 * Yellowtail flounder - Cape Cod / Gulf of Maine	(172909):	2022
 
-## Summaries added
+### Summaries added
 
 * Atlantic salmon - Gulf of Maine	(161996):	2022
 
@@ -372,7 +387,7 @@
 
 * Data pull Feb 04, 2023
 
-## Minor Update 
+### Minor Update 
 
 * Two additional columns are added to `stockAssessmentSummary` (`Stock ID,` `Assessment ID`) 
 * Three additional columns are added to `stockAssessmentData` (`Stockid`, `Assessmentid`, `AssessmentType`).
@@ -380,7 +395,7 @@
 * `get_latest_metrics.r` now filters by `AssessmentType` which replaces `UpdateType`
 * `RegionalEcosystem` field included in output from `get_latest_metrics.r`.
 
-## Time series changes
+### Time series changes
 
 ITIS codes replace previous NA values
 
@@ -390,7 +405,7 @@ ITIS codes replace previous NA values
 * Spiny dogfish - Pacific Coast	(160617):	2011
 * Winter flounder - Southern New England / Mid-Atlantic	(172905):	2022
 
-## Summaries added
+### Summaries added
 
 * Winter flounder - Southern New England / Mid-Atlantic	(172905):	2022
 * Rex sole - Gulf of Alaska	(172978):	2017
@@ -403,13 +418,13 @@ ITIS codes replace previous NA values
 * Data pull Feb 01, 2023
 
 
-## Time series added
+### Time series added
 
 * Pacific bluefin tuna - Pacific (172422): 2022
 * Pacific hake - Pacific Coast	(164792): 2022
 * Scamp - Gulf of Mexico	(167763):	2022
 
-## Summaries added
+### Summaries added
 
 * Scamp - Gulf of Mexico	(167763):	2022
 * Pacific hake - Pacific Coast	(164792):	2022
@@ -418,7 +433,7 @@ ITIS codes replace previous NA values
 
 * Data pull Jan 18, 2023
 
-## Summaries removed
+### Summaries removed
 
 * Winter flounder - Southern New England / Mid-Atlantic	(172905): 2022
 
@@ -426,11 +441,11 @@ ITIS codes replace previous NA values
 
 * Data pull Jan 11, 2023
 
-## New Feature
+### New Feature
 
 * `plot_ts` -  plots multiple time series of assessment data metrics (Abundance, Catch, Fmort, Recruitment) by species ITIS/stock in either a single plot or facet plot
 
-## Time series removed
+### Time series removed
 
 * Caribbean spiny lobster - St.Thomas / St.John	(97648):	2020
 
@@ -438,12 +453,12 @@ ITIS codes replace previous NA values
 
 * Data pull Dec 28,2022
 
-## Time series added
+### Time series added
 
 * Blue king crab - Saint Matthew Island	(97936):	2022
 * Snow crab - Bering Sea	(98428):	2022
 
-## Summaries added
+### Summaries added
 
 * Blue king crab - Saint Matthew Island	(97936):	2022
 * Snow crab - Bering Sea	(98428):	2022
@@ -452,7 +467,7 @@ ITIS codes replace previous NA values
 
 * Data pull Dec 21,2022
 
-## Time series added
+### Time series added
 
 * American plaice - Gulf of Maine / Georges Bank	(172877):		2022
 * Atlantic cod - Eastern Georges Bank	(164712):	2022
@@ -475,7 +490,7 @@ ITIS codes replace previous NA values
 * Yellowtail flounder - Georges Bank	(172909):		2022
 * Yellowtail flounder - Southern New England / Mid-Atlantic	(172909):	2022
 
-## Summaries added
+### Summaries added
 
 * American plaice - Gulf of Maine / Georges Bank	(172877):	2022
 * Atlantic cod - Eastern Georges Bank	(164712):	2022
@@ -507,12 +522,12 @@ ITIS codes replace previous NA values
 
 # stocksmart 0.4.0
 
-## New Feature
+### New Feature
 
 * `get_species_itis` - filters summary data to identify stock itis
 * `get_available_ts` -  filters time series data to get an idea of how much data is available in each assessment.
 
-## Minor fixes
+### Minor fixes
 
 * `query_stocksmart_api - url of API changed
 * `process_stocksmart_api.r` - included argument to be able to run locally without creating changes files required for commits
@@ -533,7 +548,7 @@ ITIS codes replace previous NA values
 
 # stocksmart 0.3.4
 
-## Minor Bugs
+### Minor Bugs
 
 * Fixed bug in filtering of data in `get_latest_metrics` function
 
@@ -541,11 +556,11 @@ ITIS codes replace previous NA values
 
 * Data pull Feb 23, 2022
 
-## New Feature
+### New Feature
 
 * Added `get_latest_metrics` function to filter lazydata and return the most recent assessment containing time series data for any subset of Abundance, Catch, Fmort, and Recruitment
 
-## Time series added
+### Time series added
 
 * Pacific grenadier - Pacific Coast   (165334)
 * Pacific sanddab - Pacific Coast     (172716)
@@ -557,13 +572,13 @@ ITIS codes replace previous NA values
 * Vermilion rockfish - Washington     (166729)
 * Blue rockfish - Southern California (166730)
 
-## Time series removed
+### Time series removed
 
 * Gopher rockfish - Northern California (166767)
 
 # stocksmart 0.3.2
 
-## Minor Bugs
+### Minor Bugs
 
 * Added missing output variables to documentation
 * Data pull Oct 26, 2021
@@ -582,7 +597,7 @@ ITIS codes replace previous NA values
 
 * Data pull May 28, 2021
 
-## Time series added
+### Time series added
 
 * Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex
 * Yelloweye rockfish - Gulf of Alaska
@@ -595,11 +610,11 @@ ITIS codes replace previous NA values
 * Yellowtail flounder - Georges Bank                
 * Yellowtail flounder - Southern New England / Mid-Atlantic
 
-## Time series removed
+### Time series removed
 
 * Atlantic sharpnose shark - Gulf of Mexico
 
-## Summaries added
+### Summaries added
 
 * Red grouper - Gulf of Mexico
 * Black sea bass - Mid-Atlantic Coast
@@ -607,7 +622,7 @@ ITIS codes replace previous NA values
 * Atlantic cod - Georges Bank
 * Coho salmon - Puget Sound: Hood Canal
 
-## Summaries removed
+### Summaries removed
 
 * Gulf of Alaska Blackspotted and Rougheye Rockfish Complex
 * Coho salmon - Oregon Production Index Area: Central California Coast
