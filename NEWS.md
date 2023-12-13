@@ -1,5 +1,7 @@
 # stocksmart 0.6.19
 
+* Data pull December 13, 2023 
+
 ### Time series added
 
 * Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex	(NA):	2022
@@ -34,6 +36,8 @@
 * Shortspine thornyhead - Pacific Coast	(166783):	2023
 
 # stocksmart 0.6.18
+
+* Data pull December 6, 2023 
 
 ### Time series added
 
