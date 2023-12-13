@@ -1,3 +1,38 @@
+# stocksmart 0.6.19
+
+### Time series added
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex	(NA):	2022
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex	(NA):	2021
+* Black rockfish - North of Point Conception	(166727):	2023
+* Black rockfish - Oregon	(166727):	2023
+* Black rockfish - South of Point Conception	(166727):	2023
+* Black rockfish - Washington	(166727):	2023
+* Canary rockfish - Pacific Coast	(166734):	2023
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2022
+* Petrale sole - Pacific Coast	(172868):	2023
+* Rex sole - Pacific Coast	(172978):	2023
+* Sablefish - Pacific Coast	(167123):	2023
+* Shortspine thornyhead - Pacific Coast	(166783):	2023
+
+
+### Summaries added
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex	(NA):	2021
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex	(NA):	2022
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2020
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2021
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2022
+* Black rockfish - North of Point Conception	(166727):	2023
+* Black rockfish - Oregon	(166727):	2023
+* Black rockfish - South of Point Conception	(166727):	2023
+* Black rockfish - Washington	(166727):	2023
+* Canary rockfish - Pacific Coast	(166734):	2023
+* Petrale sole - Pacific Coast	(172868):	2023
+* Rex sole - Pacific Coast	(172978):	2023
+* Sablefish - Pacific Coast	(167123):	2023
+* Shortspine thornyhead - Pacific Coast	(166783):	2023
+
 # stocksmart 0.6.18
 
 ### Time series added
