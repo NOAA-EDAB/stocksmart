@@ -1,3 +1,92 @@
+# stocksmart 0.6.20
+
+* Data pull December 20, 2023 
+
+### Time series added
+
+* Black jack - American Samoa	(168613):	2023
+* Blue shark - North Pacific	(160424):	2023
+* Common bluestripe snapper - American Samoa	(168862):	2023
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2021
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex	(NA):	2020
+* Flame snapper - American Samoa	(168905):	2023
+* Gag - Gulf of Mexico	(167759):	2023
+* Golden eye jobfish - American Samoa	(168920):	2023
+* Green jobfish - American Samoa	(168926):	2023
+* King mackerel - Gulf of Mexico	(172435):	2023
+* Lane snapper - Gulf of Mexico	(168860):	2023
+* Northern rock sole - Gulf of Alaska	(616392):	2016
+* Northern rock sole - Gulf of Alaska	(616392):	2015
+* Northern rock sole - Gulf of Alaska	(616392):	2014
+* Northern rock sole - Gulf of Alaska	(616392):	2013
+* Northern rock sole - Gulf of Alaska	(616392):	2012
+* Northern rock sole - Gulf of Alaska	(616392):	2011
+* Oblique-banded snapper - American Samoa	(168919):	2023
+* Queen triggerfish - Puerto Rico	(173139):	2022
+* Rock sole - Gulf of Alaska	(172917):	2019
+* Rock sole - Gulf of Alaska	(172917):	2018
+* Rock sole - Gulf of Alaska	(172917):	2017
+* Rock sole - Gulf of Alaska	(172917):	2016
+* Rock sole - Gulf of Alaska	(172917):	2015
+* Rock sole - Gulf of Alaska	(172917):	2014
+* Rock sole - Gulf of Alaska	(172917):	2013
+* Rock sole - Gulf of Alaska	(172917):	2012
+* Rock sole - Gulf of Alaska	(172917):	2011
+* Rusty jobfish - American Samoa	(168929):	2023
+* Spotcheek emperor - American Samoa	(169157):	2023
+* Vermilion rockfish and Sunset rockfish Complex - Northern California	(NA):	2021
+* Vermilion rockfish and Sunset rockfish Complex - Southern California	(NA):	2021
+* Vermilion snapper - Gulf of Mexico	(168909):	2023
+* Yellow-edged lyretail - American Samoa	(167920):	2023
+
+### Time series removed
+
+Vermilion and Sunset Rockfish Complex - Southern California	(NA):	2021
+Vermilion and Sunset rockfish Complex - Northern California	(NA):	2021
+
+### Summaries added
+
+* Queen triggerfish - Puerto Rico	(173139):	2022
+* Gag - Gulf of Mexico	(167759):	2023
+* Lane snapper - Gulf of Mexico	(168860):	2023
+* Vermilion snapper - Gulf of Mexico	(168909):	2023
+* Northern rock sole - Gulf of Alaska	(616392):	2011
+* Northern rock sole - Gulf of Alaska	(616392):	2012
+* Northern rock sole - Gulf of Alaska	(616392):	2013
+* Northern rock sole - Gulf of Alaska	(616392):	2014
+* Northern rock sole - Gulf of Alaska	(616392):	2015
+* Northern rock sole - Gulf of Alaska	(616392):	2016
+* Rock sole - Gulf of Alaska	(172917):	2011
+* Rock sole - Gulf of Alaska	(172917):	2012
+* Rock sole - Gulf of Alaska	(172917):	2013
+* Rock sole - Gulf of Alaska	(172917):	2014
+* Rock sole - Gulf of Alaska	(172917):	2015
+* Rock sole - Gulf of Alaska	(172917):	2016
+* Rock sole - Gulf of Alaska	(172917):	2017
+* Rock sole - Gulf of Alaska	(172917):	2018
+* Rock sole - Gulf of Alaska	(172917):	2019
+* Chinook salmon - Eastern North Pacific Far North Migrating	(161980):	2022
+* Vermilion rockfish and Sunset rockfish Complex - Northern California	(NA):	2021
+* Vermilion rockfish and Sunset rockfish Complex - Southern California	(NA):	2021
+* Blue shark - North Pacific	(160424):	2023
+* Skipjack tuna - Western and Central Pacific	(172401):	2022
+* King mackerel - Gulf of Mexico	(172435):	2023
+* Black jack - American Samoa	(168613):	2023
+* Common bluestripe snapper - American Samoa	(168862):	2023
+* Flame snapper - American Samoa	(168905):	2023
+* Golden eye jobfish - American Samoa	(168920):	2023
+* Green jobfish - American Samoa	(168926):	2023
+* Oblique-banded snapper - American Samoa	(168919):	2023
+* Rusty jobfish - American Samoa	(168929):	2023
+* Spotcheek emperor - American Samoa	(169157):	2023
+* Yellow-edged lyretail - American Samoa	(167920):	2023
+
+### Summaries removed
+
+* Vermilion and Sunset Rockfish Complex - Southern California	(NA):	2021
+* Vermilion and Sunset rockfish Complex - Northern California	(NA):	2021
+
+
 # stocksmart 0.6.19
 
 * Data pull December 13, 2023 
