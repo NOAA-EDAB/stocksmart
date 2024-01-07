@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -38,7 +40,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown","rlang"))
           remotes::install_github("NOAA-EDAB/stocksmart")
         shell: Rscript {0}
 
@@ -71,12 +73,21 @@ jobs:
         shell: Rscript {0}
 
       - name: Compare current pull with existing
+      # creates an rmd to send as email
+      # adds content to news.md
+      # increments package version in description
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/compareData.r"))
+          source(here::here("data-raw/update_description.R"))
+          source(here::here("data-raw/update_news.R"))
           diffs <- compareData()
-          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),params = diffs)
+          version <- update_description(diffs,digit=3)
+          update_news(version,diffs)
+          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
+                    params = diffs)
 
+          saveRDS(version,here::here("data-raw/version.rds"))
         shell: Rscript {0}
 
       - name: render readme.rmd
@@ -105,7 +116,7 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+          from: Stocksmart GitHub
 
           #body: file://${{github.workspace}}/data-raw/datapull.txt
 
@@ -121,18 +132,17 @@ jobs:
           git add data/stockAssessmentSummary.rda
           git add data-raw/datapull.txt
           git add README.md
+          git add NEWS.md
+          git add DESCRIPTION
           git commit -m "automated commit from api yml"
           git push
 
+      - name: create gh-release
+        run: |
+            version <- readRDS(here::here("data-raw/version.rds"))
+            if(!is.null(version)){
+            usethis::use_github_release(publish = F)
+            }
+        shell: Rscript {0}
 
 
-#       - name: Autoincrement a new patch version
-      #   run: |
-      #     echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
-      # - name: Update patch version
-      #   uses: hmanzur/actions-set-secret@v2.0.0
-      #   with:
-      #     name: 'PATCH_VERSION'
-      #     value: ${{ env.NEW_PATCH_VERSION }}
-      #     repository: ${{ github.repository }}
-      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}
