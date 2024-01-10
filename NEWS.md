@@ -1,3 +1,43 @@
+# stocksmart 0.6.21
+
+Data pull: January 10, 2024
+
+### Summaries added 
+
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2018
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2019
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2020
+* Coho salmon - Auke Creek (161977): 2018
+* Coho salmon - Auke Creek (161977): 2019
+* Coho salmon - Auke Creek (161977): 2020
+* Coho salmon - Auke Creek (161977): 2022
+* Coho salmon - Berners River (161977): 2018
+* Coho salmon - Berners River (161977): 2019
+* Coho salmon - Berners River (161977): 2020
+* Coho salmon - Berners River (161977): 2022
+* Coho salmon - Hugh Smith Lake (161977): 2018
+* Coho salmon - Hugh Smith Lake (161977): 2019
+* Coho salmon - Hugh Smith Lake (161977): 2020
+* Coho salmon - Hugh Smith Lake (161977): 2022
+
+### Time series added 
+
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2020
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2019
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2018
+* Coho salmon - Auke Creek (161977): 2022
+* Coho salmon - Auke Creek (161977): 2020
+* Coho salmon - Auke Creek (161977): 2019
+* Coho salmon - Auke Creek (161977): 2018
+* Coho salmon - Berners River (161977): 2022
+* Coho salmon - Berners River (161977): 2020
+* Coho salmon - Berners River (161977): 2019
+* Coho salmon - Berners River (161977): 2018
+* Coho salmon - Hugh Smith Lake (161977): 2022
+* Coho salmon - Hugh Smith Lake (161977): 2020
+* Coho salmon - Hugh Smith Lake (161977): 2019
+* Coho salmon - Hugh Smith Lake (161977): 2018
+
 # stocksmart 0.6.20
 
 * Data pull December 20, 2023 
