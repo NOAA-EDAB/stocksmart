@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.GH_RELEASE }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
 
     steps:
