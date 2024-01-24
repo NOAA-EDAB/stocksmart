@@ -1,3 +1,11 @@
+# stocksmart 0.6.22
+
+Data pull: January 24, 2024
+
+### Summaries added 
+
+* Swordfish - North Atlantic (172482): 2022
+
 # stocksmart 0.6.21
 
 Data pull: January 10, 2024
