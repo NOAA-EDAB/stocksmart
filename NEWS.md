@@ -1,3 +1,15 @@
+# stocksmart 0.6.23
+
+Data pull: January 31, 2024
+
+### Summaries removed 
+
+* Atlantic cod - Eastern Georges Bank (164712): 2021
+
+### Time series removed 
+
+* Atlantic cod - Eastern Georges Bank (164712): 2021
+
 # stocksmart 0.6.22
 
 Data pull: January 24, 2024
