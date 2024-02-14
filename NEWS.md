@@ -1,3 +1,15 @@
+# stocksmart 0.6.25
+
+Data pull: February 14, 2024
+
+### Summaries added 
+
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+
+### Time series added 
+
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+
 # stocksmart 0.6.24
 
 Data pull: February 07, 2024
