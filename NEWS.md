@@ -1,3 +1,97 @@
+# stocksmart 0.6.26
+
+Data pull: February 28, 2024
+
+### Summaries added 
+
+* American Samoa Bottomfish Multi-species Complex (NA): 2015
+* American Samoa Bottomfish Multi-species Complex (NA): 2019
+
+### Time series added 
+
+* American Samoa Bottomfish Multi-species Complex (NA): 2019
+* American Samoa Bottomfish Multi-species Complex (NA): 2015
+
+# stocksmart 0.6.25
+
+Data pull: February 14, 2024
+
+### Summaries added 
+
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+
+### Time series added 
+
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+
+# stocksmart 0.6.24
+
+Data pull: February 07, 2024
+
+### Summaries added 
+
+* Arrowtooth flounder - Bering Sea / Aleutian Islands (616029): 2023
+* Flathead sole - Bering Sea / Aleutian Islands (172875): 2023
+* Giant octopus - Bering Sea / Aleutian Islands (557227): 2023
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2023
+* Pacific cod - Bering Sea (164711): 2023
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2023
+* Walleye pollock - Aleutian Islands (934083): 2023
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2023
+* Arrowtooth flounder - Gulf of Alaska (616029): 2023
+* Big skate - Gulf of Alaska (160848): 2023
+* Flathead sole - Gulf of Alaska (172875): 2023
+* Gulf of Alaska Other Rockfish Complex (NA): 2023
+* Longnose skate - Gulf of Alaska (160851): 2023
+* Northern rock sole - Central Gulf of Alaska (616392): 2023
+* Northern rock sole - Western Gulf of Alaska (616392): 2023
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2023
+* Rex sole - Eastern Gulf of Alaska (172978): 2023
+* Rex sole - Western / Central Gulf of Alaska (172978): 2023
+* Rock sole - Central Gulf of Alaska (172917): 2023
+* Black rockfish - Point Conception / Oregon Border (166727): 2023
+
+### Summaries removed 
+
+* Black rockfish - North of Point Conception (166727): 2023
+
+### Time series added 
+
+* Arrowtooth flounder - Bering Sea / Aleutian Islands (616029): 2023
+* Arrowtooth flounder - Gulf of Alaska (616029): 2023
+* Big skate - Gulf of Alaska (160848): 2023
+* Black rockfish - Point Conception / Oregon Border (166727): 2023
+* Flathead sole - Bering Sea / Aleutian Islands (172875): 2023
+* Flathead sole - Gulf of Alaska (172875): 2023
+* Giant octopus - Bering Sea / Aleutian Islands (557227): 2023
+* Gulf of Alaska Other Rockfish Complex (NA): 2023
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2023
+* Longnose skate - Gulf of Alaska (160851): 2023
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2023
+* Pacific cod - Bering Sea (164711): 2023
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2023
+* Rex sole - Eastern Gulf of Alaska (172978): 2023
+* Rex sole - Western / Central Gulf of Alaska (172978): 2023
+* Rock sole - Central Gulf of Alaska (172917): 2023
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2023
+* Walleye pollock - Aleutian Islands (934083): 2023
+
+### Time series removed 
+
+* Black rockfish - North of Point Conception (166727): 2023
+
+# stocksmart 0.6.23
+
+Data pull: January 31, 2024
+
+### Summaries removed 
+
+* Atlantic cod - Eastern Georges Bank (164712): 2021
+
+### Time series removed 
+
+* Atlantic cod - Eastern Georges Bank (164712): 2021
+
 # stocksmart 0.6.22
 
 Data pull: January 24, 2024
