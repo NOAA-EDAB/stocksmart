@@ -141,7 +141,7 @@ jobs:
         run: |
             version <- readRDS(here::here("data-raw/version.rds"))
             if(!is.null(version)){
-            usethis::use_github_release(publish = F)
+            usethis::use_github_release(publish = T)
             }
         shell: Rscript {0}
 
