@@ -1,3 +1,15 @@
+# stocksmart 0.6.27
+
+Data pull: March 20, 2024
+
+### Summaries added 
+
+* Blue king crab - Pribilof Islands (97936): 2023
+
+### Time series added 
+
+* Blue king crab - Pribilof Islands (97936): 2023
+
 # stocksmart 0.6.26
 
 Data pull: February 28, 2024
