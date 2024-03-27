@@ -1,3 +1,15 @@
+# stocksmart 0.6.28
+
+Data pull: March 27, 2024
+
+### Summaries added 
+
+* Snow crab - Bering Sea (98428): 2023
+
+### Time series added 
+
+* Snow crab - Bering Sea (98428): 2023
+
 # stocksmart 0.6.27
 
 Data pull: March 20, 2024
