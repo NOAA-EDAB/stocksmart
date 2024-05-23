@@ -3,7 +3,8 @@ name: pull and process data from stocksmart website
 on:
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
-    - cron: "0 17 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
+    ## put on HOLD until stockSMART have finished the reorganization
+    ####- cron: "0 17 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
     #- cron: "26 * * * *" # Every hour on hour
