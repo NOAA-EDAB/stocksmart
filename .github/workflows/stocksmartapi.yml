@@ -1,6 +1,12 @@
 name: pull and process data from stocksmart website
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
     ## put on HOLD until stockSMART have finished the reorganization
