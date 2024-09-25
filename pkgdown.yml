@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   stocksmart: stocksmart.html
-last_built: 2024-09-18T19:07Z
+last_built: 2024-09-25T14:22Z
 urls:
-  reference: https://noaa-edab.github.io/assessmentdata/reference
-  article: https://noaa-edab.github.io/assessmentdata/articles
+  reference: https://noaa-edab.github.io/stocksmart/reference
+  article: https://noaa-edab.github.io/stocksmart/articles
