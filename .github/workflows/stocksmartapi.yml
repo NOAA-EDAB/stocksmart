@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - master
   pull_request:
     branches:
       - main
+      - master
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
     ## put on HOLD until stockSMART have finished the reorganization
