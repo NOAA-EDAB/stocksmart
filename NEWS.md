@@ -1,3 +1,464 @@
+# stocksmart 0.6.29
+
+Data pull: September 25, 2024
+
+### Summaries added 
+
+* Albacore - North Atlantic (172419): 2023
+* Blue shark - Atlantic (160424): 2008
+* Blue shark - Atlantic (160424): 2015
+* Blue shark - Atlantic (160424): 2023
+* Dusky shark - Atlantic (160268): 2006
+* Dusky shark - Atlantic (160268): 2011
+* Dusky shark - Atlantic (160268): 2016
+* Finetooth shark - Atlantic (160409): 2007
+* Porbeagle - Atlantic (159911): 2005
+* Porbeagle - Atlantic (159911): 2009
+* Porbeagle - Atlantic (159911): 2021
+* Sandbar shark - Atlantic (160289): 2006
+* Sandbar shark - Atlantic (160289): 2011
+* Sandbar shark - Atlantic (160289): 2018
+* Scalloped hammerhead - Atlantic (160508): 2009
+* Shortfin mako - Atlantic (159924): 2004
+* Shortfin mako - Atlantic (159924): 2008
+* Shortfin mako - Atlantic (159924): 2012
+* Shortfin mako - Atlantic (159924): 2017
+* Yellowfin tuna - Western Atlantic (172423): 2008
+* Yellowfin tuna - Western Atlantic (172423): 2011
+* Yellowfin tuna - Western Atlantic (172423): 2016
+* Yellowfin tuna - Western Atlantic (172423): 2019
+* Caribbean spiny lobster - Puerto Rico (97648): 2022
+* Caribbean spiny lobster - St. Croix (97648): 2022
+* Caribbean spiny lobster - St. Thomas / St. John (97648): 2022
+* Red grouper - Gulf of Mexico (167702): 2024
+* Silver hake - Gulf of Maine / Northern Georges Bank (164791): 2023
+* Silver hake - Southern Georges Bank / Mid-Atlantic (164791): 2023
+* Barndoor skate - Georges Bank / Southern New England (564139): 2023
+* Clearnose skate - Southern New England / Mid-Atlantic (160855): 2023
+* Little skate - Georges Bank / Southern New England (564130): 2023
+* Rosette skate - Southern New England / Mid-Atlantic (564136): 2023
+* Smooth skate - Gulf of Maine (564151): 2023
+* Thorny skate - Gulf of Maine (564149): 2023
+* Winter skate - Georges Bank / Southern New England (564145): 2023
+* Red king crab - Bristol Bay (97935): 2023
+* Red king crab - Norton Sound (97935): 2024
+* Southern Tanner crab - Bering Sea (98429): 2023
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2023
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2023
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2023
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2023
+* Bering Sea / Aleutian Islands Sculpin Complex (NA): 2023
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2023
+* Northern rock sole - Bering Sea / Aleutian Islands (616392): 2023
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2023
+* Pacific cod - Aleutian Islands (164711): 2023
+* Walleye pollock - Eastern Bering Sea (934083): 2023
+* Dover sole - Gulf of Alaska (172887): 2023
+* Dusky rockfish - Gulf of Alaska (644604): 2023
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Gulf of Alaska Other Shallow Water Flatfish Complex (NA): 2023
+* Gulf of Alaska Sculpin Complex (NA): 2023
+* Gulf of Alaska Skate Complex (NA): 2023
+* Pacific cod - Gulf of Alaska (164711): 2023
+* Pacific ocean perch - Gulf of Alaska (166707): 2023
+* Rock sole - Western Gulf of Alaska (172917): 2023
+* Sharpchin rockfish - Gulf of Alaska (166744): 2023
+* Shortraker rockfish - Gulf of Alaska (166712): 2023
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2023
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2023
+* Weathervane scallop - Alaska (79757): 2024
+* Cabezon - Northern Pacific Coast (692068): 2009
+* Cabezon - Northern Pacific Coast (692068): 2019
+* Pacific hake - Pacific Coast (164792): 2024
+* Widow rockfish - Pacific Coast (166719): 2023
+* Yelloweye rockfish - Pacific Coast (166740): 2023
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2024
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2024
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2024
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2024
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2023
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2024
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2024
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2024
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2005
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2024
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2024
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2024
+* Chinook salmon - Puget Sound: Cedar River Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Green River Summer/Fall (161980): 2018
+* Chinook salmon - Puget Sound: Green River Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Mid Hood Canal Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Nisqually River Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2024
+* Chinook salmon - Puget Sound: Puyallup Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2024
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Snohomish Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Stillaguamish Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: White River Spring (161980): 2024
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2024
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2024
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2024
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2024
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2024
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2024
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Quinault Fall Hatchery (161980): 2024
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2024
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2024
+* Coho salmon - Oregon Production Index Area: Central California Coast (161977): 2024
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2024
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2024
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2024
+* Coho salmon - Puget Sound: Hood Canal (161977): 2024
+* Coho salmon - Puget Sound: Skagit (161977): 2024
+* Coho salmon - Puget Sound: Snohomish (161977): 2024
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2024
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2024
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2024
+* Coho salmon - Washington Coast: Hoh (161977): 2024
+* Coho salmon - Washington Coast: Queets (161977): 2024
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2024
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2024
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2024
+* Pacific bluefin tuna - Pacific (172422): 2024
+* Striped marlin - Eastern Tropical Pacific (768127): 2010
+* Bigeye thresher - North Pacific (159921): 2017
+* Bigeye tuna - Central Western Pacific (172428): 2014
+* Bigeye tuna - Central Western Pacific (172428): 2017
+* Bigeye tuna - Central Western Pacific (172428): 2020
+* Bigeye tuna - Central Western Pacific (172428): 2023
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2016
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2017
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2018
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2020
+* Black sea bass - Southern Atlantic Coast (167687): 2023
+* Hogfish - Southeast Florida (170566): 2014
+* Black grouper - Southern Atlantic Coast / Gulf of Mexico (NA): 2010
+* Main Hawaiian Islands Deep 7 Bottomfish Multi-species Complex (NA): 2024
+* Guam Bottomfish Multi-species Complex (NA): 2024
+* Indo-Pacific blue marlin - Pacific (172497): 2013
+* Indo-Pacific blue marlin - Pacific (172497): 2021
+* Oceanic whitetip shark - Tropical Pacific (160330): 2019
+* Silky shark - Tropical Pacific (160310): 2013
+* Silky shark - Tropical Pacific (160310): 2018
+* Blue shark - Pacific (160424): 2017
+* Blue shark - Pacific (160424): 2023
+* Skipjack tuna - Central Western Pacific (172401): 2014
+* Skipjack tuna - Central Western Pacific (172401): 2016
+* Skipjack tuna - Central Western Pacific (172401): 2019
+* Skipjack tuna - Central Western Pacific (172401): 2022
+* Striped marlin - Central Western Pacific (768127): 2015
+* Striped marlin - Central Western Pacific (768127): 2019
+* Striped marlin - Central Western Pacific (768127): 2023
+* Yellowfin tuna - Central Western Pacific (172423): 2014
+* Yellowfin tuna - Central Western Pacific (172423): 2023
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2014
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2017
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2016
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2017
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2020
+
+### Summaries removed 
+
+* Blue shark - North Atlantic (160424): 2008
+* Blue shark - North Atlantic (160424): 2015
+* Blue shark - North Atlantic (160424): 2023
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2006
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2011
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2016
+* Finetooth shark - Atlantic and Gulf of Mexico (160409): 2007
+* Porbeagle - Northwestern Atlantic (159911): 2005
+* Porbeagle - Northwestern Atlantic (159911): 2009
+* Porbeagle - Northwestern Atlantic (159911): 2021
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2006
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2011
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2018
+* Scalloped hammerhead - Atlantic and Gulf of Mexico (160508): 2009
+* Shortfin mako - North Atlantic (159924): 2004
+* Shortfin mako - North Atlantic (159924): 2008
+* Shortfin mako - North Atlantic (159924): 2012
+* Shortfin mako - North Atlantic (159924): 2017
+* Smooth dogfish - Atlantic (160230): 2015
+* Yellowfin tuna - Atlantic (172423): 2008
+* Yellowfin tuna - Atlantic (172423): 2011
+* Yellowfin tuna - Atlantic (172423): 2016
+* Yellowfin tuna - Atlantic (172423): 2019
+* Big skate - Pacific Coast (160848): 2019
+* Cabezon - Oregon (692068): 2009
+* Cabezon - Oregon (692068): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2005
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2023
+* Bigeye thresher - Pacific (159921): 2017
+* Bigeye tuna - Eastern Pacific (172428): 2016
+* Bigeye tuna - Eastern Pacific (172428): 2017
+* Bigeye tuna - Eastern Pacific (172428): 2018
+* Bigeye tuna - Eastern Pacific (172428): 2020
+* Bigeye tuna - Western and Central Pacific (172428): 2014
+* Bigeye tuna - Western and Central Pacific (172428): 2017
+* Bigeye tuna - Western and Central Pacific (172428): 2020
+* Blue shark - North Pacific (160424): 2017
+* Blue shark - North Pacific (160424): 2023
+* Skipjack tuna - Eastern Pacific (172401): 2014
+* Skipjack tuna - Eastern Pacific (172401): 2017
+* Skipjack tuna - Eastern Pacific (172401): 2018
+* Skipjack tuna - Western and Central Pacific (172401): 2014
+* Skipjack tuna - Western and Central Pacific (172401): 2016
+* Skipjack tuna - Western and Central Pacific (172401): 2019
+* Skipjack tuna - Western and Central Pacific (172401): 2022
+* Striped marlin - Eastern Pacific (768127): 2010
+* Striped marlin - Western and Central North Pacific (768127): 2015
+* Striped marlin - Western and Central North Pacific (768127): 2019
+* Yellowfin tuna - Eastern Pacific (172423): 2016
+* Yellowfin tuna - Eastern Pacific (172423): 2017
+* Yellowfin tuna - Eastern Pacific (172423): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2020
+* Yellowfin tuna - Western and Central Pacific (172423): 2014
+* Hogfish - Florida Keys / East Florida (170566): 2014
+* Black grouper - Southern Atlantic Coast / Gulf of Mexico (167760): 2010
+* Green jobfish - Main Hawaiian Islands (168926): 2017
+* Green jobfish - Main Hawaiian Islands (168926): 2020
+* Blue marlin - Pacific (172491): 2013
+* Blue marlin - Pacific (172491): 2021
+* Oceanic whitetip shark - Western and Central Pacific (160330): 2019
+* Silky shark - Western and Central Pacific (160310): 2013
+* Silky shark - Western and Central Pacific (160310): 2018
+
+### Time series added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2023
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2023
+* Albacore - North Atlantic (172419): 2023
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2023
+* Barndoor skate - Georges Bank / Southern New England (564139): 2023
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2023
+* Bering Sea / Aleutian Islands Sculpin Complex (NA): 2023
+* Black grouper - Southern Atlantic Coast / Gulf of Mexico (NA): 2010
+* Black sea bass - Southern Atlantic Coast (167687): 2023
+* Blue shark - Atlantic (160424): 2023
+* Blue shark - Pacific (160424): 2023
+* Blue shark - Pacific (160424): 2017
+* Cabezon - Northern Pacific Coast (692068): 2019
+* Cabezon - Northern Pacific Coast (692068): 2009
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2024
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2024
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2024
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2023
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2024
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2024
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2024
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2024
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2005
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2024
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2024
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2024
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2024
+* Chinook salmon - Puget Sound: White River Spring (161980): 2024
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2024
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2024
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2024
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2024
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2024
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2024
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2024
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2024
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2024
+* Clearnose skate - Southern New England / Mid-Atlantic (160855): 2023
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2024
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2024
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2024
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2024
+* Coho salmon - Puget Sound: Hood Canal (161977): 2024
+* Coho salmon - Puget Sound: Skagit (161977): 2024
+* Coho salmon - Puget Sound: Snohomish (161977): 2024
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2024
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2024
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2024
+* Coho salmon - Washington Coast: Hoh (161977): 2024
+* Coho salmon - Washington Coast: Queets (161977): 2024
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2024
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2024
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2024
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2024
+* Dover sole - Gulf of Alaska (172887): 2023
+* Dusky rockfish - Gulf of Alaska (644604): 2023
+* Dusky shark - Atlantic (160268): 2011
+* Finetooth shark - Atlantic (160409): 2007
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2023
+* Guam Bottomfish Multi-species Complex (NA): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Gulf of Alaska Sculpin Complex (NA): 2023
+* Gulf of Alaska Skate Complex (NA): 2023
+* Hogfish - Southeast Florida (170566): 2014
+* Indo-Pacific blue marlin - Pacific (172497): 2021
+* Little skate - Georges Bank / Southern New England (564130): 2023
+* Main Hawaiian Islands Deep 7 Bottomfish Multi-species Complex (NA): 2024
+* Northern rock sole - Bering Sea / Aleutian Islands (616392): 2023
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2023
+* Pacific bluefin tuna - Pacific (172422): 2024
+* Pacific cod - Aleutian Islands (164711): 2023
+* Pacific cod - Gulf of Alaska (164711): 2023
+* Pacific hake - Pacific Coast (164792): 2024
+* Pacific ocean perch - Gulf of Alaska (166707): 2023
+* Red king crab - Bristol Bay (97935): 2023
+* Red king crab - Norton Sound (97935): 2024
+* Rock sole - Western Gulf of Alaska (172917): 2023
+* Rosette skate - Southern New England / Mid-Atlantic (564136): 2023
+* Sandbar shark - Atlantic (160289): 2018
+* Sandbar shark - Atlantic (160289): 2011
+* Sandbar shark - Atlantic (160289): 2006
+* Scalloped hammerhead - Atlantic (160508): 2009
+* Sharpchin rockfish - Gulf of Alaska (166744): 2023
+* Shortraker rockfish - Gulf of Alaska (166712): 2023
+* Silky shark - Tropical Pacific (160310): 2018
+* Silver hake - Gulf of Maine / Northern Georges Bank (164791): 2023
+* Silver hake - Southern Georges Bank / Mid-Atlantic (164791): 2023
+* Smooth skate - Gulf of Maine (564151): 2023
+* Southern Tanner crab - Bering Sea (98429): 2023
+* Striped marlin - Central Western Pacific (768127): 2023
+* Striped marlin - Central Western Pacific (768127): 2015
+* Thorny skate - Gulf of Maine (564149): 2023
+* Walleye pollock - Eastern Bering Sea (934083): 2023
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2023
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2023
+* Weathervane scallop - Alaska (79757): 2024
+* Widow rockfish - Pacific Coast (166719): 2023
+* Winter skate - Georges Bank / Southern New England (564145): 2023
+* Yelloweye rockfish - Pacific Coast (166740): 2023
+* Yellowfin tuna - Western Atlantic (172423): 2011
+
+### Time series removed 
+
+* Big skate - Pacific Coast (160848): 2019
+* Black grouper - Southern Atlantic Coast / Gulf of Mexico (167760): 2010
+* Blue marlin - Pacific (172491): 2021
+* Blue shark - North Atlantic (160424): 2023
+* Blue shark - North Pacific (160424): 2023
+* Blue shark - North Pacific (160424): 2017
+* Cabezon - Oregon (692068): 2019
+* Cabezon - Oregon (692068): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2005
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2011
+* Finetooth shark - Atlantic and Gulf of Mexico (160409): 2007
+* Green jobfish - Main Hawaiian Islands (168926): 2020
+* Green jobfish - Main Hawaiian Islands (168926): 2017
+* Hogfish - Florida Keys / East Florida (170566): 2014
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2018
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2011
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2006
+* Scalloped hammerhead - Atlantic and Gulf of Mexico (160508): 2009
+* Silky shark - Western and Central Pacific (160310): 2018
+* Smooth dogfish - Atlantic (160230): 2015
+* Striped marlin - Western and Central North Pacific (768127): 2015
+* Yellowfin tuna - Atlantic (172423): 2011
+
 # stocksmart 0.6.28
 
 Data pull: March 27, 2024
