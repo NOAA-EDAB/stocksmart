@@ -13,7 +13,7 @@
 
 ATTENTION: **NOAA Stock SMART system is undergoing some structural
 changes. Until this has been finalized and tested, the state of this
-repo has been frozen in time from May 17, 2024.**
+repo has been frozen in time from September 25, 2024.**
 
 Stock assessments reports are typically lengthy documents containing a
 great deal of information. This repo contains time series data for all

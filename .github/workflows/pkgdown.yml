@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-      - master
   schedule:
-      - cron: "0 19 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
+      - cron: "0 20 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
 
 
 jobs:
