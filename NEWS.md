@@ -1,3 +1,33 @@
+# stocksmart 0.6.30
+
+Data pull: November 27, 2024
+
+### Summaries added 
+
+* Blue marlin - Atlantic (172491): 2024
+* Yellowfin tuna - Western Atlantic (172423): 2024
+* Red grouper - Gulf of Mexico (167702): 2020
+* Yellowedge grouper - Gulf of Mexico (167699): 2024
+* Tilefish - Mid-Atlantic Coast (168546): 2024
+* Atlantic salmon - Gulf of Maine (161996): 2023
+* Atlantic salmon - Gulf of Maine (161996): 2024
+* Golden king crab - Eastern Aleutian Islands (660179): 2024
+* Golden king crab - Western Aleutian Islands (660179): 2024
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+* Pacific sardine - Northern Subpopulation (161729): 2024
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2024
+* Atlantic salmon - Gulf of Maine (161996): 2023
+* Golden king crab - Eastern Aleutian Islands (660179): 2024
+* Golden king crab - Western Aleutian Islands (660179): 2024
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+* Pacific sardine - Northern Subpopulation (161729): 2024
+* Pollock - Gulf of Maine / Georges Bank (164727): 2022
+* Yellowedge grouper - Gulf of Mexico (167699): 2024
+* Yellowfin tuna - Western Atlantic (172423): 2024
+
 # stocksmart 0.6.29
 
 Data pull: September 25, 2024
