@@ -1,3 +1,57 @@
+# stocksmart 0.6.31
+
+Data pull: January 07, 2025
+
+### Summaries added 
+
+* Striped marlin - Eastern Pacific (768127): 2010
+* Bigeye tuna - Eastern Pacific (172428): 2016
+* Bigeye tuna - Eastern Pacific (172428): 2017
+* Bigeye tuna - Eastern Pacific (172428): 2018
+* Bigeye tuna - Eastern Pacific (172428): 2020
+* Oceanic whitetip shark - Western and Central Pacific (160330): 2019
+* Silky shark - Western and Central Pacific (160310): 2013
+* Silky shark - Western and Central Pacific (160310): 2018
+* Albacore - North Pacific (172419): 2023
+* Yellowfin tuna - Central Western Pacific (172423): 2017
+* Yellowfin tuna - Central Western Pacific (172423): 2018
+* Yellowfin tuna - Central Western Pacific (172423): 2019
+* Yellowfin tuna - Central Western Pacific (172423): 2020
+* Skipjack tuna - Eastern Pacific (172401): 2014
+* Skipjack tuna - Eastern Pacific (172401): 2017
+* Skipjack tuna - Eastern Pacific (172401): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2016
+* Yellowfin tuna - Eastern Pacific (172423): 2017
+* Yellowfin tuna - Eastern Pacific (172423): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2020
+
+### Summaries removed 
+
+* Striped marlin - Eastern Tropical Pacific (768127): 2010
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2016
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2017
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2018
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2020
+* Oceanic whitetip shark - Tropical Pacific (160330): 2019
+* Silky shark - Tropical Pacific (160310): 2013
+* Silky shark - Tropical Pacific (160310): 2018
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2014
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2017
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2016
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2017
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2020
+
+### Time series added 
+
+* Albacore - North Pacific (172419): 2023
+* Silky shark - Western and Central Pacific (160310): 2018
+
+### Time series removed 
+
+* Silky shark - Tropical Pacific (160310): 2018
+
 # stocksmart 0.6.30
 
 Data pull: November 27, 2024
