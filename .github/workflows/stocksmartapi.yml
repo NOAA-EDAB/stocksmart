@@ -50,7 +50,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown","rlang"))
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","gt","rmarkdown","rlang"))
           remotes::install_github("NOAA-EDAB/stocksmart")
         shell: Rscript {0}
 
