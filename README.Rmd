@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FNOAA-EDAB%2Fstocksmart&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 <!-- badges: end -->
 
-ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.**
+<!--ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.** -->
 
 Stock assessments reports are typically lengthy documents containing a great deal of information. This repo contains time series data for all Federally assessed stocks in the United States. The following time series are available:
 
