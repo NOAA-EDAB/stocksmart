@@ -1,3 +1,57 @@
+# stocksmart 0.6.32
+
+Data pull: February 05, 2025
+
+### Summaries added 
+
+* Atlantic Large Coastal Shark Complex (NA): 2006
+* Blacknose shark - Atlantic (160304): 2007
+* Striped marlin - Eastern Tropical Pacific (768127): 2010
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2016
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2017
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2018
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2020
+* Cobia - Southern Atlantic Coast (168566): 2013
+* Cobia - Southern Atlantic Coast (168566): 2020
+* Oceanic whitetip shark - Tropical Pacific (160330): 2019
+* Silky shark - Tropical Pacific (160310): 2013
+* Silky shark - Tropical Pacific (160310): 2018
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2014
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2017
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2016
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2017
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2020
+
+### Summaries removed 
+
+* Striped marlin - Eastern Pacific (768127): 2010
+* Bigeye tuna - Eastern Pacific (172428): 2016
+* Bigeye tuna - Eastern Pacific (172428): 2017
+* Bigeye tuna - Eastern Pacific (172428): 2018
+* Bigeye tuna - Eastern Pacific (172428): 2020
+* Oceanic whitetip shark - Western and Central Pacific (160330): 2019
+* Silky shark - Western and Central Pacific (160310): 2013
+* Silky shark - Western and Central Pacific (160310): 2018
+* Skipjack tuna - Eastern Pacific (172401): 2014
+* Skipjack tuna - Eastern Pacific (172401): 2017
+* Skipjack tuna - Eastern Pacific (172401): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2016
+* Yellowfin tuna - Eastern Pacific (172423): 2017
+* Yellowfin tuna - Eastern Pacific (172423): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2020
+
+### Time series added 
+
+* Cobia - Southern Atlantic Coast (168566): 2020
+* Cobia - Southern Atlantic Coast (168566): 2013
+* Silky shark - Tropical Pacific (160310): 2018
+
+### Time series removed 
+
+* Silky shark - Western and Central Pacific (160310): 2018
+
 # stocksmart 0.6.31
 
 Data pull: January 07, 2025
