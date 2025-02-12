@@ -1,3 +1,223 @@
+# stocksmart 0.6.33
+
+Data pull: February 12, 2025
+
+### Summaries added 
+
+* Atlantic sharpnose shark - Atlantic and Gulf of Mexico (160200): 2007
+* Blacknose shark - Atlantic and Gulf of Mexico (160304): 2007
+* Blue shark - North Atlantic (160424): 2008
+* Blue shark - North Atlantic (160424): 2015
+* Blue shark - North Atlantic (160424): 2023
+* Bonnethead - Atlantic and Gulf of Mexico (160502): 2007
+* Bonnethead - Atlantic and Gulf of Mexico (160502): 2013
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2006
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2011
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2016
+* Finetooth shark - Atlantic and Gulf of Mexico (160409): 2007
+* Porbeagle - Northwestern Atlantic (159911): 2005
+* Porbeagle - Northwestern Atlantic (159911): 2009
+* Porbeagle - Northwestern Atlantic (159911): 2021
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2006
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2011
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2018
+* Scalloped hammerhead - Atlantic and Gulf of Mexico (160508): 2009
+* Shortfin mako - North Atlantic (159924): 2004
+* Shortfin mako - North Atlantic (159924): 2008
+* Shortfin mako - North Atlantic (159924): 2012
+* Shortfin mako - North Atlantic (159924): 2017
+* Yellowfin tuna - Atlantic (172423): 2008
+* Yellowfin tuna - Atlantic (172423): 2011
+* Yellowfin tuna - Atlantic (172423): 2016
+* Yellowfin tuna - Atlantic (172423): 2019
+* Yellowfin tuna - Atlantic (172423): 2024
+* Cabezon - Oregon (692068): 2009
+* Cabezon - Oregon (692068): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2005
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2024
+* Swordfish - Western and Central North Pacific (172482): 2023
+* Blue marlin - Pacific (172497): 2013
+* Blue marlin - Pacific (172497): 2021
+* Blue shark - North Pacific (160424): 2017
+* Blue shark - North Pacific (160424): 2023
+* Skipjack tuna - Western and Central Pacific (172401): 2014
+* Skipjack tuna - Western and Central Pacific (172401): 2016
+* Skipjack tuna - Western and Central Pacific (172401): 2019
+* Skipjack tuna - Western and Central Pacific (172401): 2022
+* Striped marlin - Western and Central North Pacific (768127): 2015
+* Striped marlin - Western and Central North Pacific (768127): 2019
+* Striped marlin - Western and Central North Pacific (768127): 2023
+* Yellowfin tuna - Western and Central Pacific (172423): 2014
+* Yellowfin tuna - Western and Central Pacific (172423): 2017
+* Yellowfin tuna - Western and Central Pacific (172423): 2018
+* Yellowfin tuna - Western and Central Pacific (172423): 2019
+* Yellowfin tuna - Western and Central Pacific (172423): 2020
+* Yellowfin tuna - Western and Central Pacific (172423): 2023
+
+### Summaries removed 
+
+* Blue shark - Atlantic (160424): 2008
+* Blue shark - Atlantic (160424): 2015
+* Blue shark - Atlantic (160424): 2023
+* Dusky shark - Atlantic (160268): 2006
+* Dusky shark - Atlantic (160268): 2011
+* Dusky shark - Atlantic (160268): 2016
+* Porbeagle - Atlantic (159911): 2005
+* Porbeagle - Atlantic (159911): 2009
+* Porbeagle - Atlantic (159911): 2021
+* Blacknose shark - Atlantic (160304): 2007
+* Finetooth shark - Atlantic (160409): 2007
+* Sandbar shark - Atlantic (160289): 2006
+* Sandbar shark - Atlantic (160289): 2011
+* Sandbar shark - Atlantic (160289): 2018
+* Scalloped hammerhead - Atlantic (160508): 2009
+* Shortfin mako - Atlantic (159924): 2004
+* Shortfin mako - Atlantic (159924): 2008
+* Shortfin mako - Atlantic (159924): 2012
+* Shortfin mako - Atlantic (159924): 2017
+* Yellowfin tuna - Western Atlantic (172423): 2008
+* Yellowfin tuna - Western Atlantic (172423): 2011
+* Yellowfin tuna - Western Atlantic (172423): 2016
+* Yellowfin tuna - Western Atlantic (172423): 2019
+* Yellowfin tuna - Western Atlantic (172423): 2024
+* Cabezon - Northern Pacific Coast (692068): 2009
+* Cabezon - Northern Pacific Coast (692068): 2019
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2005
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2024
+* Indo-Pacific blue marlin - Pacific (172497): 2013
+* Indo-Pacific blue marlin - Pacific (172497): 2021
+* Blue shark - Pacific (160424): 2017
+* Blue shark - Pacific (160424): 2023
+* Yellowfin tuna - Central Western Pacific (172423): 2014
+* Yellowfin tuna - Central Western Pacific (172423): 2017
+* Yellowfin tuna - Central Western Pacific (172423): 2018
+* Yellowfin tuna - Central Western Pacific (172423): 2019
+* Yellowfin tuna - Central Western Pacific (172423): 2020
+* Yellowfin tuna - Central Western Pacific (172423): 2023
+* Skipjack tuna - Central Western Pacific (172401): 2014
+* Skipjack tuna - Central Western Pacific (172401): 2016
+* Skipjack tuna - Central Western Pacific (172401): 2019
+* Skipjack tuna - Central Western Pacific (172401): 2022
+* Striped marlin - Central Western Pacific (768127): 2015
+* Striped marlin - Central Western Pacific (768127): 2019
+* Striped marlin - Central Western Pacific (768127): 2023
+
+### Time series added 
+
+* Blue marlin - Pacific (172497): 2021
+* Blue shark - North Atlantic (160424): 2023
+* Blue shark - North Pacific (160424): 2023
+* Blue shark - North Pacific (160424): 2017
+* Bonnethead - Atlantic and Gulf of Mexico (160502): 2007
+* Cabezon - Oregon (692068): 2019
+* Cabezon - Oregon (692068): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2024
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2005
+* Dusky shark - Atlantic and Gulf of Mexico (160268): 2011
+* Finetooth shark - Atlantic and Gulf of Mexico (160409): 2007
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2018
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2011
+* Sandbar shark - Atlantic and Gulf of Mexico (160289): 2006
+* Scalloped hammerhead - Atlantic and Gulf of Mexico (160508): 2009
+* Striped marlin - Western and Central North Pacific (768127): 2023
+* Striped marlin - Western and Central North Pacific (768127): 2015
+* Swordfish - Western and Central North Pacific (172482): 2023
+* Yellowfin tuna - Atlantic (172423): 2024
+* Yellowfin tuna - Atlantic (172423): 2011
+
+### Time series removed 
+
+* Blue shark - Atlantic (160424): 2023
+* Blue shark - Pacific (160424): 2023
+* Blue shark - Pacific (160424): 2017
+* Cabezon - Northern Pacific Coast (692068): 2019
+* Cabezon - Northern Pacific Coast (692068): 2009
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2024
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2023
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2022
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2021
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2020
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2019
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2018
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2017
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2016
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2015
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2014
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2013
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2012
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2011
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2010
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2009
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2008
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2007
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2006
+* Chinook salmon - Northern California Coast: Klamath (fall) (161980): 2005
+* Dusky shark - Atlantic (160268): 2011
+* Finetooth shark - Atlantic (160409): 2007
+* Indo-Pacific blue marlin - Pacific (172497): 2021
+* Sandbar shark - Atlantic (160289): 2018
+* Sandbar shark - Atlantic (160289): 2011
+* Sandbar shark - Atlantic (160289): 2006
+* Scalloped hammerhead - Atlantic (160508): 2009
+* Striped marlin - Central Western Pacific (768127): 2023
+* Striped marlin - Central Western Pacific (768127): 2015
+* Yellowfin tuna - Western Atlantic (172423): 2024
+* Yellowfin tuna - Western Atlantic (172423): 2011
+
 # stocksmart 0.6.32
 
 Data pull: February 05, 2025
