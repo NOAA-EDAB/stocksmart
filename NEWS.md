@@ -1,3 +1,24 @@
+# stocksmart 0.6.34
+
+Data pull: February 26, 2025
+
+### Summaries removed 
+
+* Yellowtail rockfish - Southern Pacific Coast (166720): 2010
+* Yellowtail rockfish - Southern Pacific Coast (166720): 2017
+* Shortnosed unicornfish - Main Hawaiian Islands (172292): 2017
+* Sleek unicornfish - Main Hawaiian Islands (172294): 2017
+* Stareye parrotfish - Main Hawaiian Islands (170875): 2017
+* Yellowfin goatfish - Main Hawaiian Islands (169411): 2017
+* Yellowstripe goatfish - Main Hawaiian Islands (169409): 2017
+
+### Time series removed 
+
+* Sleek unicornfish - Main Hawaiian Islands (172294): 2017
+* Yellowfin goatfish - Main Hawaiian Islands (169411): 2017
+* Yellowstripe goatfish - Main Hawaiian Islands (169409): 2017
+* Yellowtail rockfish - Southern Pacific Coast (166720): 2010
+
 # stocksmart 0.6.33
 
 Data pull: February 12, 2025
