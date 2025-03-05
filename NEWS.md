@@ -1,3 +1,16 @@
+# stocksmart 0.6.35
+
+Data pull: March 05, 2025
+
+### Summaries added 
+
+* Shortfin mako - North Pacific (159924): 2024
+* Silky shark - Western and Central Pacific (160310): 2024
+
+### Time series added 
+
+* Shortfin mako - North Pacific (159924): 2024
+
 # stocksmart 0.6.34
 
 Data pull: February 26, 2025
