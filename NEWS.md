@@ -1,3 +1,15 @@
+# stocksmart 0.6.36
+
+Data pull: March 12, 2025
+
+### Summaries added 
+
+* Tilefish - Southern Atlantic Coast (168546): 2024
+
+### Time series added 
+
+* Tilefish - Southern Atlantic Coast (168546): 2024
+
 # stocksmart 0.6.35
 
 Data pull: March 05, 2025
