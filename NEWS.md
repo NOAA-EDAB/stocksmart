@@ -1,3 +1,24 @@
+# stocksmart 0.6.38
+
+Data pull: March 26, 2025
+
+### Summaries removed 
+
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2012
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2013
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2014
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2015
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2016
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2017
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2018
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2019
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2020
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2021
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2022
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2023
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2024
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2025
+
 # stocksmart 0.6.37
 
 Data pull: March 19, 2025
