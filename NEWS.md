@@ -1,3 +1,31 @@
+# stocksmart 0.6.39
+
+Data pull: April 16, 2025
+
+### Summaries added 
+
+* Pacific halibut - Pacific Coast / Alaska (172932): 2023
+* Pacific halibut - Pacific Coast / Alaska (172932): 2024
+* Atlantic surfclam - Mid-Atlantic Coast (80944): 2024
+* Butterfish - Gulf of Maine / Cape Hatteras (172567): 2024
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+* Atlantic herring - Northwestern Atlantic Coast (161722): 2024
+* American plaice - Gulf of Maine / Georges Bank (172877): 2024
+* Atlantic cod - Georges Bank (164712): 2024
+* Atlantic halibut - Northwestern Atlantic Coast (172933): 2024
+* Haddock - Georges Bank (164744): 2024
+* Haddock - Gulf of Maine (164744): 2024
+
+### Time series added 
+
+* Atlantic herring - Northwestern Atlantic Coast (161722): 2024
+* Atlantic surfclam - Mid-Atlantic Coast (80944): 2024
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+* Butterfish - Gulf of Maine / Cape Hatteras (172567): 2024
+* Pacific halibut - Pacific Coast / Alaska (172932): 2024
+* Pacific halibut - Pacific Coast / Alaska (172932): 2023
+* Tilefish - Mid-Atlantic Coast (168546): 2024
+
 # stocksmart 0.6.38
 
 Data pull: March 26, 2025
