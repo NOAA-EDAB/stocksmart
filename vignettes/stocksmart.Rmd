@@ -26,7 +26,7 @@ Time series data for all federally managed stocks are bundled with the package
 
 The [stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
 
-```{r sad, echo = F}
+```{r sad, echo = FALSE}
 stockAssessmentData %>%
   tibble::as_tibble() 
 
@@ -40,7 +40,7 @@ Problem: we want to find the latest catch data for Atlantic cod in Georges Bank 
 
 We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis` function to find this
 
-```{r itis, echo = T}
+```{r itis, echo = TRUE}
 get_species_itis(stock = "Atlantic cod")
 
 ```
@@ -50,14 +50,14 @@ There are three stocks under the jurisdiction of the NEFMC, a Georges Bank, an E
 
 Lets visualize all the Catch data for every assessment of the Georges Bank stock
 
-```{r codcatch,echo = T}
+```{r codcatch, echo = TRUE, fig.alt = "Catch data for Atlantic cod in Georges Bank"}
 p <- plot_ts(itis = 164712,stock = "Atlantic cod - Georges Bank",metric ="Catch",printfig=F)
 p$plot
 ```
 
 We can also plot each assessment year in its own facet
 
-```{r codcatchfacet,echo = T}
+```{r codcatchfacet, echo = TRUE, fig.alt = "Catch data for Atlantic cod in Georges Bank with facets"}
 p <- plot_ts(itis = 164712,
              stock = "Atlantic cod - Georges Bank",
              metric ="Catch",
@@ -68,7 +68,7 @@ p$plot
 
 The facet plot is particularly useful when assessment methods have changed over time and consequently the units have also. If we plot the `Abundance` instead of `Catch` we can see how the assessment data has changed over time from Metric tons prior to 2017 to kg/tow from 2017 onward
 
-```{r codabundfacet,echo = T}
+```{r codabundfacet, echo = TRUE, fig.alt = "Abundance data for Atlantic cod in Georges Bank with facets"}
 p <- plot_ts(itis = 164712,stock = "Atlantic cod - Georges Bank",metric ="Abundance",facetplot=T,printfig=F)
 p$plot
 ```
@@ -83,7 +83,7 @@ We can use the ITIS code to search for the most recent Catch time series data th
 
 *   A summary table containing relevant metadata including the number of years of data available and the date range.
 
-```{r catchsummary, echo = T}
+```{r catchsummary, echo = TRUE}
 cod <- get_latest_metrics(itis = 164712, metrics = "Catch")
 cod$summary 
 
@@ -91,13 +91,13 @@ cod$summary
 
 *   A data table containing the time series data along with additional metadata
 
-```{r catchdata, echo = T}
+```{r catchdata, echo = TRUE}
 cod$data 
 ```
 
-We can then filter the the data by the Gulf of Maine stock and plot it.
+We can then filter the the data by the Georges Bank stock and plot it.
 
-``` {r gom, echoo = T}
+``` {r GB, echo = TRUE, fig.alt = "Catch data for Atlantic cod in Georges Bank from the latest operational assessment"}
 cod$data %>% 
   dplyr::filter(StockArea == "Georges Bank") %>%
   {. ->> filteredData} %>% 

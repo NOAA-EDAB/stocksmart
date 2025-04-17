@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FNOAA-EDAB%2Fstocksmart&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 <!-- badges: end -->
 
 <!--ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.** -->
@@ -55,16 +55,20 @@ If you find any [issue with the data](https://github.com/NOAA-EDAB/stocksmart/is
 
 ```remotes::install_github("NOAA-EDAB/stocksmart")```
 
-<!-- ### Getting started -->
+or 
 
-<!-- Please see the [getting started guide](tbd) in the package documentation -->
+```pak::pak("NOAA-EDAB/stocksmart")```
+
+### Getting started
+
+Please see the [getting started guide](articles/stocksmart.html) 
 
 
 ## Contact
 
 | [andybeet](https://github.com/andybeet)        
 | ----------------------------------------------------------------------------------------------- 
-| [![](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) | 
+| [![andybeet avatar](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) | 
 
 
 
