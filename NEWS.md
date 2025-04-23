@@ -1,3 +1,13 @@
+# stocksmart 0.6.40
+
+Data pull: April 23, 2025
+
+### Summaries added 
+
+* Pollock - Gulf of Maine / Georges Bank (164727): 2024
+* Witch flounder - Northwestern Atlantic Coast (172873): 2024
+* Yellowtail flounder - Georges Bank (172909): 2024
+
 # stocksmart 0.6.39
 
 Data pull: April 16, 2025
