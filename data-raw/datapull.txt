@@ -1,4 +1,4 @@
-2025-05-07 17:47:04
+2025-05-14 17:42:27
 Number of files read = 46
 number of rows of data object = 293550
 number of rows stocksmart data object = 293550
