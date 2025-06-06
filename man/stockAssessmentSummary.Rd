@@ -89,8 +89,8 @@ the Stock SMART data dictionary
 \section{Data download}{
 
 
-The data were downloaded from \link{Stock SMART}(https://apps-st.fisheries.noaa.
-gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments &
+The data were downloaded from [Stock SMART]{https://apps-st.fisheries.noaa.
+gov/stocksmart?app=browse-by-stock} - Status, Management, Assessments &
 Resource Trends.
 
 For Manual download:
