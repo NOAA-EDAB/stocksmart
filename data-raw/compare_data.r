@@ -2,15 +2,21 @@
 #
 
 library(magrittr)
-compareData <- function() {
+compare_data <- function() {
 
   current <- readRDS(here::here("data-raw/tempSummary.rds"))
   new <- readRDS(here::here("data-raw/newSummary.rds"))
 
   c1 <- current %>%
-    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
+    dplyr::select(`Stock Name`,
+                  `ITIS Taxon Serial Number`,
+                  `Stock Name`,
+                  `Assessment Year`)
   n1 <- new %>%
-    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
+    dplyr::select(`Stock Name`,
+                  `ITIS Taxon Serial Number`,
+                  `Stock Name`,
+                  `Assessment Year`)
 
   #######################################################
   #######################################################
@@ -20,16 +26,16 @@ compareData <- function() {
 
   if (!all(dim(current) == dim(new))) {# dimensions not same
     # find if columns added or removed
-    sumcolsAdded <- setdiff(names(new),names(current))
-    if(rlang::is_empty(sumcolsAdded)){
+    sumcolsAdded <- setdiff(names(new), names(current))
+    if (rlang::is_empty(sumcolsAdded)) {
       sumcolsAdded <- data.frame()
     }
-    sumcolsRemoved <- setdiff(names(current),names(new))
-    if(rlang::is_empty(sumcolsRemoved)){
+    sumcolsRemoved <- setdiff(names(current), names(new))
+    if (rlang::is_empty(sumcolsRemoved)) {
       sumcolsRemoved <- data.frame()
     }
-    sumspeciesAdded <- dplyr::setdiff(n1,c1)
-    sumspeciesRemoved <- dplyr::setdiff(c1,n1)
+    sumspeciesAdded <- dplyr::setdiff(n1, c1)
+    sumspeciesRemoved <- dplyr::setdiff(c1, n1)
 
   } else {
     sumcolsAdded <- data.frame()
@@ -48,31 +54,28 @@ compareData <- function() {
   current <- readRDS(here::here("data-raw/tempData.rds"))
   new <- readRDS(here::here("data-raw/newData.rds"))
 
-  #current <- current[1:(nrow(current)-55000),]
-
   if (!all(dim(current) == dim(new))) { #dimensions not same
     # find if columns added or removed
-    datcolsAdded <- setdiff(names(new),names(current))
-    if(rlang::is_empty(datcolsAdded)){
+    datcolsAdded <- setdiff(names(new), names(current))
+    if (rlang::is_empty(datcolsAdded)) {
       datcolsAdded <- data.frame()
     }
-    datcolsRemoved <- setdiff(names(current),names(new))
-    if(rlang::is_empty(datcolsRemoved)){
+    datcolsRemoved <- setdiff(names(current), names(new))
+    if (rlang::is_empty(datcolsRemoved)) {
       datcolsRemoved <- data.frame()
     }
 
     newsp <- new %>%
-      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
+      dplyr::select(StockName, ITIS, StockArea, AssessmentYear) %>%
       dplyr::distinct()
     currentsp <- current %>%
-      dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
+      dplyr::select(StockName, ITIS, StockArea, AssessmentYear) %>%
       dplyr::distinct()
 
-    datspeciesAdded <- dplyr::setdiff(newsp,currentsp) %>%
+    datspeciesAdded <- dplyr::setdiff(newsp, currentsp) %>%
       dplyr::select(-StockArea)
-    datspeciesRemoved <- dplyr::setdiff(currentsp,newsp) %>%
+    datspeciesRemoved <- dplyr::setdiff(currentsp, newsp) %>%
       dplyr::select(-StockArea)
-
 
   } else {
     datcolsAdded <- data.frame()

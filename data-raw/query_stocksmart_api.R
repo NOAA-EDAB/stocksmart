@@ -8,7 +8,6 @@
 library(magrittr)
 
 query_stocksmart_api <- function() {
-#tictoc::tic()
   ## 1. Get all entries (stockids and names)
   allids <- list()
   allids$method <- "searchEntities"
@@ -17,14 +16,14 @@ query_stocksmart_api <- function() {
   allids$jurId <- "%"
   allids$fmpId <- "%"
   allids$ecoId <- "%"
-  jsonquery <- jsonlite::toJSON(allids, pretty = TRUE,auto_unbox = TRUE)
+  jsonquery <- jsonlite::toJSON(allids, pretty = TRUE, auto_unbox = TRUE)
 
   url <- "https://apps-st.fisheries.noaa.gov/stocksmart/"
   # url query
   # file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/sis_servlet",
   #                   query=list(jsonParam = jsonquery))
-  file <- httr::GET(paste0(url,"sis_servlet"),
-                    query=list(jsonParam = jsonquery))
+  file <- httr::GET(paste0(url, "sis_servlet"),
+                    query = list(jsonParam = jsonquery))
   # pulls html content into a char
   allEntitiesChar <- base::rawToChar(file$content)
   #   allEntitiesChar <- httr::content(file,as="text")
@@ -33,18 +32,16 @@ query_stocksmart_api <- function() {
 
   stockids <- allEntities$id
 
-
   ## 2. pull all id's assessment data using the entity ids (stockids)
   # url query
   assess <- list()
   assess$method <- "getAsmtYearsWithTimeSeriesDataForEntityList"
-  #assess$entityIdList <-paste(c("10455","10026,10736"),collapse = ",")
-  assess$entityIdList <-paste(stockids,collapse = ",")
+  assess$entityIdList <- paste(stockids, collapse = ",")
 
-  jsonquery <- jsonlite::toJSON(assess, pretty = TRUE,auto_unbox = TRUE)
+  jsonquery <- jsonlite::toJSON(assess, pretty = TRUE, auto_unbox = TRUE)
 
-  file <- httr::GET(paste0(url,"sis_servlet"),
-                    query=list(jsonParam = jsonquery))
+  file <- httr::GET(paste0(url, "sis_servlet"),
+                    query = list(jsonParam = jsonquery))
 
   # pulls html content into a char
   assessChar <- base::rawToChar(file$content)
@@ -52,7 +49,7 @@ query_stocksmart_api <- function() {
   assessEntities <- jsonlite::fromJSON(assessChar)$asmtList
 
   mainData <- allEntities %>%
-    dplyr::left_join(.,assessEntities,by=c("id"="entity_id")) %>%
+    dplyr::left_join(., assessEntities, by = c("id" = "entity_id")) %>%
     dplyr::filter(!is.na(asmt_id)) %>%
     dplyr::arrange(name)
 
@@ -67,36 +64,38 @@ query_stocksmart_api <- function() {
   excel$dataType <- "TimeSeriesData"
   excel$dataFormat <- "excel"
   excel$partIndex <- "1"
-  excel$categories <- c("Catch","Abundance","Fmort","Recruitment")
+  excel$categories <- c("Catch", "Abundance", "Fmort", "Recruitment")
   excel$minYear <- "1872"
   excel$maxYear <- "2032"
 
   n <- 60
   # loop over the assessment ids in chunks of 100.
   # Server will crash if n is too much bigger
-  for (ifile in 1:ceiling(length(asmtids)/n)) {
+  for (ifile in 1:ceiling(length(asmtids) / n)) {
     # format excel output name
-    filenumber <- sprintf("%02d",ifile)
+    filenumber <- sprintf("%02d", ifile)
 
-    start <- n*(ifile-1) + 1
-    fin <- ifile*n
+    start <- n * (ifile - 1) + 1
+    fin <- ifile * n
 
     idds <- asmtids[start:fin]
     idds <- idds[!is.na(idds)]
 
-    excel$asmtList <- paste(idds,collapse = ",")
+    excel$asmtList <- paste(idds, collapse = ",")
 
-    jsonquery <- jsonlite::toJSON(excel, pretty = TRUE,auto_unbox = TRUE)
+    jsonquery <- jsonlite::toJSON(excel, pretty = TRUE, auto_unbox = TRUE)
 
-    file <- httr::GET(paste0(url,"data-export-servlet"),
-                      query=list(jsonParam = jsonquery))
+    file <- httr::GET(paste0(url, "data-export-servlet"),
+                      query = list(jsonParam = jsonquery))
 
     # create dir if doesnt exist
-    if(!dir.exists(here::here("data-raw/allAssessments"))){
+    if (!dir.exists(here::here("data-raw/allAssessments"))) {
       dir.create(here::here("data-raw/allAssessments"))
     }
     # save excel file
-    httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_",filenumber,".xlsx")),overwrite=T))
+    httr::GET(file$url,
+              httr::write_disk(path = here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_", filenumber, ".xlsx")),
+                               overwrite = TRUE))
 
   }
 
@@ -111,7 +110,7 @@ query_stocksmart_api <- function() {
   summary$rgnName <- ""
   summary$fmpName <- "- Fish Mgmt Plan -"
   summary$monName <- ""
-  summary$entityIdList <- paste(stockids,collapse = ",")
+  summary$entityIdList <- paste(stockids, collapse = ",")
   summary$outputFieldList <- "as_year,as_month,as_last_data_year,as_update_type,as_review_type,as_model,as_model_version,as_lead_lab,as_citation,as_files,as_point_of_contact,as_life_history,as_abundance,as_catch,as_level,as_frequency,as_type,as_model_cat,as_catch_data,as_abundance_data,as_biological_data,as_ecosystem_data,as_comp_data,as_f_year,as_f_best,as_f_unit,as_f_basis,as_flimit,as_flimit_basis,as_fmsy,as_fmsy_basis,as_f_flimit_ratio,as_f_fmsy_ratio,as_ftarget,as_ftarget_basis,as_f_ftarget_ratio,as_b_year,as_b_best,as_b_unit,as_b_basis,as_blimit,as_blimit_basis,as_bmsy,as_bmsy_basis,as_b_blimit_ratio,as_b_bmsy_ratio,as_msy,as_msy_unit"
   summary$outputLabelList <- "Assessment Year,Assessment Month,Last Data Year,Update Type,Review Result,Assessment Model,Model Version,Lead Lab,Citation,Final Assessment Report,Point of Contact,Life History Data,Abundance Data,Catch Data,Assessment Level,Assessment Frequency,Assessment Type,Model Category,Catch Input Data,Abundance Input Data,Biological Input Data,Ecosystem Linkage,Composition Input Data,F Year,Estimated F,F Unit,F Basis,Flimit,Flimit Basis,Fmsy,Fmsy Basis,F/Flimit,F/Fmsy,Ftarget,Ftarget Basis,F/Ftarget,B Year,Estimated B,B Unit,B Basis,Blimit,Blimit Basis,Bmsy,Bmsy Basis,B/Blimit,B/Bmsy,MSY,MSY Unit"
   summary$entityAttrList <- "ent_name,jur_name,fmp_name,sc_name,eco_name,ent_fssi_flag,tsn,sn,cn,sa"
@@ -135,15 +134,14 @@ query_stocksmart_api <- function() {
   ssummary$dataFormat <- "excel"
 
   # convert to JSON
-  jsonquery <- jsonlite::toJSON(ssummary, pretty = TRUE,auto_unbox = TRUE)
+  jsonquery <- jsonlite::toJSON(ssummary, pretty = TRUE, auto_unbox = TRUE)
 
   # make url request
-  file <- httr::GET(paste0(url,"data-export-servlet"),
-                    query=list(fileTypeList="", jsonParam = jsonquery))
+  file <- httr::GET(paste0(url, "data-export-servlet"),
+                    query = list(fileTypeList = "", jsonParam = jsonquery))
 
   # save as excel file
-  httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/Assessment_Summary_Data.xlsx")),overwrite=T))
-
-  #tictoc::toc()
-
+  httr::GET(file$url,
+            httr::write_disk(path = here::here(paste0("data-raw/Assessment_Summary_Data.xlsx")),
+                             overwrite = TRUE))
 }

@@ -23,7 +23,8 @@ A data frame with n rows and m variables
 \item{Assessment Year}{}
 \item{Assessment Month}{}
 \item{Last Data Year }{}
-\item{Assessment Type}{Joining of Update Type and Assessment Type: Describes the level of assessment effort}
+\item{Assessment Type}{Joining of Update Type and Assessment Type:
+Describes the level of assessment effort}
 \item{Review Result }{}
 \item{Assessment Model}{}
 \item{Model Version}{}
@@ -78,14 +79,19 @@ A data frame with n rows and m variables
 stockAssessmentSummary
 }
 \description{
-Stock assessment metadata and reference points for species found in waters of the USA.
-Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
-For a description of all variables please refer to the Stock SMART data dictionary \url{https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
+Stock assessment metadata and reference points for species found in waters
+of the USA. Data is provided for actively managed stocks of a federal
+Fisheries Management Plan (FMP). Stocks solely managed by US States are
+not provided. For a description of all variables please refer to
+the Stock SMART data dictionary
+\url{https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
 }
 \section{Data download}{
 
 
-The data were downloaded from {Stock SMART}(https://apps-st.fisheries.noaa.gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments & Resource Trends.
+The data were downloaded from \link{Stock SMART}(https://apps-st.fisheries.noaa.
+gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments &
+Resource Trends.
 
 For Manual download:
 \enumerate{

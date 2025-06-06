@@ -75,9 +75,9 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
-          out <- process_stocksmart_ts_data(exportFile=TRUE,isRunLocal=F)
-          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
-          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
+          out <- process_stocksmart_ts_data(exportFile=TRUE, isRunLocal = FALSE)
+          saveRDS(out$summaryData, here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData, here::here("data-raw/newData.rds"))
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
 #         and write to repo later
         shell: Rscript {0}
@@ -88,12 +88,12 @@ jobs:
       # increments package version in description
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/compareData.r"))
+          source(here::here("data-raw/compare_data.r"))
           source(here::here("data-raw/update_description.R"))
           source(here::here("data-raw/update_news.R"))
-          diffs <- compareData()
-          version <- update_description(diffs,digit=3)
-          update_news(version,diffs)
+          diffs <- compare_data()
+          version <- update_description(diffs, digit=3)
+          update_news(version, diffs)
           rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
                     params = diffs)
 
@@ -151,7 +151,7 @@ jobs:
         run: |
             version <- readRDS(here::here("data-raw/version.rds"))
             if(!is.null(version)){
-            usethis::use_github_release(publish = T)
+            usethis::use_github_release(publish = TRUE)
             }
         shell: Rscript {0}
 

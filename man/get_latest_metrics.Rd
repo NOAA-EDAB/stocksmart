@@ -2,33 +2,41 @@
 % Please edit documentation in R/get_latest_metrics.r
 \name{get_latest_metrics}
 \alias{get_latest_metrics}
-\title{Pulls the most recent data for any combination of Abundance, Catch, Recruitment, Mort}
+\title{Pulls the most recent data for any combination of Abundance, Catch,
+Recruitment, Mort}
 \usage{
 get_latest_metrics(itis = NULL, metrics = c("Catch", "Abundance"))
 }
 \arguments{
 \item{itis}{Numeric vector. Species ITIS code (Default = NULL, all species)}
 
-\item{metrics}{Character vector. The metrics for which data are required ("Catch","Abundance","Fmort","Recruitment").
-Default = c("Catch","Abundance"). All selected metrics must be available for a successful data pull for each species.}
+\item{metrics}{Character vector. The metrics for which data are required
+("Catch","Abundance","Fmort","Recruitment").
+Default = c("Catch","Abundance"). All selected metrics must be available
+for a successful data pull for each species.}
 }
 \value{
 list of 2 data frames:
-\item{data}{Data frame consisting of time series values of the most recent Benchmark or Full update for the requested metrics.}
-\item{summary}{Summary of data returned in \code{data}. StockName, CommonName, StockArea, ITIS, Metric in addition to the
-AssessmentYear the data came from, the FirstYear and LastYear of the data and the number of years (numYear) of data retrieved}
+\item{data}{Data frame consisting of time series values of the most recent
+Benchmark or Full update for the requested metrics.}
+\item{summary}{Summary of data returned in \code{data}. StockName,
+CommonName, StockArea, ITIS, Metric in addition to the AssessmentYear
+the data came from, the FirstYear and LastYear of the data and the number
+of years (numYear) of data retrieved}
 }
 \description{
 Pulls the most recent data for set of metrics provided.
 Often a benchmark or a Full update contains the longest time series of data
 whereas partial updates only contain data since last benchmark.
-Data is pulled from assessments defined as Operational. See \code{\link{stockAssessmentData}}
+Data is pulled from assessments defined as Operational.
+See \code{\link{stockAssessmentData}}
 }
 \section{Incomplete Results}{
 
 
-The document "Implementing a Next Generation Stock Assessment Enterprise" (NOAA, 2018)
-provides classification categories for assessments completed in FY2019 and later to
-offer a consistent language for the types of assessment analyses conducted.
+The document "Implementing a Next Generation Stock Assessment Enterprise"
+(NOAA, 2018) provides classification categories for assessments completed
+in FY2019 and later to offer a consistent language for the types of
+assessment analyses conducted.
 }
 

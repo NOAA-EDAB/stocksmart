@@ -2,10 +2,10 @@
 #'
 #' Increment last digit
 
-update_description <- function(compare,digit){
+update_description <- function(compare, digit) {
 
-  numRows <- unlist(lapply(compare,nrow))
-  if (!(any(numRows>0))) {
+  numRows <- unlist(lapply(compare, nrow))
+  if (!(any(numRows > 0))) {
     # empty list. No changes found between new and old data
     # no changes to news.md or DESCRIPTION
     version <- NULL
@@ -15,32 +15,31 @@ update_description <- function(compare,digit){
     tab <- readLines(con)
 
     #find line with version number on it
-    line <- which(grepl("Version",tab))
+    line <- which(grepl("Version", tab))
 
     # Increment the last digit by 1
-    spl <- strsplit(tab[line],":")
-    v <- unlist(strsplit(unlist(spl)[2],"\\."))
+    spl <- strsplit(tab[line], ":")
+    v <- unlist(strsplit(unlist(spl)[2], "\\."))
 
     # increment digit
-    v[digit] <- as.numeric(v[digit]) +1
+    v[digit] <- as.numeric(v[digit]) + 1
     v[1] <- as.numeric(v[1])
     if (digit == 3) {
     } else if (digit == 2) {
-      v[digit+1] <- 0
+      v[digit + 1] <- 0
     } else if (digit == 1) {
-      v[digit+1] <- 0
-      v[digit+2] <- 0
+      v[digit + 1] <- 0
+      v[digit + 2] <- 0
     }
 
-    newv <- paste0("Version: ",paste0(v,collapse = "."))
+    newv <- paste0("Version: ", paste0(v, collapse = "."))
 
     tab[line] <- newv
 
     # write back to DESCRIPTION
-    writeLines(tab,con)
+    writeLines(tab, con)
     close(con)
-    version <- paste0(v,collapse = ".")
+    version <- paste0(v, collapse = ".")
   }
   return(version)
-
 }

@@ -17,7 +17,8 @@ data frame (n x 5)
 \item{Jurisdiction}{Management council}
 \item{ITIS}{species itis code}
 \item{AssessmentYear}{Year of assessment}
-\item{nYrs}{Average number of years data (of Abundance, Catch, Recruitment, Fmort). Some assessments have differeing lengths of time series.  }
+\item{nYrs}{Average number of years data (of Abundance, Catch, Recruitment,
+Fmort). Some assessments have differeing lengths of time series.  }
 }
 \description{
 Filters the Summary data to find all time series data
