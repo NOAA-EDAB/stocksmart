@@ -19,7 +19,7 @@
 
 ## :book: Code of Conduct
 
-Please review our [Code of Conduct](https://github.com/NOAA-EDAB/stocksmart/blob/master/CODE_OF_CONDUCT.md). It is in effect at all times. We expect it to be honored by everyone who contributes to this project.
+Please review our [Code of Conduct](CODE_OF_CONDUCT.md). It is in effect at all times. We expect it to be honored by everyone who contributes to this project.
 
 ## :paperclip: Asking Questions
 
