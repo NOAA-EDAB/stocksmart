@@ -118,16 +118,19 @@ Bank, an Eastern Georges Bank, and a Gulf of Maine stock.</p>
 <p>Lets visualize all the Catch data for every assessment of the Georges
 Bank stock</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/plot_ts.html">plot_ts</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>,stock <span class="op">=</span> <span class="st">"Atlantic cod - Georges Bank"</span>,metric <span class="op">=</span><span class="st">"Catch"</span>,printfig<span class="op">=</span><span class="cn">F</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/plot_ts.html">plot_ts</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>,</span>
+<span>             stock <span class="op">=</span> <span class="st">"Atlantic cod - Georges Bank"</span>,</span>
+<span>             metric <span class="op">=</span> <span class="st">"Catch"</span>,</span>
+<span>             printfig <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/codcatch-1.png" alt="Catch data for Atlantic cod in Georges Bank" width="700"></p>
 <p>We can also plot each assessment year in its own facet</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/plot_ts.html">plot_ts</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>,</span>
 <span>             stock <span class="op">=</span> <span class="st">"Atlantic cod - Georges Bank"</span>,</span>
-<span>             metric <span class="op">=</span><span class="st">"Catch"</span>,</span>
-<span>             facetplot<span class="op">=</span><span class="cn">T</span>,</span>
-<span>             printfig<span class="op">=</span><span class="cn">F</span><span class="op">)</span></span>
+<span>             metric <span class="op">=</span> <span class="st">"Catch"</span>,</span>
+<span>             facetplot <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>             printfig <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/codcatchfacet-1.png" alt="Catch data for Atlantic cod in Georges Bank with facets" width="700"></p>
 <p>The facet plot is particularly useful when assessment methods have
@@ -136,7 +139,11 @@ changed over time and consequently the units have also. If we plot the
 assessment data has changed over time from Metric tons prior to 2017 to
 kg/tow from 2017 onward</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/plot_ts.html">plot_ts</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>,stock <span class="op">=</span> <span class="st">"Atlantic cod - Georges Bank"</span>,metric <span class="op">=</span><span class="st">"Abundance"</span>,facetplot<span class="op">=</span><span class="cn">T</span>,printfig<span class="op">=</span><span class="cn">F</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/plot_ts.html">plot_ts</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>,</span>
+<span>             stock <span class="op">=</span> <span class="st">"Atlantic cod - Georges Bank"</span>,</span>
+<span>             metric <span class="op">=</span> <span class="st">"Abundance"</span>,</span>
+<span>             facetplot <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>             printfig <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/codabundfacet-1.png" alt="Abundance data for Atlantic cod in Georges Bank with facets" width="700"></p>
 <p>The <a href="plot_ts"><code>plot_ts</code></a> function returns a
@@ -161,7 +168,7 @@ years of data available and the date range.</li>
 </ul>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">cod</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_latest_metrics.html">get_latest_metrics</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>, metrics <span class="op">=</span> <span class="st">"Catch"</span><span class="op">)</span></span>
-<span><span class="va">cod</span><span class="op">$</span><span class="va">summary</span> </span>
+<span><span class="va">cod</span><span class="op">$</span><span class="va">summary</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 10</span></span></span>
 <span><span class="co">#&gt;   StockName  CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
@@ -174,7 +181,7 @@ years of data available and the date range.</li>
 metadata</li>
 </ul>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span> </span>
+<code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 123 × 20</span></span></span>
 <span><span class="co">#&gt;    StockName CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
@@ -196,13 +203,14 @@ metadata</li>
 <p>We can then filter the the data by the Georges Bank stock and plot
 it.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">StockArea</span> <span class="op">==</span> <span class="st">"Georges Bank"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="op">{</span><span class="va">.</span> <span class="op">-&gt;&gt;</span> <span class="va">filteredData</span><span class="op">}</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="op">{</span> <span class="va">.</span> <span class="op">-&gt;&gt;</span> <span class="va">filteredData</span> <span class="op">}</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html" class="external-link">geom_line</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x<span class="op">=</span><span class="va">Year</span>,y <span class="op">=</span> <span class="va">Value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html" class="external-link">geom_line</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Year</span>, y <span class="op">=</span> <span class="va">Value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ylab</a></span><span class="op">(</span><span class="va">filteredData</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">Units</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ggtitle</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Assessment Year = "</span>,<span class="va">filteredData</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">AssessmentYear</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ggtitle</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Assessment Year = "</span>, <span class="va">filteredData</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>                            <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">AssessmentYear</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/GB-1.png" alt="Catch data for Atlantic cod in Georges Bank from the latest operational assessment" width="700"></p>
 </div>
 </div>
