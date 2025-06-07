@@ -1,4 +1,10 @@
-url: https://noaa-edab.github.io/assessmentdata/
+url: https://noaa-edab.github.io/stocksmart/
+
+template:
+ bootstrap: 5
+
+deploy:
+  install_metadata: true
 
 reference:
 - title: "Data"
@@ -13,3 +19,9 @@ reference:
   - get_latest_metrics
   - get_available_ts
   - get_species_itis
+- title: "Plotting functions"
+  desc: "Functions used to help user visualize the bundled data"
+- contents:
+  - plot_ts
+
+

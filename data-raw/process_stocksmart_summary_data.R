@@ -29,7 +29,11 @@ process_stocksmart_summary_data <- function(exportFile = T){
     dataf <- readxl::read_xlsx(here::here("data-raw",fn), col_names = T)
     summaryData <- rbind(summaryData,dataf)
   }
-  stockAssessmentSummary <- summaryData
+  stockAssessmentSummary <- summaryData %>%
+    dplyr::mutate(Type = dplyr::case_when(is.na(`Update Type`) ~ `Assessment Type`,
+                                          TRUE ~ `Update Type`)) %>%
+    dplyr::select(-`Assessment Type`,-`Update Type`) %>%
+    dplyr::rename(`Assessment Type`=Type)
 
   # remove all spaces and ? in column names
   #names(stockAssessmentSummary) <- names(stockAssessmentSummary) %>%

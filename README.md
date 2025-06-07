@@ -8,7 +8,9 @@
 [![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
+
 <!-- badges: end -->
+<!--ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.** -->
 
 Stock assessments reports are typically lengthy documents containing a
 great deal of information. This repo contains time series data for all
@@ -27,7 +29,7 @@ Jurisdiction, Point of contact, Year of assessment etc)
 
 The data are extracted and processed from NOAA’s [Stock
 SMART](https://apps-st.fisheries.noaa.gov/stocksmart) web based data
-portal (www.st.nmfs.noaa.gov/stocksmart).
+portal (<https://apps-st.fisheries.noaa.gov/stocksmart>).
 
 Any data issues found in this package should first be checked with the
 web based data portal. If this data package reflects the data found in
@@ -35,13 +37,13 @@ the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an
 [issue](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 
-*Date of most recent data pull: 2023-01-04*
+*Date of most recent data pull: 2025-06-06 21:29:27*
 
 Note: Data is retrieved and processed every Wednesday at 1200 EST. Any
 changes to the [Stock
-SMART](https://www.st.nmfs.noaa.gov/stocksmart?app=homepage) website
-will be reflected in this data package at that time. The history of
-changes can be found in the
+SMART](https://apps-st.fisheries.noaa.gov/stocksmart) website will be
+reflected in this data package at that time. The history of changes can
+be found in the
 [changelog](https://noaa-edab.github.io/stocksmart/news/index.html)
 
 ## Feature requests/Data Issues/Bugs
@@ -53,11 +55,25 @@ of the code, or want to request [new
 features](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 please let us know
 
+## Usage
+
+### Installation
+
+`remotes::install_github("NOAA-EDAB/stocksmart")`
+
+or
+
+`pak::pak("NOAA-EDAB/stocksmart")`
+
+### Getting started
+
+Please see the [getting started guide](articles/stocksmart.html)
+
 ## Contact
 
-| [andybeet](https://github.com/andybeet)                                                         |
-|-------------------------------------------------------------------------------------------------|
-| [![](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) |
+| [andybeet](https://github.com/andybeet)                                                                        |
+|----------------------------------------------------------------------------------------------------------------|
+| [![andybeet avatar](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) |
 
 #### Legal disclaimer
 

@@ -1,25 +1,37 @@
 name: pull and process data from stocksmart website
 
 on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
+    ## put on HOLD until stockSMART have finished the reorganization
+    - cron: "0 17 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
+    #- cron: "0 22 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
-    #- cron: "0 * * * *" # Every hour on hour
+    #- cron: "26 * * * *" # Every hour on hour
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
-    - cron: "0 17 * * 3" # Every Wedneday at 1200 hrs = 1700 UTC
 
 jobs:
 
   build:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.GH_RELEASE }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -27,7 +39,7 @@ jobs:
       - name: Install command line packages
         run: |
           sudo apt update
-          sudo apt-get install libcurl4-openssl-dev
+          sudo apt-get install libcurl4-openssl-dev libgit2-dev
 #          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
         shell: bash
 
@@ -38,7 +50,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","gt","rmarkdown","rlang"))
           remotes::install_github("NOAA-EDAB/stocksmart")
         shell: Rscript {0}
 
@@ -63,18 +75,29 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
-          out <- process_stocksmart_ts_data(exportFile=TRUE,isRunLocal=F)
-          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
-          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
+          out <- process_stocksmart_ts_data(exportFile=TRUE, isRunLocal = FALSE)
+          saveRDS(out$summaryData, here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData, here::here("data-raw/newData.rds"))
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
 #         and write to repo later
         shell: Rscript {0}
 
       - name: Compare current pull with existing
+      # creates an rmd to send as email
+      # adds content to news.md
+      # increments package version in description
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/compareData.r"))
-          compareData()
+          source(here::here("data-raw/compare_data.r"))
+          source(here::here("data-raw/update_description.R"))
+          source(here::here("data-raw/update_news.R"))
+          diffs <- compare_data()
+          version <- update_description(diffs, digit=3)
+          update_news(version, diffs)
+          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
+                    params = diffs)
+
+          saveRDS(version,here::here("data-raw/version.rds"))
         shell: Rscript {0}
 
       - name: render readme.rmd
@@ -103,13 +126,13 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+          from: Stocksmart GitHub
 
-          body: file://${{github.workspace}}/data-raw/datapull.txt
+          #body: file://${{github.workspace}}/data-raw/datapull.txt
 
-          #html_body: file://${{github.workspace}}/data-raw/datapull.txt
+          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
 
-          attachments: ./data-raw/sendAsEmail.html
+          #attachments: ./data-raw/sendAsEmail.html
 
       - name: commit data files
         run: |
@@ -119,18 +142,17 @@ jobs:
           git add data/stockAssessmentSummary.rda
           git add data-raw/datapull.txt
           git add README.md
+          git add NEWS.md
+          git add DESCRIPTION
           git commit -m "automated commit from api yml"
           git push
 
+      - name: create gh-release
+        run: |
+            version <- readRDS(here::here("data-raw/version.rds"))
+            if(!is.null(version)){
+            usethis::use_github_release(publish = TRUE)
+            }
+        shell: Rscript {0}
 
 
-#       - name: Autoincrement a new patch version
-      #   run: |
-      #     echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
-      # - name: Update patch version
-      #   uses: hmanzur/actions-set-secret@v2.0.0
-      #   with:
-      #     name: 'PATCH_VERSION'
-      #     value: ${{ env.NEW_PATCH_VERSION }}
-      #     repository: ${{ github.repository }}
-      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}

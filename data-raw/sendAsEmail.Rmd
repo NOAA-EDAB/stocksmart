@@ -10,33 +10,56 @@ params:
   datrowRem: NA
   datcolAdd: NA
   datcolRem: NA
-date: "2022-12-06"
+date: "`r Sys.time()`"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Summary
+
+```{r datapull,echo=F,eval=T}
+a <- readLines(con=here::here("data-raw/datapull.txt"))
+writeLines(a)
+
+```
+
+
 # Summary data changes
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$sumrowAdd)
+if(nrow(params$sumrowAdd)>0) {
+  params$sumrowAdd |> 
+    dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) |> 
+    gt::gt()
+}
 ```
 
 ### Species Removed
 ```{r, echo = F}
-kableExtra::kable(params$sumrowRem,col.names =NULL)
+if(nrow(params$sumrowRem)>0){
+params$sumrowRem |> 
+  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) |> 
+  gt::gt()
+}
 ```
 
 ### Columns added
 ```{r, echo = F}
-kableExtra::kable(params$sumcolAdd,col.names =NULL)
+if(nrow(params$sumcolAdd)>0) {
+  params$sumcolAdd |> 
+    gt::gt()
+}
 ```
 
 ### Columns removed
 ```{r, echo = F}
-kableExtra::kable(params$sumcolRem,col.names =NULL)
+if(nrow(params$sumcolRem)>0) {
+  params$sumcolRem |> 
+    gt::gt()
+}
 ```
 
 
@@ -44,20 +67,44 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$datrowAdd)
+if(nrow(params$datrowAdd)>0){
+  params$datrowAdd |>  
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) |>
+    gt::gt()
+}
 ```
+
+
+
 
 ### Species Removed
 ```{r, echo = F}
-kableExtra::kable(params$datrowRem,col.names =NULL)
+if(nrow(params$datrowRem)>0) {
+  params$datrowRem  |>  
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) |> 
+    gt::gt()
+}
 ```
 
 ### Columns added
 ```{r, echo = F}
-kableExtra::kable(params$datcolAdd,col.names =NULL)
+if(nrow(params$datcolAdd)>0) {
+  params$datcolAdd |> 
+    gt::gt()
+}
 ```
 
 ### Columns removed
 ```{r, echo = F}
-kableExtra::kable(params$datcolRem,col.names =NULL)
+if(nrow(params$datcolRem)>0) {
+  params$datcolRem |> 
+    gt::gt()
+}
 ```
+
+
+## Links to repos:
+
+* [test Stocksmart](https://github.com/andybeet/teststocksmartapi)
+
+* [main stocksmart](https://github.com/NOAA-EDAB/stocksmart)

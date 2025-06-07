@@ -16,23 +16,29 @@
 #'
 #' @export
 
-get_species_itis <- function(itis=NULL, stock = NULL) {
+get_species_itis <- function(itis = NULL, stock = NULL) {
 
 
-  #error check for metric names
-  if (is.null(itis) & is.null(stock) ) {
-    stop("If you do not know the ITIS code then please enter a value for the `species` argument.
-         A character string of any part of the species name. eg stock = \"Albacore\", stock = \"Cape Cod\"")
+  # Error check for metric names
+  if (is.null(itis) & is.null(stock)) {
+    stop("If you do not know the ITIS code then please enter a value for the
+    `species` argument. A character string of any part of the species name.
+         eg stock = \"Albacore\", stock = \"Cape Cod\"")
   }
 
   if (!is.null(itis)) {
     res <- stocksmart::stockAssessmentSummary %>%
       dplyr::filter(.data$`ITIS Taxon Serial Number` == itis) %>%
-      dplyr::distinct(.data$`Stock Name`,.data$Jurisdiction,.data$`ITIS Taxon Serial Number`)
+      dplyr::distinct(.data$`Stock Name`,
+                      .data$Jurisdiction,
+                      .data$`ITIS Taxon Serial Number`)
   } else if (!is.null(stock)) {
     res <- stocksmart::stockAssessmentSummary %>%
-      dplyr::filter(grepl(stock,.data$`Stock Name`)) %>%
-      dplyr::distinct(.data$`Stock Name`,.data$Jurisdiction,.data$`ITIS Taxon Serial Number`)
+      dplyr::filter(grepl(stock,
+                          .data$`Stock Name`)) %>%
+      dplyr::distinct(.data$`Stock Name`,
+                      .data$Jurisdiction,
+                      .data$`ITIS Taxon Serial Number`)
   }
 
 

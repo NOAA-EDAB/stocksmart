@@ -1,0 +1,40 @@
+name: Data Issues
+description: Missing, Incorrect, Duplicate data?
+title: "[Data]: "
+labels: "data"
+assignees: "andybeet"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **Thanks for taking the time to report a data issue!**
+  - type: textarea
+    attributes:
+      label: Description
+      description: |
+        A clear and concise description of what the issue is, whether the data
+        is incorrect, missing, duplicated etc.
+      value: |
+        <!--- Describe the data issue here --->
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Species, ITIS, Region
+      description: >
+        Please provide the name of the species, ITIS, and Region for which
+        there are data issues.
+      value: |
+        <!--- Add information here --->
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Sources for correcting the problem
+      description: >
+        Please provide the source (if applicable) containing the correct data
+      value: |
+        <!--- Describe your source here --->
+    validations:
+      required: false

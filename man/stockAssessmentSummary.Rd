@@ -9,6 +9,8 @@ A data frame with n rows and m variables
 
 \describe{
 \item{Stock Name}{}
+\item{Stock ID}{Unique Stock identifier}
+\item{Assessment ID}{Unique Assessment identifer}
 \item{Jurisdiction}{}
 \item{FMP}{}
 \item{Science Center}{}
@@ -21,7 +23,8 @@ A data frame with n rows and m variables
 \item{Assessment Year}{}
 \item{Assessment Month}{}
 \item{Last Data Year }{}
-\item{Update Type}{}
+\item{Assessment Type}{Joining of Update Type and Assessment Type:
+Describes the level of assessment effort}
 \item{Review Result }{}
 \item{Assessment Model}{}
 \item{Model Version}{}
@@ -35,7 +38,6 @@ A data frame with n rows and m variables
 \item{Catch Data}{}
 \item{Assessment Level}{}
 \item{Assessment Frequency}{}
-\item{Assessment Type}{}
 \item{Model Category }{}
 \item{Catch Input Data}{}
 \item{Abundance Input Data}{}
@@ -71,20 +73,27 @@ A data frame with n rows and m variables
 }
 }
 \source{
-\url{https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock}
+\url{https://apps-st.fisheries.noaa.gov/stocksmart?app=homepage}
 }
 \usage{
 stockAssessmentSummary
 }
 \description{
-Stock assessment metadata and reference points for species found in waters of the USA.
-Data is provided for actively managed stocks of a federal Fisheries Management Plan (FMP). Stocks solely managed by US States are not provided.
-For a description of all variables please refer to the Stock SMART data dictionary \url{https://www.st.nmfs.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
+Stock assessment metadata and reference points for species found in waters
+of the USA. Data is provided for actively managed stocks of a federal
+Fisheries Management Plan (FMP). Stocks solely managed by US States are
+not provided. For a description of all variables please refer to
+the Stock SMART data dictionary
+\url{https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf}
 }
 \section{Data download}{
 
 
-The data were downloaded from {Stock SMART}(https://www.st.nmfs.noaa.gov/stocksmart?app=browse_by_stock) - Status, Management, Assessments & Resource Trends. Follow these steps:
+The data were downloaded from [Stock SMART]{https://apps-st.fisheries.noaa.
+gov/stocksmart?app=browse-by-stock} - Status, Management, Assessments &
+Resource Trends.
+
+For Manual download:
 \enumerate{
 \item Click the "Download Data" module
 \item Select data to download (dropdown) -> Assessment Summary Data
