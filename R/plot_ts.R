@@ -7,7 +7,7 @@
 #' @param stock Character. Full name of stock (only required if more than one
 #' stock exists for ITIS code)
 #' @param metric Character vector. Specifying which metric to plot (Catch,
-#' Abundance, Fmort, Recruitment)
+#' Abundance, Fmort, Recruitment, Index)
 #' @param facetplot Boolean. How to plot results. Plot each assessment in its
 #' own facet (TRUE) or pplot all assessments on a single plot (default = FALSE)
 #' @param printfig Boolean. Print figure to figure window (Default = T)
