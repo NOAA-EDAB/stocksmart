@@ -90,11 +90,19 @@ plot_ts <- function(itis = NULL, stock = NULL, metric = "Catch",
 
   }
 
-  # filter out stock
-  stockToPlot <- dataToPlot %>%
-    dplyr::filter(.data$StockName == stock) %>%
-    dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
-                                                  " (", .data$Units, ")")))
+  # filter out stock to plot
+  if (length(unique(dataToPlot$StockArea)) > 1) {
+    # filter out stock
+    stockToPlot <- dataToPlot %>%
+      dplyr::filter(.data$StockName == stock) %>%
+      dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
+                                                    " (", .data$Units, ")")))
+  } else {
+    # no need to filter out stock (else causes error in dplyr 1.1.0)
+    stockToPlot <- dataToPlot %>%
+      dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
+                                                    " (", .data$Units, ")")))
+  }
 
   # units check and standardize
   # eg if units change over time from say mt to thousands mt

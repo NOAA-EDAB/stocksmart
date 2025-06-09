@@ -60,3 +60,14 @@ test_that("plot_ts with facetplot", {
   expect_type(p$data, "list")
   expect_s3_class(p$plot, "gg")
 })
+
+
+# test return message with invalid itis
+test_that("plot_ts with invalid itis", {
+  expect_message(plot_ts(itis = 999999, metric = "Catch"))
+})
+
+# test return message with correct itis but invalid stock
+test_that("plot_ts with correct itis but wrong stock", {
+  expect_message(plot_ts(itis = 172419, metric = "Catch", stock = "Nonexistent Stock"))
+})
