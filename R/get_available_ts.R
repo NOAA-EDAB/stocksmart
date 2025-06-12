@@ -11,7 +11,7 @@
 #' \item{ITIS}{species itis code}
 #' \item{AssessmentYear}{Year of assessment}
 #' \item{nYrs}{Average number of years data (of Abundance, Catch, Recruitment,
-#' Fmort). Some assessments have differeing lengths of time series.  }
+#' Fmort). Some assessments have differing lengths of time series.  }
 #'
 #'
 #' @importFrom magrittr "%>%"
@@ -28,10 +28,20 @@ get_available_ts <- function(itis = NULL, jurisdiction = NULL) {
          use get_species_itis function")
   }
 
-  # find the first and last year of each assessment
+  # Pull filter the data to determine if present
+  tsData <- stocksmart::stockAssessmentData %>%
+    dplyr::filter(.data$ITIS == itis,
+                  .data$Jurisdiction == jurisdiction)
 
-  res <- stocksmart::stockAssessmentData %>%
-    dplyr::filter(.data$ITIS == itis, .data$Jurisdiction == jurisdiction) %>%
+  if (nrow(tsData) == 0) {
+    stop("No data found. Either the itis or jurisdiction is not entered
+    correctly. Please check your inputs or use get_species_itis() to find the
+            correct ITIS code and jurisdiction.")
+  }
+
+
+  # find the first and last year of each assessment
+  res <- tsData %>%
 
     dplyr::group_by(.data$StockName,
                     .data$CommonName,

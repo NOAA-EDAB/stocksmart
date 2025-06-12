@@ -19,7 +19,7 @@ plot_ts(
 stock exists for ITIS code)}
 
 \item{metric}{Character vector. Specifying which metric to plot (Catch,
-Abundance, Fmort, Recruitment)}
+Abundance, Fmort, Recruitment, Index)}
 
 \item{facetplot}{Boolean. How to plot results. Plot each assessment in its
 own facet (TRUE) or pplot all assessments on a single plot (default = FALSE)}
