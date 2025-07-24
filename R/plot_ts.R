@@ -7,7 +7,7 @@
 #' @param stock Character. Full name of stock (only required if more than one
 #' stock exists for ITIS code)
 #' @param metric Character vector. Specifying which metric to plot (Catch,
-#' Abundance, Fmort, Recruitment)
+#' Abundance, Fmort, Recruitment, Index)
 #' @param facetplot Boolean. How to plot results. Plot each assessment in its
 #' own facet (TRUE) or pplot all assessments on a single plot (default = FALSE)
 #' @param printfig Boolean. Print figure to figure window (Default = T)
@@ -90,11 +90,19 @@ plot_ts <- function(itis = NULL, stock = NULL, metric = "Catch",
 
   }
 
-  # filter out stock
-  stockToPlot <- dataToPlot %>%
-    dplyr::filter(.data$StockName == stock) %>%
-    dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
-                                                  " (", .data$Units, ")")))
+  # filter out stock to plot
+  if (length(unique(dataToPlot$StockArea)) > 1) {
+    # filter out stock
+    stockToPlot <- dataToPlot %>%
+      dplyr::filter(.data$StockName == stock) %>%
+      dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
+                                                    " (", .data$Units, ")")))
+  } else {
+    # no need to filter out stock (else causes error in dplyr 1.1.0)
+    stockToPlot <- dataToPlot %>%
+      dplyr::mutate(AssmtYrUnits = as.factor(paste0(.data$AssessmentYear,
+                                                    " (", .data$Units, ")")))
+  }
 
   # units check and standardize
   # eg if units change over time from say mt to thousands mt

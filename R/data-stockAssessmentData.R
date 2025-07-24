@@ -41,9 +41,7 @@
 #'
 #' @section Data download:
 #'
-#' The data were downloaded from [Stock SMART]{https://apps-st.fisheries.
-#' noaa.gov/stocksmart?app=browse-by-stock} - Status, Management, Assessments
-#' & Resource Trends.
+#' The data were downloaded from [Stock SMART](https://apps-st.fisheries.noaa.gov/stocksmart?app=browse-by-stock) - Status, Management, Assessments & Resource Trends.
 #'
 #' For Manual download:
 #'
