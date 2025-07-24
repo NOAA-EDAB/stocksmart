@@ -1,3 +1,11 @@
+# stocksmart 0.6.43
+
+Data pull: July 24, 2025
+
+* Added unit testing and messages to functions
+* Added Contributor guidelines and updated issue templates
+* Cleaned code with lintr
+
 # stocksmart 0.6.42
 
 Data pull: July 02, 2025
