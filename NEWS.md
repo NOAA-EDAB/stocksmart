@@ -1,3 +1,70 @@
+# stocksmart 0.6.44
+
+Data pull: July 30, 2025
+
+### Summaries added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Bering Sea / Aleutian Islands Other Rockfish Complex (NA): 2024
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2024
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2024
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2024
+* Pacific cod - Aleutian Islands (164711): 2024
+* Pacific cod - Bering Sea (164711): 2024
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2024
+* Shortraker rockfish - Bering Sea / Aleutian Islands (166712): 2024
+* Walleye pollock - Aleutian Islands (934083): 2024
+* Walleye pollock - Eastern Bering Sea (934083): 2024
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2024
+* Arrowtooth flounder - Gulf of Alaska (616029): 2024
+* Dover sole - Gulf of Alaska (172887): 2024
+* Flathead sole - Gulf of Alaska (172875): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Gulf of Alaska Other Shallow Water Flatfish Complex (NA): 2024
+* Northern rock sole - Central Gulf of Alaska (616392): 2024
+* Northern rock sole - Western Gulf of Alaska (616392): 2024
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2024
+* Pacific cod - Gulf of Alaska (164711): 2024
+* Pacific ocean perch - Gulf of Alaska (166707): 2024
+* Rex sole - Eastern Gulf of Alaska (172978): 2024
+* Rex sole - Western / Central Gulf of Alaska (172978): 2024
+* Rock sole - Central Gulf of Alaska (172917): 2024
+* Rock sole - Western Gulf of Alaska (172917): 2024
+* Shortspine thornyhead - Gulf of Alaska (166783): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+* Yelloweye rockfish - Gulf of Alaska (166740): 2024
+
+### Time series added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Arrowtooth flounder - Gulf of Alaska (616029): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Bering Sea / Aleutian Islands Other Rockfish Complex (NA): 2024
+* Dover sole - Gulf of Alaska (172887): 2024
+* Flathead sole - Gulf of Alaska (172875): 2024
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2024
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2024
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2024
+* Pacific cod - Aleutian Islands (164711): 2024
+* Pacific cod - Bering Sea (164711): 2024
+* Pacific cod - Gulf of Alaska (164711): 2024
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2024
+* Pacific ocean perch - Gulf of Alaska (166707): 2024
+* Rex sole - Eastern Gulf of Alaska (172978): 2024
+* Rex sole - Western / Central Gulf of Alaska (172978): 2024
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2024
+* Shortraker rockfish - Bering Sea / Aleutian Islands (166712): 2024
+* Shortspine thornyhead - Gulf of Alaska (166783): 2024
+* Walleye pollock - Aleutian Islands (934083): 2024
+* Walleye pollock - Eastern Bering Sea (934083): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+* Yelloweye rockfish - Gulf of Alaska (166740): 2024
+
 # stocksmart 0.6.43
 
 Data pull: July 24, 2025
