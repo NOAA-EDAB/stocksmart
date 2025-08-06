@@ -1,3 +1,19 @@
+# stocksmart 0.6.45
+
+Data pull: August 06, 2025
+
+### Summaries added 
+
+* Northern shortfin squid - Northwestern Atlantic Coast (82521): 2025
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2025
+
+### Time series added 
+
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2023
+
 # stocksmart 0.6.44
 
 Data pull: July 30, 2025
