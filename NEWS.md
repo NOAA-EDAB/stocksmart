@@ -1,3 +1,35 @@
+# stocksmart 0.6.46
+
+Data pull: August 13, 2025
+
+### Summaries added 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+* Snow crab - Bering Sea (98428): 2019
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2023
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2024
+* Coho salmon - Auke Creek (161977): 2023
+* Coho salmon - Auke Creek (161977): 2024
+* Coho salmon - Berners River (161977): 2023
+* Coho salmon - Hugh Smith Lake (161977): 2023
+* Blueline tilefish - Southern Atlantic Coast (168543): 2024
+* Northern Mariana Islands Bottomfish Multi-species Complex (NA): 2025
+
+### Time series added 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2024
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2022
+* Coho salmon - Auke Creek (161977): 2024
+* Coho salmon - Auke Creek (161977): 2023
+* Coho salmon - Berners River (161977): 2023
+* Coho salmon - Hugh Smith Lake (161977): 2023
+* Northern Mariana Islands Bottomfish Multi-species Complex (NA): 2025
+* Snow crab - Bering Sea (98428): 2023
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2019
+
 # stocksmart 0.6.45
 
 Data pull: August 06, 2025
