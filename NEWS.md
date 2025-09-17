@@ -1,3 +1,11 @@
+# stocksmart 0.6.49
+
+Data pull: September 17, 2025
+
+### Time series removed 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+
 # stocksmart 0.6.48
 
 Data pull: August 27, 2025
