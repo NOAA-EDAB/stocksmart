@@ -1,3 +1,19 @@
+# stocksmart 0.6.51
+
+Data pull: October 22, 2025
+
+### Summaries added 
+
+* Queen triggerfish - St. Croix (173139): 2024
+* Queen triggerfish - St. Thomas / St. John (173139): 2022
+* Queen triggerfish - St. Thomas / St. John (173139): 2024
+* Skipjack tuna - Eastern Pacific (172401): 2022
+
+### Time series added 
+
+* Queen triggerfish - St. Croix (173139): 2024
+* Queen triggerfish - St. Thomas / St. John (173139): 2024
+
 # stocksmart 0.6.50
 
 Data pull: October 08, 2025
