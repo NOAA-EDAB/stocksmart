@@ -1,3 +1,177 @@
+# stocksmart 0.6.52
+
+Data pull: November 05, 2025
+
+### Summaries added 
+
+* Scamp - Gulf of Mexico (167763): 2025
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2025
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2025
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2025
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2025
+* Chinook salmon - Puget Sound: Green River Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Mid Hood Canal Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Nisqually River Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2025
+* Chinook salmon - Puget Sound: Puyallup Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2005
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2006
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2007
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2008
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2009
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2010
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2011
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2012
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2013
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2014
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2015
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2016
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2017
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2018
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2023
+* Chinook salmon - Puget Sound: Snohomish Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Stillaguamish Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: White River Spring (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2025
+* Coho salmon - Puget Sound: Hood Canal (161977): 2025
+* Coho salmon - Puget Sound: Skagit (161977): 2025
+* Coho salmon - Puget Sound: Snohomish (161977): 2025
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2025
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2025
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2025
+* Coho salmon - Washington Coast: Hoh (161977): 2025
+* Coho salmon - Washington Coast: Queets (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2025
+* Pink salmon - Puget Sound (161975): 2025
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2025
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2025
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2025
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2025
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2022
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2021
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2020
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2019
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2018
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2017
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2016
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2015
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2014
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2013
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2012
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2011
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2010
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2009
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2008
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2007
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2006
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2005
+* Chinook salmon - Puget Sound: White River Spring (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2025
+* Coho salmon - Puget Sound: Hood Canal (161977): 2025
+* Coho salmon - Puget Sound: Skagit (161977): 2025
+* Coho salmon - Puget Sound: Snohomish (161977): 2025
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2025
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2025
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2025
+* Coho salmon - Washington Coast: Hoh (161977): 2025
+* Coho salmon - Washington Coast: Queets (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2025
+* Pink salmon - Puget Sound (161975): 2025
+* Scamp - Gulf of Mexico (167763): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
 # stocksmart 0.6.51
 
 Data pull: October 22, 2025
