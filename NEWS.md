@@ -1,3 +1,17 @@
+# stocksmart 0.6.53
+
+Data pull: November 12, 2025
+
+### Summaries added 
+
+* Sharpchin rockfish - Gulf of Alaska (166744): 2019
+* Sharpchin rockfish - Gulf of Alaska (166744): 2021
+
+### Time series added 
+
+* Sharpchin rockfish - Gulf of Alaska (166744): 2021
+* Sharpchin rockfish - Gulf of Alaska (166744): 2019
+
 # stocksmart 0.6.52
 
 Data pull: November 05, 2025
