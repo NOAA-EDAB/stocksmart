@@ -26,7 +26,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">stocksmart</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.54</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.55</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,12 +104,15 @@ Georges Bank from either a Benchmark assessment or a full update.</p>
 <code>get_species_itis</code> function to find this</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_species_itis.html">get_species_itis</a></span><span class="op">(</span>stock <span class="op">=</span> <span class="st">"Atlantic cod"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 3</span></span></span>
-<span><span class="co">#&gt;   StockName                           Jurisdiction   ITIS</span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic cod - Eastern Georges Bank NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic cod - Georges Bank         NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic cod - Gulf of Maine        NEFMC        <span style="text-decoration: underline;">164</span>712</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 3</span></span></span>
+<span><span class="co">#&gt;   StockName                            Jurisdiction   ITIS</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic cod - Eastern Georges Bank  NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic cod - Eastern Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic cod - Georges Bank          NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Atlantic cod - Gulf of Maine         NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Atlantic cod - Southern New England  NEFMC        <span style="text-decoration: underline;">164</span>712</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Atlantic cod - Western Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712</span></span></code></pre></div>
 <p>There are three stocks under the jurisdiction of the NEFMC, a Georges
 Bank, an Eastern Georges Bank, and a Gulf of Maine stock.</p>
 <div class="section level4">

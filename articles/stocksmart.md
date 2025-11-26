@@ -46,12 +46,15 @@ We first need to find the ITIS code for Atlantic cod. We can use the
 
 ``` r
 get_species_itis(stock = "Atlantic cod")
-#> # A tibble: 3 × 3
-#>   StockName                           Jurisdiction   ITIS
-#>   <chr>                               <chr>         <dbl>
-#> 1 Atlantic cod - Eastern Georges Bank NEFMC        164712
-#> 2 Atlantic cod - Georges Bank         NEFMC        164712
-#> 3 Atlantic cod - Gulf of Maine        NEFMC        164712
+#> # A tibble: 6 × 3
+#>   StockName                            Jurisdiction   ITIS
+#>   <chr>                                <chr>         <dbl>
+#> 1 Atlantic cod - Eastern Georges Bank  NEFMC        164712
+#> 2 Atlantic cod - Eastern Gulf of Maine NEFMC        164712
+#> 3 Atlantic cod - Georges Bank          NEFMC        164712
+#> 4 Atlantic cod - Gulf of Maine         NEFMC        164712
+#> 5 Atlantic cod - Southern New England  NEFMC        164712
+#> 6 Atlantic cod - Western Gulf of Maine NEFMC        164712
 ```
 
 There are three stocks under the jurisdiction of the NEFMC, a Georges
