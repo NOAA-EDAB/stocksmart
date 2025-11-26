@@ -1,3 +1,13 @@
+# stocksmart 0.6.55
+
+Data pull: November 26, 2025
+
+### Summaries added 
+
+* Atlantic cod - Eastern Gulf of Maine (164712): 2024
+* Atlantic cod - Southern New England (164712): 2024
+* Atlantic cod - Western Gulf of Maine (164712): 2024
+
 # stocksmart 0.6.54
 
 Data pull: November 19, 2025
