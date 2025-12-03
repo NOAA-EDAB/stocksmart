@@ -1,5 +1,13 @@
 # Changelog
 
+## stocksmart 0.6.56
+
+Data pull: December 03, 2025
+
+#### Summaries added
+
+- Bluefish - Atlantic Coast (168559): 2025
+
 ## stocksmart 0.6.55
 
 Data pull: November 26, 2025
