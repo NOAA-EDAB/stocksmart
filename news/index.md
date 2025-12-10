@@ -1,5 +1,28 @@
 # Changelog
 
+## stocksmart 0.6.57
+
+Data pull: December 10, 2025
+
+#### Summaries added
+
+- Black sea bass - Mid-Atlantic Coast (167687): 2025
+- Scup - Atlantic Coast (169182): 2025
+- Summer flounder - Mid-Atlantic Coast (172735): 2025
+- Acadian redfish - Gulf of Maine / Georges Bank (166774): 2025
+- White hake - Gulf of Maine / Georges Bank (164732): 2025
+- Winter flounder - Georges Bank (172905): 2025
+- Winter flounder - Gulf of Maine (172905): 2025
+- Winter flounder - Southern New England / Mid-Atlantic (172905): 2025
+- Yellowtail flounder - Cape Cod / Gulf of Maine (172909): 2025
+- Yellowtail flounder - Georges Bank (172909): 2025
+- Yellowtail flounder - Southern New England / Mid-Atlantic (172909):
+  2025
+
+#### Time series added
+
+- White hake - Gulf of Maine / Georges Bank (164732): 2025
+
 ## stocksmart 0.6.56
 
 Data pull: December 03, 2025

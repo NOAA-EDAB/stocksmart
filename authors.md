@@ -11,12 +11,12 @@ Source:
 [`DESCRIPTION`](https://github.com/NOAA-EDAB/stocksmart/blob/main/DESCRIPTION)
 
 Beet A (2025). *stocksmart: Provides access to NOAAs stock SMART data*.
-R package version 0.6.56, <https://github.com/NOAA-EDAB/stocksmart>.
+R package version 0.6.57, <https://github.com/NOAA-EDAB/stocksmart>.
 
     @Manual{,
       title = {stocksmart: Provides access to NOAAs stock SMART data},
       author = {Andy Beet},
       year = {2025},
-      note = {R package version 0.6.56},
+      note = {R package version 0.6.57},
       url = {https://github.com/NOAA-EDAB/stocksmart},
     }
