@@ -15,10 +15,8 @@
 #'
 #' @export
 
-pull_species_stock <- function(itis = NULL, stock = NULL) {
+get_species_stock <- function(itis = NULL, stock = NULL) {
   # extract the stock ids since that is what is needed for the API
-  #itis <- 161977 #172419
-  #stock <- 10455
   meta <- get_species_itis(itis = itis, stock = stock)
   user_stockids <- meta$StockID
 
