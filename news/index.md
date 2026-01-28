@@ -1,5 +1,13 @@
 # Changelog
 
+## stocksmart 0.6.58
+
+Data pull: January 28, 2026
+
+#### Summaries added
+
+- Snow crab - Bering Sea (98428): 2025
+
 ## stocksmart 0.6.57
 
 Data pull: December 10, 2025
