@@ -1,3 +1,445 @@
+# stocksmart 0.6.57
+
+Data pull: December 10, 2025
+
+### Summaries added 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+* Scup - Atlantic Coast (169182): 2025
+* Summer flounder - Mid-Atlantic Coast (172735): 2025
+* Acadian redfish - Gulf of Maine / Georges Bank (166774): 2025
+* White hake - Gulf of Maine / Georges Bank (164732): 2025
+* Winter flounder - Georges Bank (172905): 2025
+* Winter flounder - Gulf of Maine (172905): 2025
+* Winter flounder - Southern New England / Mid-Atlantic (172905): 2025
+* Yellowtail flounder - Cape Cod / Gulf of Maine (172909): 2025
+* Yellowtail flounder - Georges Bank (172909): 2025
+* Yellowtail flounder - Southern New England / Mid-Atlantic (172909): 2025
+
+### Time series added 
+
+* White hake - Gulf of Maine / Georges Bank (164732): 2025
+
+# stocksmart 0.6.56
+
+Data pull: December 03, 2025
+
+### Summaries added 
+
+* Bluefish - Atlantic Coast (168559): 2025
+
+# stocksmart 0.6.55
+
+Data pull: November 26, 2025
+
+### Summaries added 
+
+* Atlantic cod - Eastern Gulf of Maine (164712): 2024
+* Atlantic cod - Southern New England (164712): 2024
+* Atlantic cod - Western Gulf of Maine (164712): 2024
+
+# stocksmart 0.6.54
+
+Data pull: November 19, 2025
+
+### Summaries added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2018
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2018
+
+# stocksmart 0.6.53
+
+Data pull: November 12, 2025
+
+### Summaries added 
+
+* Sharpchin rockfish - Gulf of Alaska (166744): 2019
+* Sharpchin rockfish - Gulf of Alaska (166744): 2021
+
+### Time series added 
+
+* Sharpchin rockfish - Gulf of Alaska (166744): 2021
+* Sharpchin rockfish - Gulf of Alaska (166744): 2019
+
+# stocksmart 0.6.52
+
+Data pull: November 05, 2025
+
+### Summaries added 
+
+* Scamp - Gulf of Mexico (167763): 2025
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2025
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2025
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2025
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2025
+* Chinook salmon - Puget Sound: Green River Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Mid Hood Canal Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Nisqually River Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2025
+* Chinook salmon - Puget Sound: Puyallup Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2005
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2006
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2007
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2008
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2009
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2010
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2011
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2012
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2013
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2014
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2015
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2016
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2017
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2018
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2023
+* Chinook salmon - Puget Sound: Snohomish Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Stillaguamish Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: White River Spring (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2025
+* Coho salmon - Puget Sound: Hood Canal (161977): 2025
+* Coho salmon - Puget Sound: Skagit (161977): 2025
+* Coho salmon - Puget Sound: Snohomish (161977): 2025
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2025
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2025
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2025
+* Coho salmon - Washington Coast: Hoh (161977): 2025
+* Coho salmon - Washington Coast: Queets (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2025
+* Pink salmon - Puget Sound (161975): 2025
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Spring (161980): 2025
+* Chinook salmon - California Central Valley: Sacramento River Winter (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Lower River Hatchery Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: North Lewis River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Snake River Spring/Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Bright Fall (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Spring (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper River Summer (161980): 2025
+* Chinook salmon - Columbia River Basin: Upper Willamette Spring (161980): 2025
+* Chinook salmon - Northern California Coast: Klamath River Fall (161980): 2025
+* Chinook salmon - Oregon Coast: Central and Northern Oregon (161980): 2025
+* Chinook salmon - Oregon Coast: Southern Oregon (161980): 2025
+* Chinook salmon - Puget Sound: Nooksack Spring Early (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2022
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2021
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2020
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2019
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2018
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2017
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2016
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2015
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2014
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2013
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2012
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2011
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2010
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2009
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2008
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2007
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2006
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2005
+* Chinook salmon - Puget Sound: White River Spring (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Fall (161980): 2025
+* Chinook salmon - Washington Coast: Grays Harbor Spring (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Fall (161980): 2025
+* Chinook salmon - Washington Coast: Hoh Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Hoko Summer/Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Fall (161980): 2025
+* Chinook salmon - Washington Coast: Queets Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Fall (161980): 2025
+* Chinook salmon - Washington Coast: Quillayute Spring/Summer (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery (161980): 2025
+* Chinook salmon - Washington Coast: Willapa Bay Fall Natural (161980): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Lower Columbia Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Hatchery (161977): 2025
+* Coho salmon - Oregon Production Index Area: Oregon Coast Natural (161977): 2025
+* Coho salmon - Oregon Production Index Area: Southern Oregon/Northern California Coast (161977): 2025
+* Coho salmon - Puget Sound: Hood Canal (161977): 2025
+* Coho salmon - Puget Sound: Skagit (161977): 2025
+* Coho salmon - Puget Sound: Snohomish (161977): 2025
+* Coho salmon - Puget Sound: South Puget Sound Hatchery (161977): 2025
+* Coho salmon - Puget Sound: Stillaguamish (161977): 2025
+* Coho salmon - Washington Coast: Grays Harbor (161977): 2025
+* Coho salmon - Washington Coast: Hoh (161977): 2025
+* Coho salmon - Washington Coast: Queets (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Fall (161977): 2025
+* Coho salmon - Washington Coast: Quillayute Summer Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Quinault Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Strait of Juan de Fuca (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Hatchery (161977): 2025
+* Coho salmon - Washington Coast: Willapa Bay Natural (161977): 2025
+* Pink salmon - Puget Sound (161975): 2025
+* Scamp - Gulf of Mexico (167763): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
+# stocksmart 0.6.51
+
+Data pull: October 22, 2025
+
+### Summaries added 
+
+* Queen triggerfish - St. Croix (173139): 2024
+* Queen triggerfish - St. Thomas / St. John (173139): 2022
+* Queen triggerfish - St. Thomas / St. John (173139): 2024
+* Skipjack tuna - Eastern Pacific (172401): 2022
+
+### Time series added 
+
+* Queen triggerfish - St. Croix (173139): 2024
+* Queen triggerfish - St. Thomas / St. John (173139): 2024
+
+# stocksmart 0.6.50
+
+Data pull: October 08, 2025
+
+### Summaries added 
+
+* Bigeye tuna - Atlantic (172428): 2025
+* White marlin - Atlantic (768126): 2025
+
+### Time series added 
+
+* Bigeye tuna - Atlantic (172428): 2025
+* White marlin - Atlantic (768126): 2025
+
+# stocksmart 0.6.49
+
+Data pull: September 17, 2025
+
+### Time series removed 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+
+# stocksmart 0.6.48
+
+Data pull: August 27, 2025
+
+### Summaries added 
+
+* Rex sole - Eastern Gulf of Alaska (172978): 2021
+* Rex sole - Western / Central Gulf of Alaska (172978): 2021
+* Blueline tilefish - Southern Atlantic Coast (168543): 2025
+* Albacore - South Pacific (172419): 2024
+* Blue shark - North Pacific (160424): 2022
+
+### Summaries removed 
+
+* Rex sole - Eastern Gulf of Alaska (172978): 2022
+* Rex sole - Western / Central Gulf of Alaska (172978): 2022
+* Blueline tilefish - Southern Atlantic Coast (168543): 2024
+* Blue shark - North Pacific (160424): 2023
+
+### Time series added 
+
+* Blue shark - North Pacific (160424): 2022
+* Rex sole - Eastern Gulf of Alaska (172978): 2021
+* Rex sole - Western / Central Gulf of Alaska (172978): 2021
+
+### Time series removed 
+
+* Blue shark - North Pacific (160424): 2023
+* Rex sole - Eastern Gulf of Alaska (172978): 2022
+* Rex sole - Western / Central Gulf of Alaska (172978): 2022
+
+# stocksmart 0.6.47
+
+Data pull: August 20, 2025
+
+### Summaries added 
+
+* Puerto Rico Grouper Unit 6 (NA): 2014
+* St. Croix Grouper Unit 4 (NA): 2014
+* St. Thomas / St. John Grouper Unit 3 (NA): 2014
+
+# stocksmart 0.6.46
+
+Data pull: August 13, 2025
+
+### Summaries added 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+* Snow crab - Bering Sea (98428): 2019
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2023
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2024
+* Coho salmon - Auke Creek (161977): 2023
+* Coho salmon - Auke Creek (161977): 2024
+* Coho salmon - Berners River (161977): 2023
+* Coho salmon - Hugh Smith Lake (161977): 2023
+* Blueline tilefish - Southern Atlantic Coast (168543): 2024
+* Northern Mariana Islands Bottomfish Multi-species Complex (NA): 2025
+
+### Time series added 
+
+* Blueline tilefish - Mid-Atlantic Coast (168543): 2025
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2024
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2022
+* Coho salmon - Auke Creek (161977): 2024
+* Coho salmon - Auke Creek (161977): 2023
+* Coho salmon - Berners River (161977): 2023
+* Coho salmon - Hugh Smith Lake (161977): 2023
+* Northern Mariana Islands Bottomfish Multi-species Complex (NA): 2025
+* Snow crab - Bering Sea (98428): 2023
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2019
+
+# stocksmart 0.6.45
+
+Data pull: August 06, 2025
+
+### Summaries added 
+
+* Northern shortfin squid - Northwestern Atlantic Coast (82521): 2025
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2025
+
+### Time series added 
+
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2023
+
+# stocksmart 0.6.44
+
+Data pull: July 30, 2025
+
+### Summaries added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Bering Sea / Aleutian Islands Other Rockfish Complex (NA): 2024
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2024
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2024
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2024
+* Pacific cod - Aleutian Islands (164711): 2024
+* Pacific cod - Bering Sea (164711): 2024
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2024
+* Shortraker rockfish - Bering Sea / Aleutian Islands (166712): 2024
+* Walleye pollock - Aleutian Islands (934083): 2024
+* Walleye pollock - Eastern Bering Sea (934083): 2024
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2024
+* Arrowtooth flounder - Gulf of Alaska (616029): 2024
+* Dover sole - Gulf of Alaska (172887): 2024
+* Flathead sole - Gulf of Alaska (172875): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Gulf of Alaska Other Shallow Water Flatfish Complex (NA): 2024
+* Northern rock sole - Central Gulf of Alaska (616392): 2024
+* Northern rock sole - Western Gulf of Alaska (616392): 2024
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2024
+* Pacific cod - Gulf of Alaska (164711): 2024
+* Pacific ocean perch - Gulf of Alaska (166707): 2024
+* Rex sole - Eastern Gulf of Alaska (172978): 2024
+* Rex sole - Western / Central Gulf of Alaska (172978): 2024
+* Rock sole - Central Gulf of Alaska (172917): 2024
+* Rock sole - Western Gulf of Alaska (172917): 2024
+* Shortspine thornyhead - Gulf of Alaska (166783): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+* Yelloweye rockfish - Gulf of Alaska (166740): 2024
+
+### Time series added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Arrowtooth flounder - Gulf of Alaska (616029): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Bering Sea / Aleutian Islands Other Rockfish Complex (NA): 2024
+* Dover sole - Gulf of Alaska (172887): 2024
+* Flathead sole - Gulf of Alaska (172875): 2024
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Kamchatka flounder - Bering Sea / Aleutian Islands (616027): 2024
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2024
+* Northern rockfish - Western / Central Gulf of Alaska (166735): 2024
+* Pacific cod - Aleutian Islands (164711): 2024
+* Pacific cod - Bering Sea (164711): 2024
+* Pacific cod - Gulf of Alaska (164711): 2024
+* Pacific ocean perch - Bering Sea / Aleutian Islands (166707): 2024
+* Pacific ocean perch - Gulf of Alaska (166707): 2024
+* Rex sole - Eastern Gulf of Alaska (172978): 2024
+* Rex sole - Western / Central Gulf of Alaska (172978): 2024
+* Sablefish - Eastern Bering Sea / Aleutian Islands / Gulf of Alaska (167123): 2024
+* Shortraker rockfish - Bering Sea / Aleutian Islands (166712): 2024
+* Shortspine thornyhead - Gulf of Alaska (166783): 2024
+* Walleye pollock - Aleutian Islands (934083): 2024
+* Walleye pollock - Eastern Bering Sea (934083): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+* Yelloweye rockfish - Gulf of Alaska (166740): 2024
+
+# stocksmart 0.6.43
+
+Data pull: July 24, 2025
+
+* Added unit testing and messages to functions
+* Added Contributor guidelines and updated issue templates
+* Cleaned code with lintr
+
 # stocksmart 0.6.42
 
 Data pull: July 02, 2025
