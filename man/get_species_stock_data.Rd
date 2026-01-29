@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_species_stock_data.R
 \name{get_species_stock_data}
 \alias{get_species_stock_data}
-\title{Pull species data directly}
+\title{Pull real-time species stock data directly from StockSMART API}
 \usage{
 get_species_stock_data(itis = NULL, stock = NULL)
 }

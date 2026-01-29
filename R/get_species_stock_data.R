@@ -1,4 +1,4 @@
-#' Pull species data directly
+#' Pull real-time species stock data directly from StockSMART API
 #'
 #' Pulls data defined by stock directly to obtain current data. For those who
 #' don't want to reinstall the package to get most recent data

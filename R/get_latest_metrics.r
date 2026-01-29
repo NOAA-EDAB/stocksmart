@@ -31,7 +31,6 @@
 #' the data came from, the FirstYear and LastYear of the data and the number
 #'  of years (numYear) of data retrieved}
 #'
-#' @importFrom magrittr "%>%"
 #' @importFrom rlang .data
 #'
 #' @export
