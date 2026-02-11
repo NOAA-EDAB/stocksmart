@@ -1,5 +1,23 @@
 # Changelog
 
+## stocksmart 0.6.60
+
+Data pull: February 11, 2026
+
+#### Summaries added
+
+- Gag - Gulf of Mexico (167759): 2026
+- Red grouper - Gulf of Mexico (167702): 2025
+- Red grouper - Gulf of Mexico (167702): 2026
+- Atlantic mackerel - Gulf of Maine / Cape Hatteras (172414): 2025
+- Snow crab - Bering Sea (98428): 2025
+- Tilefish - Southern Atlantic Coast (168546): 2025
+
+#### Time series added
+
+- Red grouper - Gulf of Mexico (167702): 2025
+- Tilefish - Southern Atlantic Coast (168546): 2025
+
 ## stocksmart 0.6.59
 
 Data pull: February 04, 2026
