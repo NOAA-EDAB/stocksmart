@@ -18,6 +18,9 @@
 get_species_stock_data <- function(itis = NULL, stock = NULL) {
   # extract the stock ids since that is what is needed for the API
   meta <- get_species_itis(itis = itis, stock = stock)
+  if (is.character(meta)) {
+    return(meta)
+  }
   user_stockids <- meta$StockID
 
   # Start pull query

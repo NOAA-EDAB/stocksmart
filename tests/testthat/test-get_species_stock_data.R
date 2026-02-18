@@ -43,5 +43,6 @@ test_that("get_species_stock_data with itis as numeric, stock is null", {
 
 # test null both argument
 test_that("get_species_stock_data with null itis and stock", {
-  expect_error(get_species_stock_data())
+  res <- get_species_stock_data()
+  expect_true(is.character(res))
 })

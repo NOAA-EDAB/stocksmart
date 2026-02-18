@@ -27,7 +27,7 @@
 get_species_itis <- function(itis = NULL, stock = NULL) {
   # Error check for metric names
   if (is.null(itis) & is.null(stock)) {
-    stop(
+    return(
       "If you do not know the ITIS code then please enter a value for the
     `stock` argument. A character string of any part of the stock name.
          eg stock = \"Albacore\", stock = \"Cape Cod\""

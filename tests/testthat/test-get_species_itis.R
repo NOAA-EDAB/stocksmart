@@ -47,5 +47,6 @@ test_that("get_species_itis with specific itis", {
 
 # test null both argument
 test_that("get_species_itis with null itis and stock", {
-  expect_error(get_species_itis())
+  res <- get_species_itis()
+  expect_true(is.character(res))
 })
