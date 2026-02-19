@@ -1,3 +1,15 @@
+# stocksmart 0.7.1
+
+Data pull: February 19, 2026
+
+### Summaries added 
+
+* Southern Tanner crab - Bering Sea (98429): 2024
+
+### Time series added 
+
+* Southern Tanner crab - Bering Sea (98429): 2024
+
 # stocksmart 0.7.0
 
 ## Minor update
