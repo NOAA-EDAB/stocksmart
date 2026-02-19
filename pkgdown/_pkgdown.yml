@@ -16,6 +16,8 @@ reference:
 - contents:
   - stockAssessmentData
   - stockAssessmentSummary
+  - stock_assessment_data
+  - stock_assessment_summary
 - title: "Filtering functions"
   desc: "Functions used to help user extract information from the bundled data"
 - contents:

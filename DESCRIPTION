@@ -24,7 +24,8 @@ Imports:
     ggplot2,
     tibble,
     jsonlite,
-    httr, 
+    httr,
+    lifecycle,
     readxl
 Suggests:
     here,
