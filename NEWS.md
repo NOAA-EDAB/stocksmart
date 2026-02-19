@@ -1,3 +1,10 @@
+# stocksmart 0.7.0
+
+## Minor update
+
+* `get_species_stock_data` - Pull individual stock directly from the StockSMART API
+* Replaced `magrittr` pipe with native pipe
+
 # stocksmart 0.6.57
 
 Data pull: December 10, 2025
