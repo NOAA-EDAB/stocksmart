@@ -9,14 +9,25 @@ get_species_itis(itis = NULL, stock = NULL)
 \arguments{
 \item{itis}{Numeric vector. Species ITIS code (Default = NULL, all species)}
 
-\item{stock}{Character vector. String in which to use to search for stock}
+\item{stock}{Vector. Either a characterstring or numeric in which to use to search for stock name or stock id}
 }
 \value{
-data frame (n x 3)
+data frame
 \item{StockName}{Full name of stock}
 \item{Jurisdiction}{Management council}
 \item{ITIS}{species itis code}
+\item{StockID}{stock id code}
 }
 \description{
 Filters the Summary data to find species stock information
+}
+\examples{
+# Get ITIS info for Atlantic Cod, (ITIS code = 1647112)
+get_species_itis(stock = "Atlantic cod")
+get_species_itis(stock = "cod")
+get_species_itis(itis = 167712)
+# Get ITIS info for a specific cod stock
+get_species_itis(stock = "12805")
+get_species_itis(stock = 12805)
+
 }

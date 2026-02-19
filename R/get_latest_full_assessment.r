@@ -16,17 +16,15 @@
 #' AssessmentYear the data came from, the FirstYear and LastYear of the data
 #'  and the number of years (numYear) of data retrieved}
 #'
-#' @importFrom magrittr "%>%"
 #' @importFrom rlang .data
 #'
 #' @export
 
 get_latest_full_assessment <- function(itis = NULL) {
-
-  result <-  get_latest_metrics(itis = itis,
-                                metrics = c("Catch", "Abundance", "Fmort",
-                                            "Recruitment"))
+  result <- get_latest_metrics(
+    itis = itis,
+    metrics = c("Catch", "Abundance", "Fmort", "Recruitment")
+  )
 
   return(result)
-
 }
