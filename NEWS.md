@@ -1,3 +1,67 @@
+# stocksmart 0.6.61
+
+Data pull: February 18, 2026
+
+### Summaries added 
+
+* Blue king crab - Pribilof Islands (97936): 2025
+* Blue king crab - Saint Matthew Island (97936): 2024
+* Red king crab - Bristol Bay (97935): 2024
+* Red king crab - Bristol Bay (97935): 2025
+* Red king crab - Pribilof Islands (97935): 2025
+* Red snapper - Southern Atlantic Coast (168853): 2024
+
+### Summaries removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+
+### Time series added 
+
+* Blue king crab - Pribilof Islands (97936): 2025
+* Blue king crab - Saint Matthew Island (97936): 2024
+* Red king crab - Bristol Bay (97935): 2025
+* Red king crab - Bristol Bay (97935): 2024
+* Red king crab - Pribilof Islands (97935): 2025
+* Red snapper - Southern Atlantic Coast (168853): 2024
+
+### Time series removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+
+# stocksmart 0.6.60
+
+Data pull: February 11, 2026
+
+### Summaries added 
+
+* Gag - Gulf of Mexico (167759): 2026
+* Red grouper - Gulf of Mexico (167702): 2025
+* Red grouper - Gulf of Mexico (167702): 2026
+* Atlantic mackerel - Gulf of Maine / Cape Hatteras (172414): 2025
+* Snow crab - Bering Sea (98428): 2025
+* Tilefish - Southern Atlantic Coast (168546): 2025
+
+### Time series added 
+
+* Red grouper - Gulf of Mexico (167702): 2025
+* Tilefish - Southern Atlantic Coast (168546): 2025
+
+# stocksmart 0.6.59
+
+Data pull: February 04, 2026
+
+### Summaries removed 
+
+* Snow crab - Bering Sea (98428): 2025
+
+# stocksmart 0.6.58
+
+Data pull: January 28, 2026
+
+### Summaries added 
+
+* Snow crab - Bering Sea (98428): 2025
+
 # stocksmart 0.6.57
 
 Data pull: December 10, 2025
