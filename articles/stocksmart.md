@@ -2,7 +2,6 @@
 
 ``` r
 library(stocksmart)
-library(magrittr)
 ```
 
 ## Stock assessment time series data
@@ -46,15 +45,15 @@ We first need to find the ITIS code for Atlantic cod. We can use the
 
 ``` r
 get_species_itis(stock = "Atlantic cod")
-#> # A tibble: 6 × 3
-#>   StockName                            Jurisdiction   ITIS
-#>   <chr>                                <chr>         <dbl>
-#> 1 Atlantic cod - Eastern Georges Bank  NEFMC        164712
-#> 2 Atlantic cod - Eastern Gulf of Maine NEFMC        164712
-#> 3 Atlantic cod - Georges Bank          NEFMC        164712
-#> 4 Atlantic cod - Gulf of Maine         NEFMC        164712
-#> 5 Atlantic cod - Southern New England  NEFMC        164712
-#> 6 Atlantic cod - Western Gulf of Maine NEFMC        164712
+#> # A tibble: 6 × 4
+#>   StockName                            Jurisdiction   ITIS StockID
+#>   <chr>                                <chr>         <dbl>   <dbl>
+#> 1 Atlantic cod - Eastern Georges Bank  NEFMC        164712   12805
+#> 2 Atlantic cod - Eastern Gulf of Maine NEFMC        164712   17281
+#> 3 Atlantic cod - Georges Bank          NEFMC        164712   10509
+#> 4 Atlantic cod - Gulf of Maine         NEFMC        164712   10508
+#> 5 Atlantic cod - Southern New England  NEFMC        164712   17282
+#> 6 Atlantic cod - Western Gulf of Maine NEFMC        164712   17280
 ```
 
 There are three stocks under the jurisdiction of the NEFMC, a Georges
@@ -168,13 +167,14 @@ cod$data
 We can then filter the the data by the Georges Bank stock and plot it.
 
 ``` r
-cod$data %>%
-  dplyr::filter(StockArea == "Georges Bank") %>%
-  { . ->> filteredData } %>%
-  ggplot2::ggplot(.) +
+filteredData <- cod$data  |> 
+  dplyr::filter(StockArea == "Georges Bank") 
+cod$data |> 
+  dplyr::filter(StockArea == "Georges Bank") |> 
+  ggplot2::ggplot() +
   ggplot2::geom_line(ggplot2::aes(x = Year, y = Value)) +
-  ggplot2::ylab(filteredData %>% dplyr::distinct(Units)) +
-  ggplot2::ggtitle(paste0("Assessment Year = ", filteredData %>%
+  ggplot2::ylab(filteredData  |>  dplyr::distinct(Units)) +
+  ggplot2::ggtitle(paste0("Assessment Year = ", filteredData  |> 
                             dplyr::distinct(AssessmentYear)))
 ```
 

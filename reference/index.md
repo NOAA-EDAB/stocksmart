@@ -15,15 +15,17 @@ Lazydata bundled along with the package
 
 Functions used to help user extract information from the bundled data
 
+- [`get_available_ts()`](https://noaa-edab.github.io/stocksmart/reference/get_available_ts.md)
+  : Find the available assessment time series data
 - [`get_latest_full_assessment()`](https://noaa-edab.github.io/stocksmart/reference/get_latest_full_assessment.md)
   : Pulls the most recent full stock assessment data.
 - [`get_latest_metrics()`](https://noaa-edab.github.io/stocksmart/reference/get_latest_metrics.md)
   : Pulls the most recent data for any combination of Abundance, Catch,
   Recruitment, Mort
-- [`get_available_ts()`](https://noaa-edab.github.io/stocksmart/reference/get_available_ts.md)
-  : Find the available assessment time series data
 - [`get_species_itis()`](https://noaa-edab.github.io/stocksmart/reference/get_species_itis.md)
   : Find the species itis
+- [`get_species_stock_data()`](https://noaa-edab.github.io/stocksmart/reference/get_species_stock_data.md)
+  : Pull real-time species stock data directly from StockSMART API
 
 ## Plotting functions
 
