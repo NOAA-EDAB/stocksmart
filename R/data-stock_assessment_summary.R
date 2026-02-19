@@ -20,7 +20,7 @@
 #'   \item{fmp}{}
 #'   \item{science_center}{}
 #'   \item{regional_ecosystem}{}
-#'   \item{fssi_Stock}{}
+#'   \item{fssi_stock}{}
 #'   \item{itis}{}
 #'   \item{scientific_name}{}
 #'   \item{common_name}{}
@@ -57,11 +57,11 @@
 #'   \item{flimit_basis}{}
 #'   \item{fmsy}{}
 #'   \item{fmsy_basis}{}
-#'   \item{f/flimit}{}
-#'   \item{f/fmsy}{}
+#'   \item{f_over_flimit}{}
+#'   \item{f_over_fmsy}{}
 #'   \item{ftarget}{}
 #'   \item{ftarget_basis}{}
-#'   \item{f/ftarget}{}
+#'   \item{f_over_ftarget}{}
 #'   \item{b_year}{}
 #'   \item{estimated_b}{}
 #'   \item{b_unit}{}
@@ -70,8 +70,8 @@
 #'   \item{blimit_basis}{}
 #'   \item{bmsy}{}
 #'   \item{bmsy_basis}{}
-#'   \item{b/blimit}{}
-#'   \item{b/bmsy}{}
+#'   \item{b_over_blimit}{}
+#'   \item{b_over_bmsy}{}
 #'   \item{msy}{}
 #'   \item{msy_unit}{}
 #'
