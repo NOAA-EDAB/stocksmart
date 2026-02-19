@@ -99,5 +99,5 @@
 #' 8. Download all Parts
 #'
 #'
-#'
+#' @keywords internal
 "stockAssessmentSummary"

@@ -74,4 +74,4 @@ Other stockAssessments:
 \code{\link{stock_assessment_summary}}
 }
 \concept{stockAssessments}
-\keyword{datasets}
+\keyword{internal}

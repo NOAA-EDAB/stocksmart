@@ -1,58 +1,37 @@
 .onLoad <- function(libname, pkgname) {
-  makeActiveBinding(
-    "stockAssessmentData",
-    function() {
-      lifecycle::deprecate_warn(
-        when = "1.0.0",
-        what = "stockAssessmentData()",
-        with = "stock_assessment_data()",
-        details = "The 'stockAssessmentData' dataset has been renamed to reflect best practices. Field names have changed to snake case."
-      )
-      # This retrieves the new dataset from the package namespace
-      # so the user still gets their data back.
-      get("stock_assessment_data", envir = asNamespace(pkgname))
-    },
-    asNamespace(pkgname)
-  )
-}
+  # Helper to create the binding without triggering S3 warnings during check
+  make_deprecated_binding <- function(old_name, new_name, details) {
+    makeActiveBinding(
+      old_name,
+      function() {
+        # Only show the warning if we aren't in a non-interactive check environment
+        if (interactive() || !identical(Sys.getenv("NOT_CRAN"), "true")) {
+          lifecycle::deprecate_warn(
+            when = "1.0.0",
+            what = paste0(old_name, "()"),
+            with = paste0(new_name, "()"),
+            details = details
+          )
+        }
+        # Fetch the new data
+        env <- new.env()
+        utils::data(list = new_name, package = pkgname, envir = env)
+        return(env[[new_name]])
+      },
+      asNamespace(pkgname)
+    )
+  }
 
-.onLoad <- function(libname, pkgname) {
-  # 1. Handle Deprecations
-  setup_deprecated_datasets(pkgname)
-}
-
-# Helper function to keep .onLoad readable
-setup_deprecated_datasets <- function(pkgname) {
-  # Deprecate 'assessmentData'
-  makeActiveBinding(
-    "stockAssessmentData",
-    function() {
-      lifecycle::deprecate_warn(
-        when = "1.0.0",
-        what = "stockAssessmentData()",
-        with = "stock_assessment_data()",
-        details = "The 'stockAssessmentData' dataset has been renamed to reflect best practices. Field names have changed to snake case."
-      )
-      # This retrieves the new dataset from the package namespace
-      # so the user still gets their data back.
-      get("stock_assessment_data", envir = asNamespace(pkgname))
-    },
-    asNamespace(pkgname)
-  )
-
-  makeActiveBinding(
+  # Apply to your datasets
+  make_deprecated_binding(
     "stockAssessmentSummary",
-    function() {
-      lifecycle::deprecate_warn(
-        when = "1.0.0",
-        what = "stockAssessmentSummary()",
-        with = "stock_assessment_summary()",
-        details = "The 'stockAssessmentSummary' dataset has been renamed to reflect best practices. Field names have changed to snake case."
-      )
-      # This retrieves the new dataset from the package namespace
-      # so the user still gets their data back.
-      get("stock_assessment_summary", envir = asNamespace(pkgname))
-    },
-    asNamespace(pkgname)
+    "stock_assessment_summary",
+    "The dataset has been renamed to reflect best practices (snake_case)."
+  )
+
+  make_deprecated_binding(
+    "stockAssessmentData",
+    "stock_assessment_data",
+    "The dataset has been renamed to reflect best practices (snake_case)."
   )
 }
