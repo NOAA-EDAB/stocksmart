@@ -1,11 +1,13 @@
 Package: stocksmart
 Title: Provides access to NOAAs stock SMART data
-Version: 0.6.61
+Version: 0.7.0
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
            comment = c(ORCID = "0000-0001-8270-7090"))
-Description: A data package serving all data found on NOAAs stock SMART website
+Description: Provides access to data found on the NOAA Stock SMART website. 
+    The package serves as a data repository for fisheries assessment 
+    information and includes utilities for data retrieval.
 URL: https://github.com/NOAA-EDAB/stocksmart, https://noaa-edab.github.io/stocksmart/
 BugReports: https://github.com/NOAA-EDAB/stocksmart/issues
 License: file LICENSE
@@ -14,14 +16,16 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: 
-    R (>= 3.6)
+    R (>= 4.2)
 Imports: 
     dplyr,
     tidyr,
-    magrittr,
     rlang,
     ggplot2,
-    tibble
+    tibble,
+    jsonlite,
+    httr, 
+    readxl
 Suggests:
     here,
     knitr,

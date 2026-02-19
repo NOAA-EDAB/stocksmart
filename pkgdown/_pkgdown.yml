@@ -19,10 +19,7 @@ reference:
 - title: "Filtering functions"
   desc: "Functions used to help user extract information from the bundled data"
 - contents:
-  - get_latest_full_assessment
-  - get_latest_metrics
-  - get_available_ts
-  - get_species_itis
+  - starts_with("get_")
 - title: "Plotting functions"
   desc: "Functions used to help user visualize the bundled data"
 - contents:
