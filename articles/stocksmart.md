@@ -13,7 +13,7 @@ The
 [stockAssessmentData](https://noaa-edab.github.io/stocksmart/reference/stockAssessmentData.md)
 looks like this:
 
-    #> # A tibble: 307,383 × 17
+    #> # A tibble: 307,994 × 17
     #>    StockName           Stockid Assessmentid  Year Value Metric Description Units
     #>    <chr>                 <dbl>        <dbl> <dbl> <dbl> <chr>  <chr>       <chr>
     #>  1 Acadian redfish - …   10455        12882  1913     7 Catch  Reported C… Metr…
@@ -26,7 +26,7 @@ looks like this:
     #>  8 Acadian redfish - …   10455        12882  1920    31 Catch  Reported C… Metr…
     #>  9 Acadian redfish - …   10455        12882  1921    13 Catch  Reported C… Metr…
     #> 10 Acadian redfish - …   10455        12882  1922     9 Catch  Reported C… Metr…
-    #> # ℹ 307,373 more rows
+    #> # ℹ 307,984 more rows
     #> # ℹ 9 more variables: AssessmentYear <dbl>, Jurisdiction <chr>, FMP <chr>,
     #> #   CommonName <chr>, ScientificName <chr>, ITIS <dbl>, AssessmentType <chr>,
     #> #   StockArea <chr>, RegionalEcosystem <chr>
@@ -130,12 +130,14 @@ returned.
 ``` r
 cod <- get_latest_metrics(itis = 164712, metrics = "Catch")
 cod$summary
-#> # A tibble: 3 × 10
+#> # A tibble: 5 × 10
 #>   StockName  CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric
 #>   <chr>      <chr>      <chr>      <dbl>          <dbl> <chr>             <chr> 
 #> 1 Atlantic … Atlantic … Eastern … 164712           2023 Northeast Shelf   Catch 
 #> 2 Atlantic … Atlantic … Georges … 164712           2021 Northeast Shelf   Catch 
 #> 3 Atlantic … Atlantic … Gulf of … 164712           2021 Northeast Shelf   Catch 
+#> 4 Atlantic … Atlantic … Southern… 164712           2024 Northeast Shelf   Catch 
+#> 5 Atlantic … Atlantic … Western … 164712           2024 Northeast Shelf   Catch 
 #> # ℹ 3 more variables: FirstYear <dbl>, LastYear <dbl>, numYears <dbl>
 ```
 
@@ -144,7 +146,7 @@ cod$summary
 
 ``` r
 cod$data
-#> # A tibble: 123 × 20
+#> # A tibble: 209 × 20
 #>    StockName CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric
 #>    <chr>     <chr>      <chr>      <dbl>          <dbl> <chr>             <chr> 
 #>  1 Atlantic… Atlantic … Eastern … 164712           2023 Northeast Shelf   Catch 
@@ -157,7 +159,7 @@ cod$data
 #>  8 Atlantic… Atlantic … Eastern … 164712           2023 Northeast Shelf   Catch 
 #>  9 Atlantic… Atlantic … Eastern … 164712           2023 Northeast Shelf   Catch 
 #> 10 Atlantic… Atlantic … Eastern … 164712           2023 Northeast Shelf   Catch 
-#> # ℹ 113 more rows
+#> # ℹ 199 more rows
 #> # ℹ 13 more variables: FirstYear <dbl>, LastYear <dbl>, numYears <dbl>,
 #> #   Stockid <dbl>, Assessmentid <dbl>, Year <dbl>, Value <dbl>,
 #> #   Description <chr>, Units <chr>, Jurisdiction <chr>, FMP <chr>,
