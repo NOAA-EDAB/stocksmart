@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - master
   pull_request:
     branches:
       - main
-      - master
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
     ## put on HOLD until stockSMART have finished the reorganization
@@ -18,6 +16,7 @@ on:
     #- cron: "0 6 * * *" # Every day at 1am EST = 0600 GMT
     #- cron: "26 * * * *" # Every hour on hour
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
+  workflow_dispatch:
 
 jobs:
 
@@ -56,12 +55,12 @@ jobs:
 
       - name: Save current rdas
         run: |
-          load(here::here("data/stockAssessmentSummary.rda"))
-          load(here::here("data/stockAssessmentData.rda"))
-          saveRDS(stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
-          saveRDS(stockAssessmentData,here::here("data-raw/tempData.rds"))
-          rm(stockAssessmentData)
-          rm(stockAssessmentSummary)
+          load(here::here("data/stock_assessment_summary.rda"))
+          load(here::here("data/stock_assessment_data.rda"))
+          saveRDS(stock_assessment_summary,here::here("data-raw/tempSummary.rds"))
+          saveRDS(stock_assessment_data,here::here("data-raw/tempData.rds"))
+          rm(stock_assessment_data)
+          rm(stock_assessment_summary)
         shell: Rscript {0}
 
       - name: Pull stocksmart data
@@ -71,15 +70,21 @@ jobs:
           query_stocksmart_api()
         shell: Rscript {0}
 
-      - name: Process stocksmart data
+      - name: Process stocksmart data (Old dataset)
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
           out <- process_stocksmart_ts_data(exportFile=TRUE, isRunLocal = FALSE)
+        shell: Rscript {0}
+
+      - name: Process stocksmart data (New dataset)
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/process_stocksmart_ts_data2.R"))
+          out <- process_stocksmart_ts_data2(exportFile=TRUE, isRunLocal = FALSE)
           saveRDS(out$summaryData, here::here("data-raw/newSummary.rds"))
           saveRDS(out$tsData, here::here("data-raw/newData.rds"))
-#         incorporate difference check (below) prior to writing to repo or save as RDS and
-#         and write to repo later
+
         shell: Rscript {0}
 
       - name: Compare current pull with existing
@@ -140,6 +145,8 @@ jobs:
           git config user.email github-actions@github.com
           git add data/stockAssessmentData.rda
           git add data/stockAssessmentSummary.rda
+          git add data/stock_assessment_data.rda
+          git add data/stock_assessment_summary.rda
           git add data-raw/datapull.txt
           git add README.md
           git add NEWS.md
