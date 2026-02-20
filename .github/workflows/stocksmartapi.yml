@@ -75,8 +75,7 @@ jobs:
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
           out <- process_stocksmart_ts_data(exportFile=TRUE, isRunLocal = FALSE)
-#          saveRDS(out$summaryData, here::here("data-raw/newSummary.rds"))
-#          saveRDS(out$tsData, here::here("data-raw/newData.rds"))
+        shell: Rscript {0}
 
       - name: Process stocksmart data (New dataset)
         run: |
@@ -86,8 +85,6 @@ jobs:
           saveRDS(out$summaryData, here::here("data-raw/newSummary.rds"))
           saveRDS(out$tsData, here::here("data-raw/newData.rds"))
 
-#         incorporate difference check (below) prior to writing to repo or save as RDS and
-#         and write to repo later
         shell: Rscript {0}
 
       - name: Compare current pull with existing
