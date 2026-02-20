@@ -4,7 +4,6 @@
 #'
 #'
 
-
 library(magrittr)
 
 query_stocksmart_api <- function() {
@@ -22,8 +21,10 @@ query_stocksmart_api <- function() {
   # url query
   # file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/sis_servlet",
   #                   query=list(jsonParam = jsonquery))
-  file <- httr::GET(paste0(url, "sis_servlet"),
-                    query = list(jsonParam = jsonquery))
+  file <- httr::GET(
+    paste0(url, "sis_servlet"),
+    query = list(jsonParam = jsonquery)
+  )
   # pulls html content into a char
   allEntitiesChar <- base::rawToChar(file$content)
   #   allEntitiesChar <- httr::content(file,as="text")
@@ -40,8 +41,10 @@ query_stocksmart_api <- function() {
 
   jsonquery <- jsonlite::toJSON(assess, pretty = TRUE, auto_unbox = TRUE)
 
-  file <- httr::GET(paste0(url, "sis_servlet"),
-                    query = list(jsonParam = jsonquery))
+  file <- httr::GET(
+    paste0(url, "sis_servlet"),
+    query = list(jsonParam = jsonquery)
+  )
 
   # pulls html content into a char
   assessChar <- base::rawToChar(file$content)
@@ -52,7 +55,6 @@ query_stocksmart_api <- function() {
     dplyr::left_join(., assessEntities, by = c("id" = "entity_id")) %>%
     dplyr::filter(!is.na(asmt_id)) %>%
     dplyr::arrange(name)
-
 
   asmtids <- mainData %>%
     dplyr::pull(asmt_id)
@@ -85,18 +87,27 @@ query_stocksmart_api <- function() {
 
     jsonquery <- jsonlite::toJSON(excel, pretty = TRUE, auto_unbox = TRUE)
 
-    file <- httr::GET(paste0(url, "data-export-servlet"),
-                      query = list(jsonParam = jsonquery))
+    file <- httr::GET(
+      paste0(url, "data-export-servlet"),
+      query = list(jsonParam = jsonquery)
+    )
 
     # create dir if doesnt exist
     if (!dir.exists(here::here("data-raw/allAssessments"))) {
       dir.create(here::here("data-raw/allAssessments"))
     }
     # save excel file
-    httr::GET(file$url,
-              httr::write_disk(path = here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_", filenumber, ".xlsx")),
-                               overwrite = TRUE))
-
+    httr::GET(
+      file$url,
+      httr::write_disk(
+        path = here::here(paste0(
+          "data-raw/allAssessments/Assessment_TimeSeries_Data_Part_",
+          filenumber,
+          ".xlsx"
+        )),
+        overwrite = TRUE
+      )
+    )
   }
 
   ## 4. Get summary data using assessment id's (asmtids)
@@ -137,11 +148,17 @@ query_stocksmart_api <- function() {
   jsonquery <- jsonlite::toJSON(ssummary, pretty = TRUE, auto_unbox = TRUE)
 
   # make url request
-  file <- httr::GET(paste0(url, "data-export-servlet"),
-                    query = list(fileTypeList = "", jsonParam = jsonquery))
+  file <- httr::GET(
+    paste0(url, "data-export-servlet"),
+    query = list(fileTypeList = "", jsonParam = jsonquery)
+  )
 
   # save as excel file
-  httr::GET(file$url,
-            httr::write_disk(path = here::here(paste0("data-raw/Assessment_Summary_Data.xlsx")),
-                             overwrite = TRUE))
+  httr::GET(
+    file$url,
+    httr::write_disk(
+      path = here::here(paste0("data-raw/Assessment_Summary_Data.xlsx")),
+      overwrite = TRUE
+    )
+  )
 }

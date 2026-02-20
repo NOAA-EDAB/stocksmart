@@ -32,7 +32,7 @@ writeLines(a)
 ```{r, echo = F}
 if(nrow(params$sumrowAdd)>0) {
   params$sumrowAdd |> 
-    dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) |> 
+    dplyr::mutate(itis = paste0("(",itis,"):")) |> 
     gt::gt()
 }
 ```
@@ -41,7 +41,7 @@ if(nrow(params$sumrowAdd)>0) {
 ```{r, echo = F}
 if(nrow(params$sumrowRem)>0){
 params$sumrowRem |> 
-  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) |> 
+  dplyr::mutate(itis = paste0("(",itis,"):")) |> 
   gt::gt()
 }
 ```
@@ -69,7 +69,7 @@ if(nrow(params$sumcolRem)>0) {
 ```{r, echo = F}
 if(nrow(params$datrowAdd)>0){
   params$datrowAdd |>  
-    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) |>
+    dplyr::mutate(itis = paste0("(",itis,"):")) |>
     gt::gt()
 }
 ```
@@ -81,7 +81,7 @@ if(nrow(params$datrowAdd)>0){
 ```{r, echo = F}
 if(nrow(params$datrowRem)>0) {
   params$datrowRem  |>  
-    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) |> 
+    dplyr::mutate(itis = paste0("(",itis,"):")) |> 
     gt::gt()
 }
 ```
