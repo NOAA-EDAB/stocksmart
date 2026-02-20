@@ -7,16 +7,16 @@
 get_species_itis(itis = NULL, stock = NULL)
 }
 \arguments{
-\item{itis}{Numeric vector. Species ITIS code (Default = NULL, all species)}
+\item{itis}{Numeric vector. Species itis code (Default = NULL, all species)}
 
-\item{stock}{Vector. Either a characterstring or numeric in which to use to search for stock name or stock id}
+\item{stock}{Vector. Either a character string or numeric in which to use to search for stock name or stock id}
 }
 \value{
 data frame
-\item{StockName}{Full name of stock}
-\item{Jurisdiction}{Management council}
-\item{ITIS}{species itis code}
-\item{StockID}{stock id code}
+\item{stock_name}{Full name of stock}
+\item{jurisdiction}{Management council}
+\item{itis}{species itis code}
+\item{stock_id}{stock id code}
 }
 \description{
 Filters the Summary data to find species stock information

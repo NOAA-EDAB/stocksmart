@@ -21,8 +21,9 @@
 #' @export
 
 get_latest_full_assessment <- function(itis = NULL) {
+  itis_code <- itis
   result <- get_latest_metrics(
-    itis = itis,
+    itis = itis_code,
     metrics = c("Catch", "Abundance", "Fmort", "Recruitment")
   )
 

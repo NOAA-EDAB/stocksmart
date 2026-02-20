@@ -3,13 +3,13 @@
 #' Pulls data defined by stock directly to obtain current data. For those who
 #' don't want to reinstall the package to get most recent data
 #'
-#' @param itis Numeric vector. Species ITIS code (Default = NULL, all species)
+#' @param itis Numeric vector. Species itis code (Default = NULL, all species)
 #' @param stock Character vector. String in which to use to search for stock
 #'
 #' @return  data frame (n x 3)
-#' \item{StockName}{Full name of stock}
-#' \item{Jurisdiction}{Management council}
-#' \item{ITIS}{species itis code}
+#' \item{stock_name}{Full name of stock}
+#' \item{jurisdiction}{Management council}
+#' \item{itis}{species itis code}
 #'
 #' @importFrom rlang .data
 #'
@@ -17,11 +17,14 @@
 
 get_species_stock_data <- function(itis = NULL, stock = NULL) {
   # extract the stock ids since that is what is needed for the API
-  meta <- get_species_itis(itis = itis, stock = stock)
+  itis_code <- itis
+  meta <- get_species_itis(itis = itis_code, stock = stock)
   if (is.character(meta)) {
     return(meta)
+  } else if (nrow(meta) == 0) {
+    return(list(stock_ts = NULL, stock_refs = NULL))
   }
-  user_stockids <- meta$StockID
+  user_stockids <- meta$stock_id
 
   # Start pull query
   allids <- list()
@@ -139,38 +142,43 @@ get_species_stock_data <- function(itis = NULL, stock = NULL) {
   }
 
   if (!is.null(stock_data)) {
+    stock_data <- stock_data |>
+      dplyr::rename_all(tolower) |>
+      dplyr::rename(
+        stock_name = stockname,
+        stock_id = stockid,
+        assessment_id = assessmentid,
+        assessment_year = assessmentyear
+      )
     # Join summary data with stock data
     stock_data <- stock_data |>
       dplyr::left_join(
         summary_data,
-        by = c("Assessmentid" = "Assessment ID")
+        by = c("assessment_id")
       ) |>
       dplyr::select(
-        StockName,
-        Stockid,
-        Assessmentid,
-        Year,
-        Value,
-        Metric,
-        Description,
-        Units,
-        AssessmentYear,
-        Jurisdiction,
-        FMP,
-        `Common Name`,
-        `Scientific Name`,
-        `ITIS Taxon Serial Number`,
-        `Assessment Type`,
-        `Stock Area`,
-        `Regional Ecosystem`
+        stock_name.x,
+        stock_id.x,
+        assessment_id,
+        year,
+        value,
+        metric,
+        description,
+        units,
+        assessment_year.x,
+        jurisdiction,
+        fmp,
+        common_name,
+        scientific_name,
+        itis,
+        assessment_type,
+        stock_area,
+        regional_ecosystem
       ) |>
       dplyr::rename(
-        CommonName = `Common Name`,
-        ScientificName = `Scientific Name`,
-        ITIS = `ITIS Taxon Serial Number`,
-        AssessmentType = `Assessment Type`,
-        StockArea = `Stock Area`,
-        RegionalEcosystem = `Regional Ecosystem`
+        stock_name = stock_name.x,
+        stock_id = stock_id.x,
+        assessment_year = assessment_year.x
       )
   }
 
