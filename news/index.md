@@ -1,5 +1,19 @@
 # Changelog
 
+## stocksmart 0.7.3
+
+Data pull: February 20, 2026
+
+#### Summaries added
+
+- Southern Tanner crab - Bering Sea (98429): 2025
+- Dover sole - Gulf of Alaska (172887): 2025
+
+#### Time series added
+
+- Dover sole - Gulf of Alaska (172887): 2025
+- Southern Tanner crab - Bering Sea (98429): 2025
+
 ## stocksmart 0.7.2
 
 #### Patch update
