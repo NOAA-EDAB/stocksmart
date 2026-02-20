@@ -1,3 +1,21 @@
+# stocksmart 0.7.4
+
+Data pull: February 20, 2026
+
+### Summaries added 
+
+* Southern Tanner crab - Bering Sea (98429): 2025
+* Dover sole - Gulf of Alaska (172887): 2025
+
+### Time series added 
+
+* Atlantic cod - Eastern Gulf of Maine (164712): 2024
+* Atlantic cod - Georges Bank (164712): 2024
+* Atlantic cod - Southern New England (164712): 2024
+* Atlantic cod - Western Gulf of Maine (164712): 2024
+* Dover sole - Gulf of Alaska (172887): 2025
+* Southern Tanner crab - Bering Sea (98429): 2025
+
 # stocksmart 0.7.3
 
 Data pull: February 20, 2026
