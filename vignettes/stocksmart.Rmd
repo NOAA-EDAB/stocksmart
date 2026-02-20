@@ -23,10 +23,10 @@ library(stocksmart)
 
 Time series data for all federally managed stocks are bundled with the package
 
-The [stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
+The [stock_assessment_data](../reference/stock_assessmentdata.html) data object looks like this:
 
 ```{r sad, echo = FALSE}
-stockAssessmentData  |> 
+stock_assessment_data  |> 
   dplyr::as_tibble()
 
 ```
@@ -104,12 +104,12 @@ We can then filter the the data by the Georges Bank stock and plot it.
 
 ``` {r GB, echo = TRUE, fig.alt = "Catch data for Atlantic cod in Georges Bank from the latest operational assessment"}
 filteredData <- cod$data  |> 
-  dplyr::filter(StockArea == "Georges Bank") 
+  dplyr::filter(stock_area == "Georges Bank") 
 cod$data |> 
-  dplyr::filter(StockArea == "Georges Bank") |> 
+  dplyr::filter(stock_area == "Georges Bank") |> 
   ggplot2::ggplot() +
-  ggplot2::geom_line(ggplot2::aes(x = Year, y = Value)) +
-  ggplot2::ylab(filteredData  |>  dplyr::distinct(Units)) +
+  ggplot2::geom_line(ggplot2::aes(x = year, y = value)) +
+  ggplot2::ylab(filteredData  |>  dplyr::distinct(units)) +
   ggplot2::ggtitle(paste0("Assessment Year = ", filteredData  |> 
-                            dplyr::distinct(AssessmentYear)))
+                            dplyr::distinct(assessment_year)))
 ```
