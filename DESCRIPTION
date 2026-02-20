@@ -19,14 +19,15 @@ Depends:
     R (>= 4.2)
 Imports: 
     dplyr,
-    tidyr,
-    rlang,
     ggplot2,
-    tibble,
-    jsonlite,
     httr,
+    jsonlite,
     lifecycle,
-    readxl
+    readxl,
+    rlang,
+    stringr,
+    tibble,
+    tidyr
 Suggests:
     here,
     knitr,
