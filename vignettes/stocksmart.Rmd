@@ -23,7 +23,7 @@ library(stocksmart)
 
 Time series data for all federally managed stocks are bundled with the package
 
-The [stock_assessment_data](../reference/stock_assessmentdata.html) data object looks like this:
+The `?stock_assessment_data` data object looks like this:
 
 ```{r sad, echo = FALSE}
 stock_assessment_data  |> 
@@ -37,7 +37,7 @@ Several functions are bundled with the package to aid in filtering the data by s
 
 Problem: we want to find the latest catch data for Atlantic cod in Georges Bank from either a Benchmark assessment or a full update.
 
-We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis` function to find this
+We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis()` function to find this
 
 ```{r itis, echo = TRUE}
 get_species_itis(stock = "Atlantic cod")
@@ -79,13 +79,13 @@ p <- plot_ts(itis = 164712,
 p$plot
 ```
 
-The [`plot_ts`](plot_ts) function returns a list of two items, a ggplot object and data frame containing the data used in the plot.
+The `plot_ts()` function returns a list of two items, a ggplot object and data frame containing the data used in the plot.
 
 ### Extract latest data
 
 Some of the assessments visualized above may not be considered `Operational` (Analyses conducted to provide scientific advice to fishery managers with particular focus on determining stock status and recommending catch limits - from stockSMART [Data Dictionary](https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf)).
 
-We can use the ITIS code to search for the most recent Catch time series data that comes from an `Operational` assessment using the `get_latest_metrics` function. A list containing two data frames are returned. 
+We can use the ITIS code to search for the most recent Catch time series data that comes from an `Operational` assessment using the `get_latest_metrics()` function. A list containing two data frames are returned. 
 
 *   A summary table containing relevant metadata including the number of years of data available and the date range.
 
