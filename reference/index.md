@@ -5,9 +5,15 @@
 Lazydata bundled along with the package
 
 - [`stockAssessmentData`](https://noaa-edab.github.io/stocksmart/reference/stockAssessmentData.md)
+  **\[deprecated\]** : Abundance, Catch, Fishing mortality, Recruitment
+  for USA assessed stocks
+- [`stockAssessmentSummary`](https://noaa-edab.github.io/stocksmart/reference/stockAssessmentSummary.md)
+  **\[deprecated\]** : Reference points, contact info, assessment
+  metadata for USA assessed stocks
+- [`stock_assessment_data`](https://noaa-edab.github.io/stocksmart/reference/stock_assessment_data.md)
   : Abundance, Catch, Fishing mortality, Recruitment for USA assessed
   stocks
-- [`stockAssessmentSummary`](https://noaa-edab.github.io/stocksmart/reference/stockAssessmentSummary.md)
+- [`stock_assessment_summary`](https://noaa-edab.github.io/stocksmart/reference/stock_assessment_summary.md)
   : Reference points, contact info, assessment metadata for USA assessed
   stocks
 
