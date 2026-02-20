@@ -5,9 +5,15 @@
 #'  multiple xlsx files. Read in and process this data and export
 #'  as tidy Rdata file
 #'
+#' ###################################################
+#' Both summary and time series data sets now have same column names.
+#' Field names and data sets are all snake_case with
+#' all white space and non alphanumeric characters removed
 #'
+#' Other than that, identical to old data set
+#' ###################################################
 
-source(here::here("data-raw", "process_stocksmart_summary_data.R"))
+source(here::here("data-raw", "process_stocksmart_summary_data2.R"))
 
 read_assessment_files <- function() {
   files <- list.files(
@@ -32,7 +38,7 @@ read_assessment_files <- function() {
 
 #' process time series data
 #'
-process_stocksmart_ts_data <- function(exportFile = FALSE, isRunLocal = TRUE) {
+process_stocksmart_ts_data2 <- function(exportFile = FALSE, isRunLocal = TRUE) {
   files <- read_assessment_files()
 
   tsfiles <- files |> dplyr::filter(grepl("TimeSeries", Files))
@@ -84,78 +90,91 @@ process_stocksmart_ts_data <- function(exportFile = FALSE, isRunLocal = TRUE) {
 
   ## process the summary data and join with time series data
   # rename variable and remove a bunch
-  summaryData <- process_stocksmart_summary_data(exportFile = exportFile)
-  stockAssessmentData <- dplyr::left_join(
-    stockAssessmentData,
-    summaryData,
-    by = c("Assessmentid" = "Assessment ID")
-  ) |>
+  summaryData <- process_stocksmart_summary_data2(exportFile = exportFile)
+
+  stockAssessmentData <- stockAssessmentData |>
+    dplyr::rename_all(tolower) |>
+    dplyr::rename(
+      stock_name = stockname,
+      stock_id = stockid,
+      assessment_id = assessmentid,
+      assessment_year = assessmentyear
+    ) |>
+    dplyr::left_join(summaryData, by = c("assessment_id")) |>
     dplyr::select(
-      StockName,
-      Stockid,
-      Assessmentid,
-      Year,
-      Value,
-      Metric,
-      Description,
-      Units,
-      AssessmentYear,
-      Jurisdiction,
-      FMP,
-      `Common Name`,
-      `Scientific Name`,
-      `ITIS Taxon Serial Number`,
-      `Assessment Type`,
-      `Stock Area`,
-      `Regional Ecosystem`
+      stock_name.x,
+      stock_id.x,
+      assessment_id,
+      year,
+      value,
+      metric,
+      description,
+      units,
+      assessment_year.x,
+      jurisdiction,
+      fmp,
+      common_name,
+      scientific_name,
+      itis,
+      assessment_type,
+      stock_area,
+      regional_ecosystem
     ) |>
     dplyr::rename(
-      CommonName = `Common Name`,
-      ScientificName = `Scientific Name`,
-      ITIS = `ITIS Taxon Serial Number`,
-      AssessmentType = `Assessment Type`,
-      StockArea = `Stock Area`,
-      RegionalEcosystem = `Regional Ecosystem`
+      stock_name = stock_name.x,
+      stock_id = stock_id.x,
+      assessment_year = assessment_year.x
     )
 
-  ## The following (writing to a file) is now done in for the new data set
-  # This will eventually be retired
-  #
-  #   # create a differnt file if run locally
-  #   if (isRunLocal) {
-  #     fn <- "localdatapull.txt"
-  #   } else {
-  #     fn <- "datapull.txt"
-  #   }
-  #
-  #   file.create(here::here("data-raw", fn))
-  #   dateCreated <- Sys.time()
-  #   cat(paste0(dateCreated, "\n"), file = here::here("data-raw", fn))
-  #   cat(paste0("Number of files read = ", nrow(files), "\n"),
-  #       file = here::here("data-raw", fn),
-  #       append = TRUE)
-  #   cat(paste0("number of rows of data object = ",
-  #              nrow(stockAssessmentData), "\n"),
-  #       file = here::here("data-raw", fn),
-  #       append = TRUE)
-  #   cat(paste0("number of rows stocksmart data object = ",
-  #              nrow(stocksmart::stockAssessmentData), "\n"),
-  #       file = here::here("data-raw", fn),
-  #       append = TRUE)
-  #   cat(paste0("number of rows of summary object = ",
-  #              nrow(summaryData), "\n"),
-  #       file = here::here("data-raw", fn),
-  #       append = TRUE)
-  #   cat(paste0("number of rows stocksmart summary data object = ",
-  #              nrow(stocksmart::stockAssessmentSummary), "\n"),
-  #       file = here::here("data-raw", fn),
-  #       append = TRUE)
-
-  stockAssessmentData <- tibble::as_tibble(stockAssessmentData)
-
-  if (exportFile) {
-    usethis::use_data(stockAssessmentData, overwrite = TRUE)
+  # create a different file if run locally
+  if (isRunLocal) {
+    fn <- "localdatapull.txt"
+  } else {
+    fn <- "datapull.txt"
   }
 
-  return(list(tsData = stockAssessmentData, summaryData = summaryData))
+  file.create(here::here("data-raw", fn))
+  dateCreated <- Sys.time()
+  cat(paste0(dateCreated, "\n"), file = here::here("data-raw", fn))
+  cat(
+    paste0("Number of files read = ", nrow(files), "\n"),
+    file = here::here("data-raw", fn),
+    append = TRUE
+  )
+  cat(
+    paste0("number of rows of data object = ", nrow(stockAssessmentData), "\n"),
+    file = here::here("data-raw", fn),
+    append = TRUE
+  )
+  cat(
+    paste0(
+      "number of rows stocksmart data object = ",
+      nrow(stocksmart::stockAssessmentData),
+      "\n"
+    ),
+    file = here::here("data-raw", fn),
+    append = TRUE
+  )
+  cat(
+    paste0("number of rows of summary object = ", nrow(summaryData), "\n"),
+    file = here::here("data-raw", fn),
+    append = TRUE
+  )
+  cat(
+    paste0(
+      "number of rows stocksmart summary data object = ",
+      nrow(stocksmart::stockAssessmentSummary),
+      "\n"
+    ),
+    file = here::here("data-raw", fn),
+    append = TRUE
+  )
+
+  stock_assessment_data <- tibble::as_tibble(stockAssessmentData)
+
+  if (exportFile) {
+    usethis::use_data(stock_assessment_data, overwrite = TRUE)
+  }
+
+  return(list(tsData = stock_assessment_data, summaryData = summaryData))
 }
