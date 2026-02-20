@@ -1,3 +1,11 @@
+# stocksmart 0.7.2
+
+### Patch update
+
+* Warnings for deprecated datasets
+  * `stockAssessmentData` deprecated in favor of `stock_assessment_data`
+  * `stockAssessmentSummary` deprecated in favor of `stock_assessment_summary`
+
 # stocksmart 0.7.1
 
 Data pull: February 19, 2026
@@ -12,7 +20,7 @@ Data pull: February 19, 2026
 
 # stocksmart 0.7.0
 
-## Minor update
+### Minor update
 
 * `get_species_stock_data` - Pull individual stock directly from the StockSMART API
 * Replaced `magrittr` pipe with native pipe

@@ -1,5 +1,10 @@
 #' Abundance, Catch, Fishing mortality, Recruitment for USA assessed stocks
 #'
+#' @description
+#' `r lifecycle::badge("deprecated")`
+#'
+#' `stockAssessmentData` is deprecated and will be removed in the next major release (1.0.0). Camel case is being replaced by snake case]. Please use [stock_assessment_data] instead.
+#'
 #' Stock assessment data for species found in waters of the USA. Data is
 #' provided for actively managed stocks of a federal Fisheries Management
 #' Plan (FMP). Stocks solely managed by US States are not provided.
@@ -54,5 +59,5 @@
 #' 6. Download all Parts
 #'
 #'
-#'
+#'@keywords internal
 "stockAssessmentData"
