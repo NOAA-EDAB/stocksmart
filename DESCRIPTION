@@ -1,6 +1,6 @@
 Package: stocksmart
 Title: Provides access to NOAAs stock SMART data
-Version: 0.7.2
+Version: 0.7.3
 Authors@R: 
     person(given = "Andy",family = "Beet", role = c("aut", "cre"),
            email = "andrew.beet@noaa.gov",
