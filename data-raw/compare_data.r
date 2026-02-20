@@ -3,20 +3,13 @@
 
 library(magrittr)
 compare_data <- function() {
-
   current <- readRDS(here::here("data-raw/tempSummary.rds"))
   new <- readRDS(here::here("data-raw/newSummary.rds"))
 
   c1 <- current %>%
-    dplyr::select(`Stock Name`,
-                  `ITIS Taxon Serial Number`,
-                  `Stock Name`,
-                  `Assessment Year`)
+    dplyr::select(stock_name, itis, assessment_year)
   n1 <- new %>%
-    dplyr::select(`Stock Name`,
-                  `ITIS Taxon Serial Number`,
-                  `Stock Name`,
-                  `Assessment Year`)
+    dplyr::select(stock_name, itis, assessment_year)
 
   #######################################################
   #######################################################
@@ -24,7 +17,8 @@ compare_data <- function() {
   #######################################################
   #######################################################
 
-  if (!all(dim(current) == dim(new))) {# dimensions not same
+  if (!all(dim(current) == dim(new))) {
+    # dimensions not same
     # find if columns added or removed
     sumcolsAdded <- setdiff(names(new), names(current))
     if (rlang::is_empty(sumcolsAdded)) {
@@ -36,14 +30,12 @@ compare_data <- function() {
     }
     sumspeciesAdded <- dplyr::setdiff(n1, c1)
     sumspeciesRemoved <- dplyr::setdiff(c1, n1)
-
   } else {
     sumcolsAdded <- data.frame()
     sumcolsRemoved <- data.frame()
     sumspeciesAdded <- data.frame()
     sumspeciesRemoved <- data.frame()
   }
-
 
   #######################################################
   #######################################################
@@ -54,7 +46,8 @@ compare_data <- function() {
   current <- readRDS(here::here("data-raw/tempData.rds"))
   new <- readRDS(here::here("data-raw/newData.rds"))
 
-  if (!all(dim(current) == dim(new))) { #dimensions not same
+  if (!all(dim(current) == dim(new))) {
+    #dimensions not same
     # find if columns added or removed
     datcolsAdded <- setdiff(names(new), names(current))
     if (rlang::is_empty(datcolsAdded)) {
@@ -66,17 +59,16 @@ compare_data <- function() {
     }
 
     newsp <- new %>%
-      dplyr::select(StockName, ITIS, StockArea, AssessmentYear) %>%
+      dplyr::select(stock_name, itis, stock_area, assessment_year) %>%
       dplyr::distinct()
     currentsp <- current %>%
-      dplyr::select(StockName, ITIS, StockArea, AssessmentYear) %>%
+      dplyr::select(stock_name, itis, stock_area, assessment_year) %>%
       dplyr::distinct()
 
     datspeciesAdded <- dplyr::setdiff(newsp, currentsp) %>%
-      dplyr::select(-StockArea)
+      dplyr::select(-stock_area)
     datspeciesRemoved <- dplyr::setdiff(currentsp, newsp) %>%
-      dplyr::select(-StockArea)
-
+      dplyr::select(-stock_area)
   } else {
     datcolsAdded <- data.frame()
     datcolsRemoved <- data.frame()
@@ -84,7 +76,7 @@ compare_data <- function() {
     datspeciesRemoved <- data.frame()
   }
 
-  params  <-  list(
+  params <- list(
     sumrowAdd = sumspeciesAdded,
     sumrowRem = sumspeciesRemoved,
     sumcolAdd = sumcolsAdded,
@@ -92,8 +84,8 @@ compare_data <- function() {
     datrowAdd = datspeciesAdded,
     datrowRem = datspeciesRemoved,
     datcolAdd = datcolsAdded,
-    datcolRem = datcolsRemoved)
+    datcolRem = datcolsRemoved
+  )
 
   return(params)
-
 }

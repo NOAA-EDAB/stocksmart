@@ -5,7 +5,14 @@
 #' Read in and process this data and export as tidy Rdata file
 #'
 #'
-
+#' ###################################################
+#' Both summary and time series data sets now have same column names.
+#' Field names and data sets are all snake_case with
+#' all white space and non alphanumeric characters removed
+#'
+#' Other than that, identical to old data set
+#' ###################################################
+#'
 read_summary_files <- function() {
   files <- list.files(here::here("data-raw"), pattern = "\\.xlsx$") |>
     tibble::enframe(name = NULL) |>
@@ -18,10 +25,11 @@ read_summary_files <- function() {
 #'
 #'@param exportFile Boolean. To save sumamry data file as rda to data folder. (Default = T)
 #'
-process_stocksmart_summary_data <- function(exportFile = T) {
+process_stocksmart_summary_data2 <- function(exportFile = T) {
   files <- read_summary_files()
 
-  summaryfiles <- files |> dplyr::filter(grepl("Summary", Files))
+  summaryfiles <- files |>
+    dplyr::filter(grepl("Summary", Files))
   summaryData <- NULL
   for (fn in unlist(summaryfiles)) {
     print(fn)
@@ -38,18 +46,21 @@ process_stocksmart_summary_data <- function(exportFile = T) {
     dplyr::select(-`Assessment Type`, -`Update Type`) |>
     dplyr::rename(`Assessment Type` = Type)
 
-  # remove all spaces and ? in column names
-  #names(stockAssessmentSummary) <- names(stockAssessmentSummary) %>%
-  #  stringr::str_replace_all(.,"\\s+","") %>%
-  #  stringr::str_replace(.,"\\?","") %>%
-  #  stringr::str_replace(.,"\\/","_")
+  # replace all whitespace with underscore, remove ? and all lowercase
+  # rename all field names to snake case
+  stockAssessmentSummary <- stockAssessmentSummary |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\s+", "_")) |>
+    dplyr::rename_all(tolower) |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\?", "")) |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\/", "_over_")) |>
+    dplyr::rename(itis = itis_taxon_serial_number)
 
-  stockAssessmentSummary <- tibble::as_tibble(stockAssessmentSummary)
+  stock_assessment_summary <- tibble::as_tibble(stockAssessmentSummary)
 
   if (exportFile) {
-    usethis::use_data(stockAssessmentSummary, overwrite = T)
+    usethis::use_data(stock_assessment_summary, overwrite = T)
   }
 
-  return(stockAssessmentSummary)
+  return(stock_assessment_summary)
 }
 ## Process Summary data
