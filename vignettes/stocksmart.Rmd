@@ -23,10 +23,10 @@ library(stocksmart)
 
 Time series data for all federally managed stocks are bundled with the package
 
-The [stockAssessmentData](../reference/stockAssessmentData.html) looks like this:
+The `?stock_assessment_data` data object looks like this:
 
 ```{r sad, echo = FALSE}
-stockAssessmentData  |> 
+stock_assessment_data  |> 
   dplyr::as_tibble()
 
 ```
@@ -37,7 +37,7 @@ Several functions are bundled with the package to aid in filtering the data by s
 
 Problem: we want to find the latest catch data for Atlantic cod in Georges Bank from either a Benchmark assessment or a full update.
 
-We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis` function to find this
+We first need to find the ITIS code for Atlantic cod. We can use the `get_species_itis()` function to find this
 
 ```{r itis, echo = TRUE}
 get_species_itis(stock = "Atlantic cod")
@@ -79,13 +79,13 @@ p <- plot_ts(itis = 164712,
 p$plot
 ```
 
-The [`plot_ts`](plot_ts) function returns a list of two items, a ggplot object and data frame containing the data used in the plot.
+The `plot_ts()` function returns a list of two items, a ggplot object and data frame containing the data used in the plot.
 
 ### Extract latest data
 
 Some of the assessments visualized above may not be considered `Operational` (Analyses conducted to provide scientific advice to fishery managers with particular focus on determining stock status and recommending catch limits - from stockSMART [Data Dictionary](https://apps-st.fisheries.noaa.gov/stocksmart/StockSMART_DataDictionary.pdf)).
 
-We can use the ITIS code to search for the most recent Catch time series data that comes from an `Operational` assessment using the `get_latest_metrics` function. A list containing two data frames are returned. 
+We can use the ITIS code to search for the most recent Catch time series data that comes from an `Operational` assessment using the `get_latest_metrics()` function. A list containing two data frames are returned. 
 
 *   A summary table containing relevant metadata including the number of years of data available and the date range.
 
@@ -104,12 +104,12 @@ We can then filter the the data by the Georges Bank stock and plot it.
 
 ``` {r GB, echo = TRUE, fig.alt = "Catch data for Atlantic cod in Georges Bank from the latest operational assessment"}
 filteredData <- cod$data  |> 
-  dplyr::filter(StockArea == "Georges Bank") 
+  dplyr::filter(stock_area == "Georges Bank") 
 cod$data |> 
-  dplyr::filter(StockArea == "Georges Bank") |> 
+  dplyr::filter(stock_area == "Georges Bank") |> 
   ggplot2::ggplot() +
-  ggplot2::geom_line(ggplot2::aes(x = Year, y = Value)) +
-  ggplot2::ylab(filteredData  |>  dplyr::distinct(Units)) +
+  ggplot2::geom_line(ggplot2::aes(x = year, y = value)) +
+  ggplot2::ylab(filteredData  |>  dplyr::distinct(units)) +
   ggplot2::ggtitle(paste0("Assessment Year = ", filteredData  |> 
-                            dplyr::distinct(AssessmentYear)))
+                            dplyr::distinct(assessment_year)))
 ```
