@@ -13,7 +13,7 @@ The
 [stockAssessmentData](https://noaa-edab.github.io/stocksmart/reference/stockAssessmentData.md)
 looks like this:
 
-    #> # A tibble: 307,994 × 17
+    #> # A tibble: 309,110 × 17
     #>    StockName           Stockid Assessmentid  Year Value Metric Description Units
     #>    <chr>                 <dbl>        <dbl> <dbl> <dbl> <chr>  <chr>       <chr>
     #>  1 Acadian redfish - …   10455        12882  1913     7 Catch  Reported C… Metr…
@@ -26,7 +26,7 @@ looks like this:
     #>  8 Acadian redfish - …   10455        12882  1920    31 Catch  Reported C… Metr…
     #>  9 Acadian redfish - …   10455        12882  1921    13 Catch  Reported C… Metr…
     #> 10 Acadian redfish - …   10455        12882  1922     9 Catch  Reported C… Metr…
-    #> # ℹ 307,984 more rows
+    #> # ℹ 309,100 more rows
     #> # ℹ 9 more variables: AssessmentYear <dbl>, Jurisdiction <chr>, FMP <chr>,
     #> #   CommonName <chr>, ScientificName <chr>, ITIS <dbl>, AssessmentType <chr>,
     #> #   StockArea <chr>, RegionalEcosystem <chr>
