@@ -1,3 +1,13 @@
+# stocksmart 0.7.6
+
+Data pull: March 04, 2026
+
+### Time series added 
+
+* Winter flounder - Gulf of Maine (172905): 2025
+* Yellowtail flounder - Georges Bank (172909): 2025
+* Yellowtail flounder - Southern New England / Mid-Atlantic (172909): 2025
+
 # stocksmart 0.7.5
 
 Data pull: February 25, 2026
