@@ -1,9 +1,60 @@
+<<<<<<< dev
 # stocksmart 1.0.0
 
 ## Major update
 
 * Reworked all functions to use updated data sets which have updated field names. 
 * All field names are now **snake_case**. ( All field names are lower case. All white space replaced with underscores and special characters have been removed.)
+=======
+# stocksmart 0.7.6
+
+Data pull: March 04, 2026
+
+### Time series added 
+
+* Winter flounder - Gulf of Maine (172905): 2025
+* Yellowtail flounder - Georges Bank (172909): 2025
+* Yellowtail flounder - Southern New England / Mid-Atlantic (172909): 2025
+
+# stocksmart 0.7.5
+
+Data pull: February 25, 2026
+
+### Time series added 
+
+* American plaice - Gulf of Maine / Georges Bank (172877): 2024
+* Atlantic halibut - Northwestern Atlantic Coast (172933): 2024
+* Atlantic mackerel - Gulf of Maine / Cape Hatteras (172414): 2025
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+* Bluefish - Atlantic Coast (168559): 2025
+* Haddock - Gulf of Maine (164744): 2024
+* Winter flounder - Georges Bank (172905): 2025
+
+# stocksmart 0.7.4
+
+Data pull: February 20, 2026
+
+### Time series added 
+
+* Atlantic cod - Eastern Gulf of Maine (164712): 2024
+* Atlantic cod - Georges Bank (164712): 2024
+* Atlantic cod - Southern New England (164712): 2024
+* Atlantic cod - Western Gulf of Maine (164712): 2024
+
+# stocksmart 0.7.3
+
+Data pull: February 20, 2026
+
+### Summaries added 
+
+* Southern Tanner crab - Bering Sea (98429): 2025
+* Dover sole - Gulf of Alaska (172887): 2025
+
+### Time series added 
+
+* Dover sole - Gulf of Alaska (172887): 2025
+* Southern Tanner crab - Bering Sea (98429): 2025
+>>>>>>> main
 
 # stocksmart 0.7.2
 
