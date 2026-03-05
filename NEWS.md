@@ -3,7 +3,7 @@
 ## Major update
 
 * Reworked all functions to use updated data sets which have updated field names. 
-* All field names are now **snake_case**
+* All field names are now **snake_case**. ( All field names are lower case. All white space replaced with underscores and special characters have been removed.)
 
 # stocksmart 0.7.2
 
