@@ -13,3 +13,5 @@ basictests
 ^\.github$
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+^[.]?air[.]toml$
+^\.vscode$
