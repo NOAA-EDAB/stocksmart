@@ -1,3 +1,10 @@
+# stocksmart 1.0.0
+
+## Major update
+
+* Reworked all functions to use updated data sets which have updated field names. 
+* All field names are now **snake_case**
+
 # stocksmart 0.7.2
 
 ### Patch update
