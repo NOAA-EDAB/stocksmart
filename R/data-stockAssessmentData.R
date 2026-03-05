@@ -3,7 +3,8 @@
 #' @description
 #' `r lifecycle::badge("deprecated")`
 #'
-#' `stockAssessmentData` is deprecated and will be removed in the next major release (1.0.0). Camel case is being replaced by snake case]. Please use [stock_assessment_data] instead.
+#' `stockAssessmentData` is deprecated. It will continue to receive updates for while. From v1.0.0 it will not be used in any of the supporting functions.
+#'  Camel case naming is being replaced by snake case. Please use [stock_assessment_data] instead since this data set is used in all supporting functions.
 #'
 #' Stock assessment data for species found in waters of the USA. Data is
 #' provided for actively managed stocks of a federal Fisheries Management

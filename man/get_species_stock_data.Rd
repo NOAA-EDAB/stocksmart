@@ -7,15 +7,15 @@
 get_species_stock_data(itis = NULL, stock = NULL)
 }
 \arguments{
-\item{itis}{Numeric vector. Species ITIS code (Default = NULL, all species)}
+\item{itis}{Numeric vector. Species itis code (Default = NULL, all species)}
 
 \item{stock}{Character vector. String in which to use to search for stock}
 }
 \value{
 data frame (n x 3)
-\item{StockName}{Full name of stock}
-\item{Jurisdiction}{Management council}
-\item{ITIS}{species itis code}
+\item{stock_name}{Full name of stock}
+\item{jurisdiction}{Management council}
+\item{itis}{species itis code}
 }
 \description{
 Pulls data defined by stock directly to obtain current data. For those who

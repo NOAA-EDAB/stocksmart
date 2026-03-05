@@ -2,14 +2,14 @@
 #'
 #' Filters the Summary data to find species stock information
 #'
-#' @param itis Numeric vector. Species ITIS code (Default = NULL, all species)
-#' @param stock Vector. Either a characterstring or numeric in which to use to search for stock name or stock id
+#' @param itis Numeric vector. Species itis code (Default = NULL, all species)
+#' @param stock Vector. Either a character string or numeric in which to use to search for stock name or stock id
 #'
 #' @return  data frame
-#' \item{StockName}{Full name of stock}
-#' \item{Jurisdiction}{Management council}
-#' \item{ITIS}{species itis code}
-#' \item{StockID}{stock id code}
+#' \item{stock_name}{Full name of stock}
+#' \item{jurisdiction}{Management council}
+#' \item{itis}{species itis code}
+#' \item{stock_id}{stock id code}
 #'
 #' @importFrom rlang .data
 #'
@@ -26,42 +26,34 @@
 
 get_species_itis <- function(itis = NULL, stock = NULL) {
   # Error check for metric names
-  if (is.null(itis) & is.null(stock)) {
+  itis_code <- itis
+  if (is.null(itis_code) & is.null(stock)) {
     return(
-      "If you do not know the ITIS code then please enter a value for the
-    `stock` argument. A character string of any part of the stock name.
-         eg stock = \"Albacore\", stock = \"Cape Cod\""
+      "If you do not know the `itis` code then please enter a value for the `stock` argument. A character string of any part of the stock name.  eg stock = \"Albacore\", stock = \"Cape Cod\""
     )
   }
 
-  if (!is.null(itis)) {
-    res <- stocksmart::stockAssessmentSummary |>
-      dplyr::filter(.data$`ITIS Taxon Serial Number` == itis) |>
+  if (!is.null(itis_code)) {
+    res <- stocksmart::stock_assessment_summary |>
+      dplyr::filter(.data$itis == itis_code) |>
       dplyr::distinct(
-        .data$`Stock Name`,
-        .data$Jurisdiction,
-        .data$`ITIS Taxon Serial Number`,
-        .data$`Stock ID`
+        .data$stock_name,
+        .data$jurisdiction,
+        .data$itis,
+        .data$stock_id
       )
   } else if (!is.null(stock)) {
-    res <- stocksmart::stockAssessmentSummary |>
+    res <- stocksmart::stock_assessment_summary |>
       dplyr::filter(
-        (grepl(stock, .data$`Stock Name`) | .data$`Stock ID` == stock)
+        (grepl(stock, .data$stock_name) | .data$stock_id == stock)
       ) |>
       dplyr::distinct(
-        .data$`Stock Name`,
-        .data$Jurisdiction,
-        .data$`ITIS Taxon Serial Number`,
-        .data$`Stock ID`
+        .data$stock_name,
+        .data$jurisdiction,
+        .data$itis,
+        .data$stock_id
       )
   }
-
-  res <- res |>
-    dplyr::rename(
-      ITIS = .data$`ITIS Taxon Serial Number`,
-      StockName = .data$`Stock Name`,
-      StockID = .data$`Stock ID`
-    )
 
   return(res)
 }

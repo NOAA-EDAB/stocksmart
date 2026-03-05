@@ -79,5 +79,14 @@ process_stock_summary_data <- function(url, stockids) {
     dplyr::select(-`Assessment Type`, -`Update Type`) |>
     dplyr::rename(`Assessment Type` = Type)
 
+  # replace all whitespace with underscore, remove ? and all lowercase
+  # rename all field names to snake case
+  summary_data <- summary_data |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\s+", "_")) |>
+    dplyr::rename_all(tolower) |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\?", "")) |>
+    dplyr::rename_with(~ stringr::str_replace_all(., "\\/", "_over_")) |>
+    dplyr::rename(itis = itis_taxon_serial_number)
+
   return(summary_data)
 }
