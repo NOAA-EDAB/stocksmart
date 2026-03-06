@@ -1,5 +1,15 @@
 # Changelog
 
+## stocksmart 1.0.1
+
+Data pull: March 06, 2026
+
+#### Time series added
+
+- Acadian redfish - Gulf of Maine / Georges Bank (166774): 2025
+- Scup - Atlantic Coast (169182): 2025
+- Summer flounder - Mid-Atlantic Coast (172735): 2025
+
 ## stocksmart 1.0.0
 
 ### Major update
