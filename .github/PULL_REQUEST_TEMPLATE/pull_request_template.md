@@ -36,3 +36,9 @@ Assign at least 2 reviewers:
 * the others should be familiar with the subject changes.
 
 Please detail the process reviewers will need to follow to properly test these changes. It is especially helpful to identify the exact code needed to conduct a local build/review/test and to specify any aspects of the testing that may not be obvious.
+
+
+### Formatting
+
+This repo contains an `air.toml` file that automatically formats code to a set of standards.
+It is preferred that contributors and reviewers install the [air](https://posit-dev.github.io/air/) formatting tool.
