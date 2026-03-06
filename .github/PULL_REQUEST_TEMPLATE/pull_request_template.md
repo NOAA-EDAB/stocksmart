@@ -23,7 +23,7 @@ Put an `x` in the boxes that apply
 - [ ] I have tested my changes?
 - [ ] I have created unit tests and run `devtools::test()` to ensure all unit tests pass locally?
 - [ ] I have run `devtools::check()` to ensure package builds locally?
-- [ ] I have followed the proposed [CONTRIBUTING](/CONTRIBUTING.md) guideline?
+- [ ] I have followed the proposed [CONTRIBUTING](../blob/main/CONTRIBUTING.md) guideline?
  
 ### Further comments
 
