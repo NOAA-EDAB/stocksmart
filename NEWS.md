@@ -4,6 +4,8 @@
 
 * Reworked all functions to use updated data sets which have updated field names. 
 * All field names are now **snake_case**. ( All field names are lower case. All white space replaced with underscores and special characters have been removed.)
+* Deprecated data set `stockAssessmentData` in favor of `stock_assessment_data`
+* Deprecated data set `stockAssessmentSummary` in favor of `stock_assessment_summary`
 
 # stocksmart 0.7.6
 
