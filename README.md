@@ -8,7 +8,7 @@
 [![gh-pages](https://github.com/NOAA-EDAB/stocksmart/workflows/gh-pages/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![gitleaks](https://github.com/NOAA-EDAB/stocksmart/workflows/gitleaks/badge.svg)]((https://github.com/NOAA-EDAB/stocksmart/actions))
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
-
+[![air-formatting.yaml](https://github.com/NOAA-EDAB/stocksmart/actions/workflows/format-suggest.yaml/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions/workflows/format-suggest.yaml)
 <!-- badges: end -->
 <!--ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.** -->
 
