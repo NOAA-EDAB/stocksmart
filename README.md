@@ -10,6 +10,7 @@
 [![R-CMD-check](https://github.com/NOAA-EDAB/stocksmart/workflows/R-CMD-check/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions)
 [![air-formatting.yaml](https://github.com/NOAA-EDAB/stocksmart/actions/workflows/format-suggest.yaml/badge.svg)](https://github.com/NOAA-EDAB/stocksmart/actions/workflows/format-suggest.yaml)
 <!-- badges: end -->
+
 <!--ATTENTION:  **NOAA Stock SMART system is undergoing some structural changes. Until this has been finalized and tested, the state of this repo has been frozen in time from November 27, 2024.** -->
 
 Stock assessments reports are typically lengthy documents containing a
@@ -71,8 +72,8 @@ Please see the [getting started guide](articles/stocksmart.html)
 
 ## Contact
 
-| [andybeet](https://github.com/andybeet)                                                                        |
-|----------------------------------------------------------------------------------------------------------------|
+| [andybeet](https://github.com/andybeet) |
+|----|
 | [![andybeet avatar](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) |
 
 #### Legal disclaimer
