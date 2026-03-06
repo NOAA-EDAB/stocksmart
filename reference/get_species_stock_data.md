@@ -13,7 +13,7 @@ get_species_stock_data(itis = NULL, stock = NULL)
 
 - itis:
 
-  Numeric vector. Species ITIS code (Default = NULL, all species)
+  Numeric vector. Species itis code (Default = NULL, all species)
 
 - stock:
 
@@ -23,14 +23,14 @@ get_species_stock_data(itis = NULL, stock = NULL)
 
 data frame (n x 3)
 
-- StockName:
+- stock_name:
 
   Full name of stock
 
-- Jurisdiction:
+- jurisdiction:
 
   Management council
 
-- ITIS:
+- itis:
 
   species itis code

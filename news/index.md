@@ -1,5 +1,15 @@
 # Changelog
 
+## stocksmart 1.0.0
+
+### Major update
+
+- Reworked all functions to use updated data sets which have updated
+  field names.
+- All field names are now **snake_case**. ( All field names are lower
+  case. All white space replaced with underscores and special characters
+  have been removed.)
+
 ## stocksmart 0.7.6
 
 Data pull: March 04, 2026
@@ -48,7 +58,7 @@ Data pull: February 20, 2026
 #### Time series added
 
 - Dover sole - Gulf of Alaska (172887): 2025
-- Southern Tanner crab - Bering Sea (98429): 2025
+- Southern Tanner crab - Bering Sea (98429): 2025 \>\>\>\>\>\>\> main
 
 ## stocksmart 0.7.2
 

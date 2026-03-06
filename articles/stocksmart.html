@@ -26,7 +26,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">stocksmart</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.7.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,25 +72,25 @@
 </h2>
 <p>Time series data for all federally managed stocks are bundled with
 the package</p>
-<p>The <a href="../reference/stockAssessmentData.html">stockAssessmentData</a>
-looks like this:</p>
+<p>The <code><a href="../reference/stock_assessment_data.html">?stock_assessment_data</a></code> data object looks like
+this:</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 309,637 × 17</span></span></span>
-<span><span class="co">#&gt;    StockName           Stockid Assessmentid  Year Value Metric Description Units</span></span>
-<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>913     7 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>914    30 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>915    40 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>916    53 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>917    82 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>918    73 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>919    25 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>920    31 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>921    13 Catch  Reported C… Metr…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Acadian redfish - …   <span style="text-decoration: underline;">10</span>455        <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>922     9 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt;    stock_name        stock_id assessment_id  year value metric description units</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>913     7 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>914    30 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>915    40 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>916    53 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>917    82 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>918    73 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>919    25 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>920    31 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>921    13 Catch  Reported C… Metr…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Acadian redfish …    <span style="text-decoration: underline;">10</span>455         <span style="text-decoration: underline;">12</span>882  <span style="text-decoration: underline;">1</span>922     9 Catch  Reported C… Metr…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 309,627 more rows</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 9 more variables: AssessmentYear &lt;dbl&gt;, Jurisdiction &lt;chr&gt;, FMP &lt;chr&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   CommonName &lt;chr&gt;, ScientificName &lt;chr&gt;, ITIS &lt;dbl&gt;, AssessmentType &lt;chr&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   StockArea &lt;chr&gt;, RegionalEcosystem &lt;chr&gt;</span></span></span></code></pre>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 9 more variables: assessment_year &lt;dbl&gt;, jurisdiction &lt;chr&gt;, fmp &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   common_name &lt;chr&gt;, scientific_name &lt;chr&gt;, itis &lt;dbl&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   assessment_type &lt;chr&gt;, stock_area &lt;chr&gt;, regional_ecosystem &lt;chr&gt;</span></span></span></code></pre>
 <p>Several functions are bundled with the package to aid in filtering
 the data by species, region, time range, metric etc. Most functions
 filter using the unique species ITIS code.</p>
@@ -100,18 +100,18 @@ filter using the unique species ITIS code.</p>
 <p>Problem: we want to find the latest catch data for Atlantic cod in
 Georges Bank from either a Benchmark assessment or a full update.</p>
 <p>We first need to find the ITIS code for Atlantic cod. We can use the
-<code>get_species_itis</code> function to find this</p>
+<code><a href="../reference/get_species_itis.html">get_species_itis()</a></code> function to find this</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_species_itis.html">get_species_itis</a></span><span class="op">(</span>stock <span class="op">=</span> <span class="st">"Atlantic cod"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 4</span></span></span>
-<span><span class="co">#&gt;   StockName                            Jurisdiction   ITIS StockID</span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic cod - Eastern Georges Bank  NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">12</span>805</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic cod - Eastern Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">17</span>281</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic cod - Georges Bank          NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">10</span>509</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Atlantic cod - Gulf of Maine         NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">10</span>508</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Atlantic cod - Southern New England  NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">17</span>282</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Atlantic cod - Western Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712   <span style="text-decoration: underline;">17</span>280</span></span></code></pre></div>
+<span><span class="co">#&gt;   stock_name                           jurisdiction   itis stock_id</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic cod - Eastern Georges Bank  NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">12</span>805</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic cod - Eastern Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">17</span>281</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic cod - Georges Bank          NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">10</span>509</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Atlantic cod - Gulf of Maine         NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">10</span>508</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Atlantic cod - Southern New England  NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">17</span>282</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Atlantic cod - Western Gulf of Maine NEFMC        <span style="text-decoration: underline;">164</span>712    <span style="text-decoration: underline;">17</span>280</span></span></code></pre></div>
 <p>There are three stocks under the jurisdiction of the NEFMC, a Georges
 Bank, an Eastern Georges Bank, and a Gulf of Maine stock.</p>
 <div class="section level4">
@@ -148,9 +148,8 @@ kg/tow from 2017 onward</p>
 <span>             printfig <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/codabundfacet-1.png" class="r-plt" alt="Abundance data for Atlantic cod in Georges Bank with facets" width="700"></p>
-<p>The <a href="plot_ts"><code>plot_ts</code></a> function returns a
-list of two items, a ggplot object and data frame containing the data
-used in the plot.</p>
+<p>The <code><a href="../reference/plot_ts.html">plot_ts()</a></code> function returns a list of two items, a
+ggplot object and data frame containing the data used in the plot.</p>
 </div>
 <div class="section level4">
 <h4 id="extract-latest-data">Extract latest data<a class="anchor" aria-label="anchor" href="#extract-latest-data"></a>
@@ -162,8 +161,8 @@ status and recommending catch limits - from stockSMART <a href="https://apps-st.
 Dictionary</a>).</p>
 <p>We can use the ITIS code to search for the most recent Catch time
 series data that comes from an <code>Operational</code> assessment using
-the <code>get_latest_metrics</code> function. A list containing two data
-frames are returned.</p>
+the <code><a href="../reference/get_latest_metrics.html">get_latest_metrics()</a></code> function. A list containing two
+data frames are returned.</p>
 <ul>
 <li>A summary table containing relevant metadata including the number of
 years of data available and the date range.</li>
@@ -172,14 +171,15 @@ years of data available and the date range.</li>
 <code class="sourceCode R"><span><span class="va">cod</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_latest_metrics.html">get_latest_metrics</a></span><span class="op">(</span>itis <span class="op">=</span> <span class="fl">164712</span>, metrics <span class="op">=</span> <span class="st">"Catch"</span><span class="op">)</span></span>
 <span><span class="va">cod</span><span class="op">$</span><span class="va">summary</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 5 × 10</span></span></span>
-<span><span class="co">#&gt;   StockName  CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic … Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic … Atlantic … Georges … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>021 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic … Atlantic … Gulf of … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>021 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Atlantic … Atlantic … Southern… <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>024 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Atlantic … Atlantic … Western … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>024 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 3 more variables: FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;, numYears &lt;dbl&gt;</span></span></span></code></pre></div>
+<span><span class="co">#&gt;   stock_name    common_name stock_area   itis assessment_year regional_ecosystem</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Atlantic cod… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Atlantic cod… Atlantic c… Georges B… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>021 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Atlantic cod… Atlantic c… Gulf of M… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>021 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Atlantic cod… Atlantic c… Southern … <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>024 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Atlantic cod… Atlantic c… Western G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>024 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 4 more variables: metric &lt;chr&gt;, FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   numYears &lt;dbl&gt;</span></span></span></code></pre></div>
 <ul>
 <li>A data table containing the time series data along with additional
 metadata</li>
@@ -187,35 +187,35 @@ metadata</li>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">cod</span><span class="op">$</span><span class="va">data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 209 × 20</span></span></span>
-<span><span class="co">#&gt;    StockName CommonName StockArea   ITIS AssessmentYear RegionalEcosystem Metric</span></span>
-<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Atlantic… Atlantic … Eastern … <span style="text-decoration: underline;">164</span>712           <span style="text-decoration: underline;">2</span>023 Northeast Shelf   Catch </span></span>
+<span><span class="co">#&gt;    stock_name   common_name stock_area   itis assessment_year regional_ecosystem</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Atlantic co… Atlantic c… Eastern G… <span style="text-decoration: underline;">164</span>712            <span style="text-decoration: underline;">2</span>023 Northeast Shelf   </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 199 more rows</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 13 more variables: FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;, numYears &lt;dbl&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   Stockid &lt;dbl&gt;, Assessmentid &lt;dbl&gt;, Year &lt;dbl&gt;, Value &lt;dbl&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   Description &lt;chr&gt;, Units &lt;chr&gt;, Jurisdiction &lt;chr&gt;, FMP &lt;chr&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   ScientificName &lt;chr&gt;, AssessmentType &lt;chr&gt;</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 14 more variables: metric &lt;chr&gt;, FirstYear &lt;dbl&gt;, LastYear &lt;dbl&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   numYears &lt;dbl&gt;, stock_id &lt;dbl&gt;, assessment_id &lt;dbl&gt;, year &lt;dbl&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   value &lt;dbl&gt;, description &lt;chr&gt;, units &lt;chr&gt;, jurisdiction &lt;chr&gt;, fmp &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   scientific_name &lt;chr&gt;, assessment_type &lt;chr&gt;</span></span></span></code></pre></div>
 <p>We can then filter the the data by the Georges Bank stock and plot
 it.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">filteredData</span> <span class="op">&lt;-</span> <span class="va">cod</span><span class="op">$</span><span class="va">data</span>  <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">StockArea</span> <span class="op">==</span> <span class="st">"Georges Bank"</span><span class="op">)</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">stock_area</span> <span class="op">==</span> <span class="st">"Georges Bank"</span><span class="op">)</span> </span>
 <span><span class="va">cod</span><span class="op">$</span><span class="va">data</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">StockArea</span> <span class="op">==</span> <span class="st">"Georges Bank"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">stock_area</span> <span class="op">==</span> <span class="st">"Georges Bank"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html" class="external-link">geom_line</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Year</span>, y <span class="op">=</span> <span class="va">Value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ylab</a></span><span class="op">(</span><span class="va">filteredData</span>  <span class="op">|&gt;</span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">Units</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html" class="external-link">geom_line</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ylab</a></span><span class="op">(</span><span class="va">filteredData</span>  <span class="op">|&gt;</span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">units</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ggtitle</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Assessment Year = "</span>, <span class="va">filteredData</span>  <span class="op">|&gt;</span> </span>
-<span>                            <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">AssessmentYear</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<span>                            <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">assessment_year</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="stocksmart_files/figure-html/GB-1.png" class="r-plt" alt="Catch data for Atlantic cod in Georges Bank from the latest operational assessment" width="700"></p>
 </div>
 </div>
