@@ -18,5 +18,5 @@ test_that("get_latest_full_assessment with valid itis", {
   expect_true(nrow(df$data) > 0)
   expect_s3_class(df$summary, "data.frame")
   expect_true(nrow(df$summary) > 0)
-  expect_true(all(c("ITIS", "Metric") %in% colnames(df$data)))
+  expect_true(all(c("itis", "metric") %in% colnames(df$data)))
 })

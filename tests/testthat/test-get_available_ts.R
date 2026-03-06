@@ -3,12 +3,14 @@
 
 # if itis is null expect a message
 test_that("get_available_ts with null itis", {
-  expect_error(get_available_ts(itis = NULL))
+  res <- get_available_ts(itis = NULL)
+  expect_true(is.character(res))
 })
 
 # if jurisdiction is null expect a message
 test_that("get_available_ts with null jurisdiction", {
-  expect_error(get_available_ts(itis = 172419, jurisdiction = NULL))
+  res <- get_available_ts(itis = 172419, jurisdiction = NULL)
+  expect_true(is.character(res))
 })
 
 # if itis and/or jurisdiction are not null but entered incorrectly

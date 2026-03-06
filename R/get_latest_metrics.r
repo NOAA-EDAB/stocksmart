@@ -36,6 +36,7 @@
 #' @export
 
 get_latest_metrics <- function(itis = NULL, metrics = c("Catch", "Abundance")) {
+  itis_code <- itis
   #error check for metric names
   if (!all(metrics %in% c("Catch", "Abundance", "Fmort", "Recruitment"))) {
     stop(
@@ -46,9 +47,9 @@ get_latest_metrics <- function(itis = NULL, metrics = c("Catch", "Abundance")) {
 
   # Filter Operational Assesments (old codes = New, Full Updates,
   #Benchmark assessments)
-  allData <- stocksmart::stockAssessmentData |>
+  allData <- stocksmart::stock_assessment_data |>
     dplyr::filter(
-      .data$AssessmentType %in%
+      .data$assessment_type %in%
         c(
           "New",
           "Benchmark",
@@ -60,70 +61,70 @@ get_latest_metrics <- function(itis = NULL, metrics = c("Catch", "Abundance")) {
 
   # find all distinct ITIS codes
   itiscodes <- allData |>
-    dplyr::distinct(.data$ITIS) |>
+    dplyr::distinct(.data$itis) |>
     tidyr::drop_na() |>
     dplyr::pull()
 
   # find the first and last year of each assessment
   allStats <- allData |>
     dplyr::group_by(
-      .data$StockName,
-      .data$CommonName,
-      .data$StockArea,
-      .data$ITIS,
-      .data$Metric,
-      .data$AssessmentYear,
-      .data$RegionalEcosystem
+      .data$stock_name,
+      .data$common_name,
+      .data$stock_area,
+      .data$itis,
+      .data$metric,
+      .data$assessment_year,
+      .data$regional_ecosystem
     ) |>
     dplyr::summarise(
-      FirstYear = min(.data$Year),
-      LastYear = max(.data$Year),
+      FirstYear = min(.data$year),
+      LastYear = max(.data$year),
       numYears = .data$LastYear - .data$FirstYear + 1,
       .groups = "drop"
     ) |>
     dplyr::arrange(
-      .data$ITIS,
-      .data$StockName,
-      .data$AssessmentYear,
-      .data$Metric
+      .data$itis,
+      .data$stock_name,
+      .data$assessment_year,
+      .data$metric
     )
 
   # find assessment years in which all selected metrics are reported.
   # Then select the most recent year, join the last year, first year to the df
   statsprep <- allStats |>
-    dplyr::filter(.data$Metric %in% metrics) |>
+    dplyr::filter(.data$metric %in% metrics) |>
     dplyr::group_by(
-      .data$StockName,
-      .data$CommonName,
-      .data$StockArea,
-      .data$ITIS,
-      .data$AssessmentYear,
-      .data$RegionalEcosystem
+      .data$stock_name,
+      .data$common_name,
+      .data$stock_area,
+      .data$itis,
+      .data$assessment_year,
+      .data$regional_ecosystem
     ) |>
     dplyr::summarise(sumMetric = dplyr::n(), .groups = "drop") |>
-    dplyr::filter(.data$sumMetric == length(metrics)) |>
+    dplyr::filter(sumMetric == length(metrics)) |>
     dplyr::group_by(
-      .data$StockName,
-      .data$CommonName,
-      .data$StockArea,
-      .data$ITIS
+      .data$stock_name,
+      .data$common_name,
+      .data$stock_area,
+      .data$itis
     ) |>
-    dplyr::filter(.data$AssessmentYear == max(.data$AssessmentYear))
+    dplyr::filter(.data$assessment_year == max(.data$assessment_year))
 
   stats <- dplyr::left_join(
     statsprep,
     allStats,
     by = c(
-      "StockName",
-      "ITIS",
-      "CommonName",
-      "StockArea",
-      "AssessmentYear",
-      "RegionalEcosystem"
+      "stock_name",
+      "itis",
+      "common_name",
+      "stock_area",
+      "assessment_year",
+      "regional_ecosystem"
     )
   ) |>
-    dplyr::select(-.data$sumMetric) |>
-    dplyr::filter(.data$Metric %in% metrics) |>
+    dplyr::select(-sumMetric) |>
+    dplyr::filter(.data$metric %in% metrics) |>
     dplyr::ungroup()
 
   # select the full time series for the most recent assessments that have
@@ -132,20 +133,20 @@ get_latest_metrics <- function(itis = NULL, metrics = c("Catch", "Abundance")) {
     stats,
     allData,
     by = c(
-      "StockName",
-      "ITIS",
-      "CommonName",
-      "StockArea",
-      "Metric",
-      "AssessmentYear",
-      "RegionalEcosystem"
+      "stock_name",
+      "itis",
+      "common_name",
+      "stock_area",
+      "metric",
+      "assessment_year",
+      "regional_ecosystem"
     )
   )
 
   # if itis = Null, finished. otherwise filter by itis codes supplied by user
-  if (!is.null(itis)) {
+  if (!is.null(itis_code)) {
     # check for missing itis
-    missingCodes <- setdiff(itis, itiscodes)
+    missingCodes <- setdiff(itis_code, itiscodes)
     if (length(missingCodes) > 0) {
       message(
         "No ITIS codes found for: ",
@@ -154,9 +155,9 @@ get_latest_metrics <- function(itis = NULL, metrics = c("Catch", "Abundance")) {
     }
 
     stats <- stats |>
-      dplyr::filter(.data$ITIS %in% itis)
+      dplyr::filter(.data$itis %in% itis_code)
     data <- data |>
-      dplyr::filter(.data$ITIS %in% itis)
+      dplyr::filter(.data$itis %in% itis_code)
   }
 
   return(list(data = data, summary = stats))

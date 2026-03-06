@@ -3,7 +3,6 @@
 #' Increment last digit
 
 update_description <- function(compare, digit) {
-
   numRows <- unlist(lapply(compare, nrow))
   if (!(any(numRows > 0))) {
     # empty list. No changes found between new and old data
@@ -24,8 +23,7 @@ update_description <- function(compare, digit) {
     # increment digit
     v[digit] <- as.numeric(v[digit]) + 1
     v[1] <- as.numeric(v[1])
-    if (digit == 3) {
-    } else if (digit == 2) {
+    if (digit == 3) {} else if (digit == 2) {
       v[digit + 1] <- 0
     } else if (digit == 1) {
       v[digit + 1] <- 0

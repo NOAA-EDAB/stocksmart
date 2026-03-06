@@ -3,7 +3,6 @@
 #'
 
 write_to_news <- function(aa, con) {
-
   nms <- letters[1:length(names(aa))]
   names(aa) <- nms
   g <- aa %>%
@@ -14,11 +13,9 @@ write_to_news <- function(aa, con) {
     writeLines(paste("*", as.character(g[iline, ])), con)
   }
   writeLines("", con)
-
 }
 
 update_news <- function(version, compare) {
-
   if (is.null(version)) {
     # No changes found between new and old data
     # no changes to news.md
@@ -29,7 +26,6 @@ update_news <- function(version, compare) {
     close(con)
 
     con <- file(here::here("NEWS.md"), open = "w")
-
 
     # translate compare to md text
     writeLines(paste0("# stocksmart ", version), con)
@@ -43,14 +39,12 @@ update_news <- function(version, compare) {
       writeLines("", con)
 
       write_to_news(compare$sumrowAdd, con)
-
     }
     if (!is.null(compare$sumrowRem) && nrow(compare$sumrowRem) > 0) {
       writeLines("### Summaries removed ", con)
       writeLines("", con)
 
       write_to_news(compare$sumrowRem, con)
-
     }
     if (!is.null(compare$datrowAdd) && nrow(compare$datrowAdd) > 0) {
       writeLines("### Time series added ", con)
@@ -67,7 +61,5 @@ update_news <- function(version, compare) {
 
     writeLines(currentNews, con)
     close(con)
-
   }
-
 }
