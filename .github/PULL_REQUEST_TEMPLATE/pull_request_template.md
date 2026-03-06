@@ -2,9 +2,9 @@
 
 The commits you have made explain the `what` and `where` you made changes. Your commit messages explain `why` you made the commits. You do not need to reiterate this. This PR is meant to address the big picture `Why`
 
-### Justification:
+### Justification
 
-Describe the big picture of your changes here to communicate to the maintainers why they should accept this pull request.
+Describe the big picture of your changes here to communicate to the reviewers why they should accept this pull request.
 Please describe the importance/impact of the problem and a description of how the changes in this pull request will address, resolve or improve the problem.
 If it fixes a bug or resolves a feature request, be sure to link to the issue below
 
@@ -37,4 +37,4 @@ Assign at least 2 reviewers:
 * one of which should be a maintainer, 
 * the others should be familiar with the subject changes.
 
-Please detail the process reviewers will need to follow to properly test these changes. It is especially helpful to identify the exact code needed to conduct a local build/review/test and to specify any aspects of the testing that may not be obvious (e.g. installing a particular package version before testing).
+Please detail the process reviewers will need to follow to properly test these changes. It is especially helpful to identify the exact code needed to conduct a local build/review/test and to specify any aspects of the testing that may not be obvious.
