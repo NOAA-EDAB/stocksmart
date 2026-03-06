@@ -3,11 +3,11 @@
 **\[deprecated\]**
 
 `stockAssessmentSummary` is deprecated. It will continue to receive
-updates for while. From v1.0.0 is will not be used in any of the
+updates for while. From v1.0.0 it will not be used in any of the
 supporting functions. Camel case naming is being replaced by snake case.
 Please use
 [stock_assessment_summary](https://noaa-edab.github.io/stocksmart/reference/stock_assessment_summary.md)
-instead. This data set is used in all supporting functions.
+instead since this data set is used in all supporting functions.
 
 Stock assessment metadata and reference points for species found in
 waters of the USA. Data is provided for actively managed stocks of a
