@@ -1,6 +1,4 @@
-## Note
-
-The commits you have made explain the `what` and `where` you made changes. Your commit messages explain `why` you made the commits. You do not need to reiterate this. This PR is meant to address the big picture `Why`
+Your commits explain the `what` and `where` you made changes in the code. Your commit messages explain `why` you made the commits. You do not need to reiterate this. This PR is meant to address the big picture, `Why`
 
 ### Justification
 
