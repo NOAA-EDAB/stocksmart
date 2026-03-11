@@ -1,5 +1,13 @@
 # Changelog
 
+## stocksmart 1.0.2
+
+Data pull: March 10, 2026
+
+#### Summaries added
+
+- Yellowfin tuna - Eastern Pacific (172423): 2025
+
 ## stocksmart 1.0.1
 
 Data pull: March 06, 2026
