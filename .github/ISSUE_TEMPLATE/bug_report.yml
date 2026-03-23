@@ -2,7 +2,6 @@ name: Bug report
 description: Use this template to report bugs
 title: "[Bug Report]:"
 labels: "bug"
-assignees: "andybeet"
 body:
   - type: markdown
     attributes:
