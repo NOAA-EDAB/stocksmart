@@ -1,3 +1,9 @@
+# stocksmart 1.1.3
+
+## Minor update
+
+* `get_reference_points` function to extract time series of reference points
+
 # stocksmart 1.0.3
 
 Data pull: March 18, 2026
