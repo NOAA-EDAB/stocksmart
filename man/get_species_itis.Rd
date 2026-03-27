@@ -25,7 +25,7 @@ Filters the Summary data to find species stock information
 # Get ITIS info for Atlantic Cod, (ITIS code = 1647112)
 get_species_itis(stock = "Atlantic cod")
 get_species_itis(stock = "cod")
-get_species_itis(itis = 167712)
+get_species_itis(itis = 172419)
 # Get ITIS info for a specific cod stock
 get_species_itis(stock = "12805")
 get_species_itis(stock = 12805)
