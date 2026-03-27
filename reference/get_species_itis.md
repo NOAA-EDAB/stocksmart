@@ -69,10 +69,13 @@ get_species_itis(stock = "cod")
 #> 10 Cowcod - Southern California         PFMC         166754    10443
 #> 11 Lingcod - Northern Pacific Coast     PFMC         167116    12194
 #> 12 Lingcod - Southern Pacific Coast     PFMC         167116    12195
-get_species_itis(itis = 167712)
-#> # A tibble: 0 × 4
-#> # ℹ 4 variables: stock_name <chr>, jurisdiction <chr>, itis <dbl>,
-#> #   stock_id <dbl>
+get_species_itis(itis = 172419)
+#> # A tibble: 3 × 4
+#>   stock_name                jurisdiction   itis stock_id
+#>   <chr>                     <chr>         <dbl>    <dbl>
+#> 1 Albacore - North Atlantic Atlantic HMS 172419    10950
+#> 2 Albacore - South Pacific  WPFMC        172419    11688
+#> 3 Albacore - North Pacific  WPFMC        172419    11682
 # Get ITIS info for a specific cod stock
 get_species_itis(stock = "12805")
 #> # A tibble: 1 × 4

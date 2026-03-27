@@ -117,6 +117,8 @@ Functions used to help user extract information from the bundled data
 - [`get_latest_metrics()`](https://noaa-edab.github.io/stocksmart/reference/get_latest_metrics.md)
   : Pulls the most recent data for any combination of Abundance, Catch,
   Recruitment, Mort
+- [`get_reference_points()`](https://noaa-edab.github.io/stocksmart/reference/get_reference_points.md)
+  : Find reference points for a species stock
 - [`get_species_itis()`](https://noaa-edab.github.io/stocksmart/reference/get_species_itis.md)
   : Find the species itis
 - [`get_species_stock_data()`](https://noaa-edab.github.io/stocksmart/reference/get_species_stock_data.md)
