@@ -1,3 +1,29 @@
+# stocksmart 1.0.3
+
+Data pull: March 18, 2026
+
+### Summaries added 
+
+* Red king crab - Norton Sound (97935): 2025
+
+# stocksmart 1.0.2
+
+Data pull: March 10, 2026
+
+### Summaries added 
+
+* Yellowfin tuna - Eastern Pacific (172423): 2025
+
+# stocksmart 1.0.1
+
+Data pull: March 06, 2026
+
+### Time series added 
+
+* Acadian redfish - Gulf of Maine / Georges Bank (166774): 2025
+* Scup - Atlantic Coast (169182): 2025
+* Summer flounder - Mid-Atlantic Coast (172735): 2025
+
 # stocksmart 1.0.0
 
 ## Major update
