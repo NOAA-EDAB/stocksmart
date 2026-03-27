@@ -19,8 +19,7 @@ What types of changes does your code introduce? Put an `x` in the boxes that app
 
 Put an `x` in the boxes that apply
 
-- [ ] I have updated relevant documentation?
-- [ ] I have tested my changes?
+- [ ] I have updated relevant documentation? (run `pkgdown::build_site()` to check)
 - [ ] I have created unit tests and run `devtools::test()` to ensure all unit tests pass locally?
 - [ ] I have run `devtools::check()` to ensure package builds locally?
 - [ ] I have followed the proposed [CONTRIBUTING](../blob/main/CONTRIBUTING.md) guideline?
