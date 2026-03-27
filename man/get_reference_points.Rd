@@ -4,10 +4,10 @@
 \alias{get_reference_points}
 \title{Find reference points for a species stock}
 \usage{
-get_reference_points(stock_id = NULL, ref_point = "bmsy")
+get_reference_points(stock = NULL, ref_point = "bmsy")
 }
 \arguments{
-\item{stock_id}{Numeric. Stock id number, found using  `get_species_itis()``}
+\item{stock}{Numeric or Character. Stock id number, found using  \code{\link{get_species_itis}}}
 
 \item{ref_point}{Character string. The name of the reference point eg ("bmsy", "fmsy")}
 }
@@ -23,6 +23,7 @@ Filters the Summary data to find species reference point information
 }
 \examples{
 # Get fmsy reference point for stock_id = 10509 (Atlantic cod - Georges Bank)
-get_reference_points(stock_id = 10509, ref_point = "fmsy")
+get_reference_points(stock = 10509, ref_point = "fmsy")
+get_reference_points(stock = "10509", ref_point = "bmsy")
 
 }

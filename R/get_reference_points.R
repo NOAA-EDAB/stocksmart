@@ -2,7 +2,7 @@
 #'
 #' Filters the Summary data to find species reference point information
 #'
-#' @param stock_id Numeric. Stock id number, found using  `get_species_itis()``
+#' @param stock Numeric or Character. Stock id number, found using  \code{\link{get_species_itis}}
 #' @param ref_point Character string. The name of the reference point eg ("bmsy", "fmsy")
 #'
 #' @return  data frame
@@ -15,25 +15,32 @@
 #'
 #' @examples
 #' # Get fmsy reference point for stock_id = 10509 (Atlantic cod - Georges Bank)
-#' get_reference_points(stock_id = 10509, ref_point = "fmsy")
+#' get_reference_points(stock = 10509, ref_point = "fmsy")
+#' get_reference_points(stock = "10509", ref_point = "bmsy")
 #'
 #' @export
 
 get_reference_points <- function(
-  stock_id = NULL,
+  stock = NULL,
   ref_point = "bmsy"
 ) {
-  if (!(stock_id %in% stocksmart::stock_assessment_summary$stock_id)) {
+  # check for nulls
+  if (is.null(stock)) {
+    stop("stock_id can not be null. Please see get_species_itis()")
+  }
+  # convert to numeric
+  stock <- as.numeric(stock)
+  if (!(stock %in% stocksmart::stock_assessment_summary$stock_id)) {
     stop("Not a valid stock id. Please see get_species_itis()")
   }
-
+  # check for valid reference point
   ref_point <- tolower(ref_point)
   if (!(ref_point %in% names(stocksmart::stock_assessment_summary))) {
-    return(
+    stop(
       " Please enter a valid reference point name. See the stock_assessment_summary data object"
     )
   }
-  stock <- stock_id
+
   res <- stocksmart::stock_assessment_summary |>
     dplyr::filter(stock_id == stock) |>
     dplyr::select(
