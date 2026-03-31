@@ -2,7 +2,6 @@ name: Feature Request
 description: Suggest an idea to help us improve
 title: "[Feature]: "
 labels: "feature"
-assignees: "andybeet"
 body:
   - type: markdown
     attributes:
