@@ -1,5 +1,44 @@
 # Changelog
 
+## stocksmart 1.1.5
+
+Data pull: April 08, 2026
+
+#### Summaries added
+
+- Pink shrimp - Gulf of Mexico (551574): 2026
+- Chinook salmon - California Central Valley: Sacramento River Fall
+  (161980): 2026
+- Chinook salmon - California Central Valley: Sacramento River Spring
+  (161980): 2026
+- Chinook salmon - California Central Valley: Sacramento River Winter
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Lower River Hatchery Fall
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Lower River Hatchery Spring
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: North Lewis River Fall
+  (161980): 2026
+
+#### Time series added
+
+- Chinook salmon - California Central Valley: Sacramento River Fall
+  (161980): 2026
+- Chinook salmon - California Central Valley: Sacramento River Spring
+  (161980): 2026
+- Chinook salmon - California Central Valley: Sacramento River Winter
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Lower River Hatchery Fall
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Lower River Hatchery Spring
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall
+  (161980): 2026
+- Chinook salmon - Columbia River Basin: North Lewis River Fall
+  (161980): 2026
+
 ## stocksmart 1.1.4
 
 Data pull: March 27, 2026
