@@ -1,6 +1,7 @@
 # stocksmart
 
 ``` r
+
 library(stocksmart)
 ```
 
@@ -45,6 +46,7 @@ We first need to find the ITIS code for Atlantic cod. We can use the
 function to find this
 
 ``` r
+
 get_species_itis(stock = "Atlantic cod")
 #> # A tibble: 6 × 4
 #>   stock_name                           jurisdiction   itis stock_id
@@ -66,6 +68,7 @@ Lets visualize all the Catch data for every assessment of the Georges
 Bank stock
 
 ``` r
+
 p <- plot_ts(itis = 164712,
              stock = "Atlantic cod - Georges Bank",
              metric = "Catch",
@@ -79,6 +82,7 @@ Bank](stocksmart_files/figure-html/codcatch-1.png)
 We can also plot each assessment year in its own facet
 
 ``` r
+
 p <- plot_ts(itis = 164712,
              stock = "Atlantic cod - Georges Bank",
              metric = "Catch",
@@ -97,6 +101,7 @@ changed over time from Metric tons prior to 2017 to kg/tow from 2017
 onward
 
 ``` r
+
 p <- plot_ts(itis = 164712,
              stock = "Atlantic cod - Georges Bank",
              metric = "Abundance",
@@ -130,6 +135,7 @@ function. A list containing two data frames are returned.
   years of data available and the date range.
 
 ``` r
+
 cod <- get_latest_metrics(itis = 164712, metrics = "Catch")
 cod$summary
 #> # A tibble: 5 × 10
@@ -148,6 +154,7 @@ cod$summary
   metadata
 
 ``` r
+
 cod$data
 #> # A tibble: 209 × 20
 #>    stock_name   common_name stock_area   itis assessment_year regional_ecosystem
@@ -172,6 +179,7 @@ cod$data
 We can then filter the the data by the Georges Bank stock and plot it.
 
 ``` r
+
 filteredData <- cod$data  |> 
   dplyr::filter(stock_area == "Georges Bank") 
 cod$data |> 

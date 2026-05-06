@@ -25,7 +25,7 @@ the web portal please send emails to `Stock.SMART@noaa.gov`. Otherwise
 please create an
 [issue](https://github.com/NOAA-EDAB/stocksmart/issues/new/choose)
 
-*Date of most recent data pull: 2026-04-29 18:38:01*
+*Date of most recent data pull: 2026-05-06 18:36:50*
 
 Note: Data is retrieved and processed every Wednesday at 1200 EST. Any
 changes to the [Stock
@@ -60,8 +60,8 @@ guide](https://noaa-edab.github.io/stocksmart/articles/stocksmart.md)
 
 ## Contact
 
-| [andybeet](https://github.com/andybeet)                                                                        |
-|----------------------------------------------------------------------------------------------------------------|
+| [andybeet](https://github.com/andybeet) |
+|----|
 | [![andybeet avatar](https://avatars1.githubusercontent.com/u/22455149?s=100&v=4)](https://github.com/andybeet) |
 
 #### Legal disclaimer
