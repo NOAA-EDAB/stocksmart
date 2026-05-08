@@ -6,13 +6,15 @@
 
 - [Code of Conduct](#book-code-of-conduct)
 - [Asking Questions](#paperclip-asking-questions)
-- [Opening an Issue](#inbox_tray-opening-an-issue)
-- [Bug Reports and Other Issues](#beetle-bug-reports-and-other-issues)
+- [Acceptable Types](#whale-acceptable-types)
+- [Opening an Issue](#fishing_pole_and_fish-opening-an-issue)
+- [Bug Reports and Other Issues](#blowfish-bug-reports-and-other-issues)
 - [Feature Requests](#tropical_fish-feature-requests)
-- [Submitting Pull Requests](#repeat-submitting-pull-requests)
+- [Creating a Branch](#anchor-creating-a-branch)
 - [Writing Commit Messages](#memo-writing-commit-messages)
-- [Coding Style](#nail_care-coding-style)
-- [Certificate of Origin](#medal_sports-certificate-of-origin)
+- [Submitting Pull Requests](#fish_cake-submitting-pull-requests)
+- [Coding Style](#shark-coding-style)
+- [Certificate of Origin](#crab-certificate-of-origin)
 - [Credits](#pray-credits)
 
 > **This guide serves to set clear expectations for everyone involved with the project so that we can improve it together while also creating a welcoming space for everyone to participate. Following these guidelines will help ensure a positive experience for contributors and maintainers.**
@@ -25,14 +27,36 @@ Please review our [Code of Conduct](CODE_OF_CONDUCT.md). It is in effect at all 
 
 GitHub issues are not the appropriate place to debug your specific project, but should be reserved for filing bugs and feature requests.
 
+## :whale: Acceptable Types
+
+Throughout this project, we use standard `types` to communicate more effectively. These types are used when labeling issues, creating branches, committing changes and naming pull requests. Please reference and use the `types` below when contributing to this project:
+
+- **fix:** Patch an unexpected or undesirable behavior
+
+- **build:** Add or modify build-related components (e.g. workflows, versioning, etc.)
+
+- **chore:** Maintenance of product or repository (e.g. gitignore, templates, etc.)
+
+- **docs:** Add or modify documentation
+
+- **feature:** Add or modify a feature or functionality
+
+- **refactor:** Rewrite or restructure code without altering behavior
+
+- **style:** Reformat code style without altering behavior
+
+- **test:** Add or modify tests
+
+All issues, branches, commits and pull requests should align with one of the above `types`. If you have questions or need assistance, please reach out to a maintainer.
+
 ## :fishing_pole_and_fish: Opening an Issue
 
-Before [creating an issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue), check if you are using the latest version of the project. If you are not up-to-date, see if updating fixes your issue first.
+Before [creating an issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue), check that you are using the latest version of the project. If you are not up-to-date, see if updating fixes your issue first.
 
 ### :blowfish: Bug Reports and Other Issues
 
-A great way to contribute to the project is to send a detailed issue when you encounter a problem. We ask you to please create a [reprex](https://reprex.tidyverse.org/).
-We always appreciate a well-written, thorough bug report. This helps us quickly identify and fix the problem.
+A great way to contribute to the project is to send a detailed issue when you encounter a problem.
+This repo has a 'Bug Report' issue template that will guide you in submitting a well-written, thorough bug report. If possible, please also create a [reprex](https://reprex.tidyverse.org/) and include it in your issue. This helps us quickly identify and fix the problem.
 
 When opening an issue, please follow these guidelines:
 
@@ -46,22 +70,38 @@ When opening an issue, please follow these guidelines:
 
 - **Use [GitHub-flavored Markdown](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).** Especially put code blocks and console outputs in backticks (```). This improves readability. In short, since you are most likely a developer, **provide a ticket that you would like to receive**.
 
-- **Review the documentation** before opening a new issue.
-
-- **Do not open a duplicate issue!** Search through existing issues to see if your issue has previously been reported. If your issue exists, comment with any additional information you have. You may simply note "I have this problem too", which helps prioritize the most common problems and requests. 
+- **Do not open a duplicate issue!** Search through existing issues to see if your issue has previously been reported. If your issue exists, comment with any additional information you have. You may simply leave a reaction to bump the issue, which helps prioritize the most common problems and requests. 
 
 - **Fully complete the provided issue template.** The bug report template requests all the information we need to quickly and efficiently address your issue. Be clear, concise, and descriptive. Provide as much information as you can, including steps to reproduce, stack traces, compiler errors, library versions, OS versions, and screenshots (if applicable).
 
-## :tropical_fish: Feature Requests
+### :tropical_fish: Feature Requests
 
-Feature requests are more than welcome! While we will consider all requests, we cannot guarantee your request will be accepted or the timeline for implementation and release. 
+Feature requests are more than welcome! While we will consider all requests, we cannot guarantee your request will be accepted or provide the timeline for implementation and release. 
 
-- **Do not open a duplicate feature request.** Search for existing feature requests first. If you find your feature (or one very similar) previously requested, comment on that issue.
+- **Do not open a duplicate feature request.** Search for existing feature requests first. If you find your feature (or one very similar) previously requested, comment on or add a reaction to that issue.
 
-- **Fully complete the provided issue template.** The feature request template asks for all necessary information for us to begin a productive conversation. 
+- **Fully complete the provided issue template.** The 'Feature Request' template asks for all necessary information for us to begin a productive conversation. 
 
-- Be precise about the proposed outcome of the feature and how it relates to existing features. Include all implementation details.
+- **Be precise** about the proposed outcome of the feature and how it relates to existing features. Include all implementation details.
 
+## :anchor: Creating a Branch
+
+Many contributions to this project will make use of [branching](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches). This repo has two permanent branches: `main` and `dev`. To contribute via branching, you should create a branch from and pull request to the `dev` branch. Your branch name should follow these conventions:
+
+- Use `type/i#-describe-branch-purpose`, where # is the number of the target issue
+- Prefix with the `type` of change the branch will introduce (see [acceptable `types`](#whale-acceptable-types) above)
+- Include an issue number in your branch name (your changes should relate to an [existing issue](#fishing_pole_and_fish-opening-an-issue))
+- Provide a clear but concise description of the branch's purpose
+
+## :memo: Writing Commit Messages
+
+Please write a **conventional** commit message:
+
+1. Use `type(optional scope): commit message` structure (see above for [acceptable `types`](#whale-acceptable-types))
+1. Separate changes into their own commits with unique messages
+1. Write using imperative mood (example: "fix: correct the food web")
+1. Include a `scope` if a commit serves a larger purpose (example: "refactor(food web fix): reorder data ingestion")
+1. Be as brief as possible without losing clarity
 
 ## :fish_cake: Submitting Pull Requests
 
@@ -71,7 +111,11 @@ We appreciate pull requests! Before [forking the repo](https://help.github.com/e
 
 **Guidelines for happy pull requests:**
 
-- **Communication is the key to success.** If you are unsure about something, ask! We are happy to help. We have an open channel of communication, make sure to reach us up and further develop your ideas or changes before working on a pull request. 
+- **Title meaningfully.** Consistent with the convention elsewhere, please title your pull request: "Type(#i): Describe Change Purpose", where "i" is the number of the issue addressed by the PR. Please reference the [acceptable types](#whale-acceptable-types) above.
+
+- **Request appropriate reviewers.** At the very least, please request review from one or all of the project maintainers (maintainers are listed on the [README](README.md)). You should include additional reviews from people familiar with the subject or problem your proposed changes address.
+
+- **Communication is the key to success.** If you are unsure about something, ask! We are happy to help. We have an open channel of communication, make sure to reach out and further develop your ideas or changes before working on a pull request. 
 
 - **Smaller is better.** Submit **one** pull request per bug fix or feature. A pull request should contain isolated changes pertaining to a single bug fix or feature implementation. **Do not** refactor or reformat code that is unrelated to your change. It is better to **submit many small pull requests** rather than a single large one. Enormous pull requests will take enormous amounts of time to review, or may be rejected altogether. 
 
@@ -85,39 +129,15 @@ We appreciate pull requests! Before [forking the repo](https://help.github.com/e
 
 - **Update the example project** if one exists to exercise any new functionality you have added.
 
-- **Add documentation.** Document your changes with code doc comments or in existing guides.
+- **Add documentation.** Document your changes with code comments or other documentation.
 
-- **Update the CHANGELOG** for all enhancements and bug fixes. Include the corresponding issue number if one exists, and your GitHub username. 
-
-- **Use the repo's default branch.** Branch from and [submit your pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the repo's default branch. In Rpath case it will be `dev`.
+- **Use the correct branch.** Branch from and [submit your pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the correct branch (see above for [branching instructions](#anchor-creating-a-branch)). In this repo, it will be the `dev` branch.
 
 - **[Resolve any merge conflicts](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github)** that occur.
 
-- When writing comments, use properly constructed sentences, including punctuation.
-
-- Use spaces, not tabs.
-
-## :memo: Writing Commit Messages
-
-Please [write a great commit message](https://chris.beams.io/posts/git-commit/).
-
-1. Separate subject from body with a blank line
-1. Limit the subject line to 50 characters
-1. Capitalize the subject line
-1. Do not end the subject line with a period
-1. Use the imperative mood in the subject line (example: "Fix food web issue")
-1. Wrap the body at about 72 characters
-1. Use the body to explain **why**, *not what and how* (the code shows that!)
-1. If applicable, prefix the title with the relevant component name. (examples: "[Docs] Fix typo", "[Profile] Fix missing avatar")
-1. Link the commit message to the issue it fixes, if applicable. (example: "Fixes #1234")
-
-
 ## :shark: Coding Style
 
-Consistency is the most important. Following the existing style, formatting, and naming conventions of the file you are modifying and of the overall project. Failure to do so will result in a prolonged review process that has to focus on updating the superficial aspects of your code, rather than improving its functionality and performance.
-
-For example, if all private properties are prefixed with an underscore `_`, then new ones you add should be prefixed in the same way. Or, if methods are named using camelcase, like `thisIsMyNewMethod`, then do not diverge from that by writing `this_is_my_new_method`. You get the idea. If in doubt, please ask or search the codebase for something similar.
-
+Consistent formatting is an essential part of effective collaboration and communication. Reading, writing and reviewing code all benefit from following the standards and conventions of a project. Failure to do so will result in a prolonged review process that has to focus on updating the superficial aspects of your code, rather than improving its functionality and performance. This repo uses and adheres to the [tidyverse style guide](https://style.tidyverse.org/) and the [Air autoformatting tool](https://posit-dev.github.io/air/) that follows it. Please read and follow these guides as you make contributions to the project.
 
 ## :crab: Certificate of Origin
 
