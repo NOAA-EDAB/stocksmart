@@ -1,7 +1,8 @@
 name: Data Issues
 description: Missing, Incorrect, Duplicate data?
 title: "[Data]: "
-labels: "data"
+labels: "bug"
+
 body:
   - type: markdown
     attributes:
