@@ -119,7 +119,7 @@ jobs:
 
       # Send email indicating if anything has changed
       - name: Send email
-        uses: dawidd6/action-send-mail@v14
+        uses: dawidd6/action-send-mail@v17
 
         with:
           server_address: smtp.gmail.com
