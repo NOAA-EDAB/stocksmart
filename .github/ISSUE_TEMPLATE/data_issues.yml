@@ -2,7 +2,6 @@ name: Data Issues
 description: Missing, Incorrect, Duplicate data?
 title: "[Data]: "
 labels: "data"
-assignees: "andybeet"
 body:
   - type: markdown
     attributes:
