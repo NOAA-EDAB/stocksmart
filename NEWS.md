@@ -1,3 +1,12 @@
+# stocksmart 1.1.8
+
+Data pull: May 14, 2026
+
+### Time series removed 
+
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Black sea bass - Southern Atlantic Coast (167687): 2023
+
 # stocksmart 1.1.7
 
 Data pull: May 06, 2026
