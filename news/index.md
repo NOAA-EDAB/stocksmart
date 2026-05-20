@@ -1,5 +1,24 @@
 # Changelog
 
+## stocksmart 1.1.9
+
+Data pull: May 20, 2026
+
+#### Time series added
+
+- Haddock - Georges Bank (164744): 2024
+- Pollock - Gulf of Maine / Georges Bank (164727): 2024
+- Witch flounder - Northwestern Atlantic Coast (172873): 2024
+
+## stocksmart 1.1.8
+
+Data pull: May 14, 2026
+
+#### Time series removed
+
+- Black sea bass - Southern Atlantic Coast (167687): 2025
+- Black sea bass - Southern Atlantic Coast (167687): 2023
+
 ## stocksmart 1.1.7
 
 Data pull: May 06, 2026
