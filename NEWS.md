@@ -1,3 +1,21 @@
+# stocksmart 1.1.11
+
+Data pull: June 17, 2026
+
+### Summaries added 
+
+* Chilipepper - Pacific Coast (166722): 2025
+* Petrale sole - Pacific Coast (172868): 2025
+* Shortspine thornyhead - Pacific Coast (166783): 2025
+* Yellowtail rockfish - Northern Pacific Coast (166720): 2025
+
+### Time series added 
+
+* Chilipepper - Pacific Coast (166722): 2025
+* Petrale sole - Pacific Coast (172868): 2025
+* Shortspine thornyhead - Pacific Coast (166783): 2025
+* Yellowtail rockfish - Northern Pacific Coast (166720): 2025
+
 # stocksmart 1.1.10
 
 Data pull: May 27, 2026
