@@ -1,5 +1,17 @@
 # Changelog
 
+## stocksmart 1.1.12
+
+Data pull: July 15, 2026
+
+#### Summaries added
+
+- Pacific Coast Blackspotted and Rougheye Rockfish Complex (NA): 2025
+
+#### Time series added
+
+- Pacific Coast Blackspotted and Rougheye Rockfish Complex (NA): 2025
+
 ## stocksmart 1.1.11
 
 Data pull: June 17, 2026
