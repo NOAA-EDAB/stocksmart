@@ -1,3 +1,11 @@
+# stocksmart 1.1.13
+
+Data pull: July 29, 2026
+
+### Summaries added 
+
+* Caribbean spiny lobster - St. Croix (97648): 2025
+
 # stocksmart 1.1.12
 
 Data pull: July 15, 2026
