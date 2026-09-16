@@ -1,3 +1,15 @@
+# stocksmart 1.1.16
+
+Data pull: September 16, 2026
+
+### Summaries removed 
+
+* Yellowedge grouper - Gulf of Mexico (167699): 2010
+
+### Time series removed 
+
+* Yellowedge grouper - Gulf of Mexico (167699): 2010
+
 # stocksmart 1.1.15
 
 Data pull: September 09, 2026
