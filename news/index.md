@@ -1,5 +1,30 @@
 # Changelog
 
+## stocksmart 1.1.17
+
+Data pull: September 23, 2026
+
+#### Summaries added
+
+- Pacific cod - Gulf of Alaska (164711): 2026
+- Aggregate Chinook Salmon Complex (161980): 2026
+- Aggregate Other Sockeye Salmon Complex (161979): 2026
+- Sockeye salmon - Kasilof River (161979): 2026
+- Sockeye salmon - Kenai River Late Run (161979): 2026
+- Pacific hake - Pacific Coast (164792): 2026
+- Widow rockfish - Pacific Coast (166719): 2026
+- Bigeye tuna - Eastern Pacific (172428): 2026
+
+#### Time series added
+
+- Aggregate Chinook Salmon Complex (161980): 2026
+- Aggregate Other Sockeye Salmon Complex (161979): 2026
+- Pacific cod - Gulf of Alaska (164711): 2026
+- Pacific hake - Pacific Coast (164792): 2026
+- Sockeye salmon - Kasilof River (161979): 2026
+- Sockeye salmon - Kenai River Late Run (161979): 2026
+- Widow rockfish - Pacific Coast (166719): 2026
+
 ## stocksmart 1.1.16
 
 Data pull: September 16, 2026
