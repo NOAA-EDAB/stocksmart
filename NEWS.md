@@ -1,3 +1,28 @@
+# stocksmart 1.1.18
+
+Data pull: September 29, 2026
+
+### Summaries added 
+
+* Golden king crab - Pribilof Islands (660179): 2023
+* Golden king crab - Pribilof Islands (660179): 2026
+* Dusky rockfish - Gulf of Alaska (644604): 2024
+* Aggregate Coho Salmon Complex (161977): 2026
+
+### Summaries removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+
+### Time series added 
+
+* Aggregate Coho Salmon Complex (161977): 2026
+* Dusky rockfish - Gulf of Alaska (644604): 2024
+
+### Time series removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+
 # stocksmart 1.1.17
 
 Data pull: September 23, 2026
