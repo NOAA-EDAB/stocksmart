@@ -22,5 +22,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Andy Beet \email{andrew.beet@noaa.gov} (\href{https://orcid.org/0000-0001-8270-7090}{ORCID})
 
+Authors:
+\itemize{
+  \item Andy Beet \email{andrew.beet@noaa.gov} (\href{https://orcid.org/0000-0001-8270-7090}{ORCID})
+}
+
 }
 \keyword{internal}

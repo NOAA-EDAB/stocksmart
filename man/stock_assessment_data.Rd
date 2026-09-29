@@ -53,7 +53,7 @@ The data were downloaded from \href{https://apps-st.fisheries.noaa.gov/stocksmar
 }
 
 \seealso{
-Other stockAssessments: 
+Other stockAssessments:
 \code{\link{stockAssessmentData}},
 \code{\link{stockAssessmentSummary}},
 \code{\link{stock_assessment_summary}}

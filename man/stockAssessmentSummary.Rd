@@ -110,7 +110,7 @@ For Manual download:
 }
 
 \seealso{
-Other stockAssessments: 
+Other stockAssessments:
 \code{\link{stockAssessmentData}},
 \code{\link{stock_assessment_data}},
 \code{\link{stock_assessment_summary}}
