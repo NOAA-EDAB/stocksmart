@@ -69,7 +69,7 @@ For Manual download:
 }
 
 \seealso{
-Other stockAssessments: 
+Other stockAssessments:
 \code{\link{stockAssessmentSummary}},
 \code{\link{stock_assessment_data}},
 \code{\link{stock_assessment_summary}}
