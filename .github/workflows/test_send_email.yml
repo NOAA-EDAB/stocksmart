@@ -10,7 +10,7 @@ jobs:
     steps:
 
       - name: Send email
-        uses: dawidd6/action-send-mail@v18
+        uses: dawidd6/action-send-mail@v22
 
         with:
           server_address: smtp.gmail.com
