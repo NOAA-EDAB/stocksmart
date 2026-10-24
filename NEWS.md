@@ -1,3 +1,15 @@
+# stocksmart 1.1.19
+
+Data pull: October 24, 2026
+
+### Summaries removed 
+
+* Arrowtooth flounder - Pacific Coast (616029): 2021
+
+### Time series removed 
+
+* Arrowtooth flounder - Pacific Coast (616029): 2021
+
 # stocksmart 1.1.18
 
 Data pull: September 29, 2026
